@@ -140,6 +140,12 @@ a:hover,a:focus {
 		border:0px solid rgba(0,0,0,0.03);
 	}
 }
+
+img.img-circle {
+	border-radius:50%;
+	border-style:solid;
+}
+
 .intro {
 	display:table;
 	width:100%;
