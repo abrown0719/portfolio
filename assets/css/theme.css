@@ -7,7 +7,7 @@ body {
 	width:100%;
 	height:100%;
 	font-family: Open Sans, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-	color:#fff;
+	color:#F9FFE0;
 	 font-weight:300;
 }
 html {
@@ -125,10 +125,10 @@ a:hover,a:focus {
 		padding:0px 0;
 		border-bottom:1px solid rgba(255,255,255,.3);
 		color:#333;
-		background:#fff;
+		background:#F9FFE0;
 	}
 	.navbar-custom.top-nav-collapse a {
-			color:#333;
+			color:#39422B;
 			display:inline-block;
 	}
 	.navbar-expand-md .navbar-custom.navbar-nav .nav-link {
@@ -144,6 +144,7 @@ a:hover,a:focus {
 img.img-circle {
 	border-radius:50%;
 	border-style:solid;
+	border-color: #39421B;
 }
 
 .intro {
@@ -152,7 +153,7 @@ img.img-circle {
 	height:auto;
 	padding:100px 0 100px 0;
 	text-align:center;
-	color:#fff;
+	color:#B1BA9A;
 	background-image:radial-gradient(circle at 50% 50%,rgba(0,0,0,0.46),rgba(0,0,0,0.18)),url('https://images.unsplash.com/photo-1451337516015-6b6e9a44a8a3?crop=entropy&fit=crop&fm=jpg&h=675&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1375');
 	-webkit-background-size:cover;
 	-moz-background-size:cover;
@@ -178,8 +179,8 @@ img.img-circle {
 			font-size:60px;
 			margin-top:90px;
 			margin-bottom:20px;
-			border-top:2px solid #fff;
-			border-bottom:2px solid #fff;
+			border-top:2px solid #B1BA9A;
+			border-bottom:2px solid #B1BA9A;
 			display:inline-block;
 			padding:7px 0;
 	}
@@ -195,10 +196,8 @@ img.img-circle {
 	margin-top:15px;
 	line-height:40px;
 	text-align:center;
-	border:2px solid #fff;
-	border-radius:100%!important;
 	font-size:20px;
-	color:#fff;
+	color:#B1BA9A;
 	background:0 0;
 	-webkit-transition:background .3s ease-in-out;
 	-moz-transition:background .3s ease-in-out;
@@ -260,7 +259,7 @@ img.img-circle {
 }
 @media(min-width:767px) {
 	.content-section {
-			padding:150px 0;
+			padding:75px 0;
 				 clear:both;
 	}
 }
@@ -368,22 +367,22 @@ p.lead {
 	line-height:1.9;
 }
 .btnghost {
-	border:2px solid #333;
+	border:2px solid #39422B;
 	background-color:transparent;
 	padding:15px 20px;
 	letter-spacing:3px;
 	font-size:12px;
 	text-transform:uppercase;
 	font-weight:400;
-	color:#333;
+	color:#39422B;
 	margin:20px 5px 0 5px;
 	display:inline-block;
     min-width: 150px;
 }
 .btnghost:hover {
-	background-color:#333;
-	color:#fff;
-	border:2px solid #333;
+	background-color:#39422B;
+	color:#F9FFE0;
+	border:2px solid #39422B;
 }
 .highlightlink {
 	border-bottom:1px dashed #ccc;
@@ -468,8 +467,8 @@ section:after {
 	clear:both;
 }
 section {
-	background-color:#f9f9f9;
-	color:#333;
+	background-color:#F9FFE0;
+	color:#687F6B;
 	overflow:hidden;
 }
 .done {
