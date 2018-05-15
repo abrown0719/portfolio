@@ -8583,6 +8583,31 @@ html {
     -ms-flex-item-align: stretch !important;
         align-self: stretch !important; } }
 
+@media (max-width: 995px) {
+li.d-inline.navpic {
+  display: none !important;
+}
+
+@media (max-width: 767px) {
+ul.navbar {
+  width: 50% !important;
+}
+
+@media (max-width: 767px) {
+  .mobileno {
+    display: none !important;
+  }
+
+@media (max-width: 767px) {
+.row.justify-content-center.skills.skills-list {
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+li.col-md-3.Skills {
+  margin: .75em 0;
+
+}
 /* Custom Mixins -------------------- */
 /* Base Styles -------------------- */
 
