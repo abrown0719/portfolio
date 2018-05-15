@@ -160,6 +160,11 @@ img.img-circle {
 	background-size:cover;
 	-o-background-size:cover;
 }
+
+.intro.intro2 {
+	background-image:radial-gradient(circle at 50% 50%,rgba(0,0,0,0.46),rgba(0,0,0,0.18)),url('https://images.pexels.com/photos/353140/pexels-photo-353140.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+}
+
 .work-box {
 	margin: 3em 1.5em;
 	display:inline-block;
@@ -182,8 +187,8 @@ img.img-circle {
 	}
 	.intro .intro-body .brand-heading {
 			font-size:60px;
-			margin-top:90px;
-			margin-bottom:20px;
+			margin-top:0px;
+			margin-bottom:1rem;
 			border-top:2px solid #B1BA9A;
 			border-bottom:2px solid #B1BA9A;
 			display:inline-block;
@@ -389,7 +394,7 @@ body {
 	display:inline-block;
 }
 p:last-child {
-	margin-bottom:0;
+	margin-bottom:12rem;
 }
 p.lead {
 	line-height:1.9;
