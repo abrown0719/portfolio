@@ -8606,7 +8606,18 @@ ul.navbar {
 @media (max-width: 767px) {
 li.col-md-3.Skills {
   margin: .75em 0;
+}
 
+@media (max-width: 500px) {
+img.img-circle.intropic {
+  width: 200px;
+  height: 200px;
+}
+
+@media (max-width: 250px) {
+img.img-circle.intropic {
+  display: none;
+}
 }
 /* Custom Mixins -------------------- */
 /* Base Styles -------------------- */

@@ -165,6 +165,10 @@ img.img-circle {
 	background-image:radial-gradient(circle at 50% 50%,rgba(0,0,0,0.46),rgba(0,0,0,0.18)),url('https://images.pexels.com/photos/353140/pexels-photo-353140.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
 }
 
+.intro.intro3 {
+	background-image:radial-gradient(circle at 50% 50%,rgba(0,0,0,0.46),rgba(0,0,0,0.18)),url('https://images.pexels.com/photos/1034887/pexels-photo-1034887.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+}
+
 .work-box {
 	margin: 3em 1.5em;
 	display:inline-block;
@@ -341,11 +345,6 @@ img.skillicon {
 
 .row.col-md-12.btn-group.personal1 {
     margin-top: 2.5em;
-}
-
-@media (max-width: 767px) 
-.row.justify-content-center.skills.skills-list {
-margin: 0;
 }
 
 ul.skills {
@@ -541,4 +540,19 @@ section {
 	border-bottom:2px solid lightseagreen;
 	outline:0;
 	outline: none;
+}
+@keyframes fadein {
+	0% {opacity:0;}
+	20% {opacity:.2;}
+	40% {opacity:.4;}
+	60% {opacity:.6;}
+	80% {opacity:.8;}
+	100% {opacity:1;}
+}
+
+.col-md-8.navpic.intropic {
+	margin-bottom: 2rem;
+	animation-name: fadein;
+	animation-duration: 2s;
+	animation-timing-function: linear;
 }
