@@ -8586,39 +8586,43 @@ html {
 @media (max-width: 995px) {
 li.d-inline.navpic {
   display: none !important;
-}
+}}
 
 @media (max-width: 767px) {
 ul.navbar {
   width: 50% !important;
-}
+}}
 
 @media (max-width: 767px) {
   .mobileno {
     display: none !important;
-  }
+  }}
 
 @media (max-width: 767px) {
 .row.justify-content-center.skills.skills-list {
   margin: 0;
-}
+}}
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
 li.col-md-3.Skills {
   margin: .75em 0;
 }
+.intro.intro3 {
+  background-image:radial-gradient(circle at 50% 50%,rgba(0,0,0,0.46),rgba(0,0,0,0.18)),url('../img/adventure-altitude-clear-sky-633198.jpg') !important;
+  background-position-x: center;
+}}
 
 @media (max-width: 500px) {
 img.img-circle.intropic {
   width: 200px;
   height: 200px;
-}
+}}
 
 @media (max-width: 250px) {
 img.img-circle.intropic {
   display: none;
-}
-}
+}}
+
 /* Custom Mixins -------------------- */
 /* Base Styles -------------------- */
 

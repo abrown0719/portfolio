@@ -330,6 +330,7 @@ ul.banner-social-buttons {
 		color:#333;
 	}
 	.intro {
+		height: 100%;
 		padding:100px 0 50px 0;
 	}
 }
@@ -555,4 +556,8 @@ section {
 	animation-name: fadein;
 	animation-duration: 2s;
 	animation-timing-function: linear;
+}
+
+.col-md-8.navpic.intropic:hover {
+	transform: scale(1.1,1.1);
 }
