@@ -561,3 +561,7 @@ section {
 .col-md-8.navpic.intropic:hover {
 	transform: scale(1.1,1.1);
 }
+
+.card.card-body.work-card.cert-card {
+    border-style: none;
+}
