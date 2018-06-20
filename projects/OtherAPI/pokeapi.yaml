@@ -1,0 +1,3849 @@
+swagger: '2.0'
+
+host: pokeapi.co
+basePath: /api/v2
+schemes:
+  - https
+
+produces:
+  - application/json
+
+info:
+  version: '2.0'
+  title: Pokemon API
+  x-logo:
+    url: './img/icon.jpg'
+  description: |
+    # Welcome!
+    Finally; all the Pokémon data you'll ever need, in one place, and easily accessible through a modern RESTful API. This is a full RESTful API linked to an extensive database detailing everything about the Pokémon main game series. We have covered everything from Pokémon to Berry Flavors.
+    
+    ## Introduction
+    The Pokemon API aims to provide a single, easily accessible database for all things Pokemon. Pokémon V1 was created by Paul Hallett as a weekend project but it quickly became more than a weekend's worth of work. In December of 2014 Paul deprecated V1 in favor of working on V2.
+
+    This is where Zane Adickes jumped in. Zane thought the original project was a fantastic idea and wanted to help it grow. With direction from Paul, Zane created the V2 api using an exact mirror of Veekun's data related to the main series of games.
+    
+    ## Overview and Security
+    The PokeApi only supports the GET method. 
+    
+    The Pokemon API does not use any authentication. The information returned by this API is gathered from open sources, so there is no need!
+    
+    There is a request limit of 300 per day one a single IP address for each endpoint. A single IP address can access more endpoints but no one endpoint can be accessed more than 300 times per IP address in a day. 
+    
+    Once the 300 request limit has been reached, the server will return a 4XX status in the response header.
+    
+    If you are going to be using this API a lot, we recommed that cached versions be kept on your service.
+    
+    ## Fair Use
+    PokéAPI is free and open to use. It is also very popular. Because of this, we ask every developer to abide by our fair use policy. People not complying with the fair use policy will have their IP address permenantly banned. Denial of service attacks are not tolerated. This API is an educational tool first and foremost, it is not intended for any use other than education and reference.
+    
+    We ask that all local resources be cached once they are requested. Please use pagination and don't try to scrape all data at once. Please use the appropriate ***user-agent*** header in requests, and finally just be nice and fair to fello developers in all activities.
+    
+    The PokeAPI, being open-source,is defined and maintained by the efforts of a collective of volunteers. Please be mindful of the amount of work put into this, and enjoy!
+    
+    ## Pagination
+    The PokeAPI uses pagination whenever an endpoint is called without a resource root. By default, the page will show 20 responses starting at the first entry.
+    
+    To manipulate this, change the ***limit*** and ***offset*** query parameters. The ***limit*** parameter changes how many resources will be shown on a page, and the ***offset*** parameter defines what resource ID# the list will start at.
+    
+    For any path with 20 or less resources, or if the ***limit*** is set higher than the total number of resources possible for that endpoint, then all resources will be listed.
+    
+    Each response body will return with a ***count*** key with a value equal to the total number of resources within that endpoint. Additionally, they will also contain each a ***previous*** and a ***next*** field, with links to the previous and following results pages. If there are no pages, than either or both of those fields will show *null*.
+    
+    ## Wrappers
+    * **Node Server-side with auto caching** - [Pokedex Promise](github.com/PokeAPI/pokedex-promise-v2) v2 by Thomas Asadurian and Alessandro Pezzé
+    * **Browser-side with auto caching** - [pokeapi-js-wrapper](github.com/PokeAPI/pokeapi-js-wrapper) by Alessandro Pezzé
+    * **Python with auto caching** - [PokeBase](github.com/GregHilmes/pokebase) by Greg Hilmes
+    * **Kotlin (and Java)** - [PokeKotlin](github.com/PokeAPI/pokekotlin) by sargunster
+    * **.NET (C#, VB, etc)** - [PokeApi.NET](gitlab.com/PoroCYon/PokeApi.NET) by PoroCYon
+    * **Swift** - [PokemonKit](github.com/ContinuousLearning/PokemonKit) by darkcl
+    * **PHP** - [PokePHP](github.com/danrovito/pokephp) by Dan Rovito
+    
+    ## Slack
+    Have questions? Ideas? Notice something amiss here in the docs? Hit us up on Slack. [Sign up](pokeapi-slack-invite.herokuapp.com), and [join us](pokeapi.slack.com)! We encourage you to come here before opening a ticket on github, so we can keep our issues nice and organized. There are also a solid group of people using the API who may already have answers or plans from experience.
+    
+    # Example
+    Lets just go through an example.
+    
+    Say we wanted to look up a berry, but we don't know what berry we want. This is how we'd go about it. We don't want too many results per page, max 5, so we would make the request as such:
+    ```json
+    $ curl https://pokeapi.co/api/v2/berry?limit=5
+    ```
+    This will return the following data:
+    ```json
+    {"count":64,
+    "previous":null,
+    "results":[{"url":"https:\/\/pokeapi.co\/api\/v2\/berry\/1\/","name":"cheri"},
+    {"url":"https:\/\/pokeapi.co\/api\/v2\/berry\/2\/","name":"chesto"},
+    {"url":"https:\/\/pokeapi.co\/api\/v2\/berry\/3\/","name":"pecha"},
+    {"url":"https:\/\/pokeapi.co\/api\/v2\/berry\/4\/","name":"rawst"},
+    {"url":"https:\/\/pokeapi.co\/api\/v2\/berry\/5\/","name":"aspear"}],
+    "next":"https:\/\/pokeapi.co\/api\/v2\/berry\/?limit=5&offset=5"}
+    ```
+    As we can see, there are a total of 64 possible resources within the berry endpoint. There is nothing in ***previous*** because this is the first page, and the ***next*** field has the link to our next page. None of these berries are what we want, so lets go to the next page and make a call using that link. It is offset 5, so it will skip the first five resouces, and begin with resource id 6.
+    ```json
+    $ curl https://pokeapi.co/api/v2/berry?limit=5&offset=5
+    ```
+    Which will return the following data:
+    ```json
+    {"count":64,
+    "previous":"https:\/\/pokeapi.co\/api\/v2\/berry\/?limit=5",
+    "results":[{"url":"https:\/\/pokeapi.co\/api\/v2\/berry\/6\/","name":"leppa"},
+    {"url":"https:\/\/pokeapi.co\/api\/v2\/berry\/7\/","name":"oran"},
+    {"url":"https:\/\/pokeapi.co\/api\/v2\/berry\/8\/","name":"persim"},
+    {"url":"https:\/\/pokeapi.co\/api\/v2\/berry\/9\/","name":"lum"},
+    {"url":"https:\/\/pokeapi.co\/api\/v2\/berry\/10\/","name":"sitrus"}],
+    "next":"https:\/\/pokeapi.co\/api\/v2\/berry\/?limit=5&offset=10"}
+    ```
+    Great, the *persim* berry is what we were looking for. Lets call that. We can call it one of two ways.
+    ```json
+    $ curl https://pokeapi.co/api/v2/berry/8
+    ```
+    or
+    ```json
+    $ curl https://pokeapi.co/api/v2/berry/persim
+    ```
+    Both methods are valid, and will return the same results.
+    
+    Great! We've got our data, and we can do with it what we want. Explore the documentation to find all the endpoints, and test out the API. So get started!
+  
+tags:
+  - name: Root
+  - name: Berries
+    description: Berries are items in the Pokémon world, and are critical held items in battle, with various effects.
+  - name: Contests
+    description: Pokémon Contests are a type of competition held in Contest Halls.
+  - name: Encounters
+    description: Encountering Pokemon is an important aspect of gameplay.
+  - name: Evolution
+    description: Evolution is the method by which pokemon achieve major advancements in development.
+  - name: Games
+    description: This section contains data on the various games from each generation.
+  - name: Items
+    description: Items are usable in the game with many effects in every scenario.
+  - name: Machines
+    description: Machines are the representation of items that teach moves to Pokemon.
+  - name: Moves
+    description: Moves are the skills of Pokemon in battle.
+  - name: Locations
+    description: Locations are places that can be visited in game.
+  - name: Pokemon
+    description: This sections has all the information about many specific Pokemon and their various attributes.
+  - name: Utility
+    description: This section contains information about languages, and possibly other utility information.
+    
+paths:
+  /:
+    get:
+      summary: API Root
+      tags:
+        - Root
+      description: Return a list of all resources.
+      responses:
+        200:
+          description: Success
+          schema:
+            $ref: '#/definitions/apiRoot'
+
+  /{resource}:
+    get:
+      summary: Resource Root
+      tags:
+        - Root
+      description: Returns data points within a given resource.
+      parameters:
+        - name: resource
+          in: path
+          type: string
+          required: true
+          description: The name of the resource.
+        - name: limit
+          in: query
+          type: number
+          required: false
+          description: The number of returned results per page. Default is 20.
+        - name: offset
+          in: query
+          type: number
+          required: false
+          description: The number of results from the top of the list the server ignores before it starts returning results. Default is 0.
+      responses:
+        200:
+          description: Success
+          schema:
+            $ref: '#/definitions/root'
+  
+  /berry/{id or name}:
+    get:
+      summary: Berries
+      tags:
+        - Berries
+      description: Returns a specific berry. Berries are small fruits that can provide HP and status condition restoration, stat enhancement, and even damage negation when eaten by Pokémon.
+      parameters:
+        - name: id or name
+          in: path
+          required: true
+          type: string
+          description: The ID or the name of the specific berry.
+      responses:
+        200:
+          description: Successful
+          schema:
+            $ref: '#/definitions/berryById'
+  
+  /berry-firmness/{id or name}:
+    get:
+      summary: Berry Firmnesses
+      tags:
+        - Berries
+      description: Returns a specific berry firmness property.
+      parameters:
+        - name: id or name
+          in: path
+          type: string
+          required: true
+          description: the ID or the name of the specific berry firmness property.
+      responses:
+        200:
+          description: Successful
+          schema:
+            $ref: '#/definitions/berryFirmnessById'
+  
+  /berry-flavor/{id or name}:
+    get:
+      summary: Berry Flavors
+      tags:
+        - Berries
+      description: Return a berry flavor. Flavors determine whether a Pokémon will benefit or suffer from eating a berry based on their nature.
+      parameters:
+        - name: id or name
+          in: path
+          required: true
+          type: string
+          description: The ID number or name of the berry flavor.
+      responses:
+        200:
+          description: Successful
+          schema:
+            $ref: '#/definitions/berryFlavorById'
+  
+  /contest-type/{id or name}:
+    get:
+      summary: Contest Types
+      tags:
+        - Contests
+      description: Return a contest type. Contest types are categories judges used to weigh a Pokémon's condition in Pokémon contests.
+      parameters:
+        - name: id or name
+          in: path
+          required: true
+          type: string
+          description: The ID number or name of the contest type.
+      responses:
+        200:
+          description: Successful
+          schema:
+            $ref: '#/definitions/contestTypeById'
+
+  /contest-effect/{id or name}:
+    get:
+      summary: Contest Effects
+      tags:
+        - Contests
+      description: Return a contest effect. Contest effects refer to the effects of moves when used in contests.
+      parameters:  
+        - name: id or name
+          in: path
+          required: true
+          type: string
+          description: The ID number or name of the contest effect.
+      responses:
+        200:
+          description: Successful
+          schema:
+            $ref: '#/definitions/contestEffectById'
+
+  /super-contest-effect/{id or name}:
+    get:
+      summary: Super Contest Effects
+      tags:
+        - Contests
+      description: Return a super contest effect. Super contest effects refer to the effects of moves when used in super contests.
+      parameters:
+        - name: id or name
+          in: path
+          required: true
+          type: string
+          description: The ID number or name of the super contest effect.
+      responses:
+        200:
+          description: Successful
+          schema:
+            $ref: '#/definitions/superContestEffectById'
+
+  /encounter-method/{id or name}:
+    get:
+      summary: Encounter Methods
+      tags:
+        - Encounters
+      description: Return an encounter method. Methods by which the player might can encounter Pokémon in the wild, e.g., walking in tall grass.
+      parameters:
+        - name: id or name
+          in: path
+          required: true
+          type: string
+          description: The ID number or name of the encounter method.
+      responses:
+        200:
+          description: Successful
+          schema:
+            $ref: '#/definitions/encounterMethodById'
+ 
+  /encounter-condition/{id or name}:
+    get:
+      summary: Encounter Conditions
+      tags:
+        - Encounters
+      description: Return an encounter condition. Conditions which affect what pokemon might appear in the wild, e.g., day or night.
+      parameters:
+        - name: id or name
+          in: path
+          required: true
+          type: string
+          description: The ID number or name of the encounter condition.
+      responses:
+        200:
+          description: Successful
+          schema:
+            $ref: '#/definitions/encounterConditionById'
+
+  /encounter-condition-value/{id or name}:
+    get:
+      summary: Encounter Condition Values
+      tags:
+        - Encounters
+      description: Return an encounter condition value. Encounter condition values are the various states that an encounter condition can have, i.e., time of day can be either day or night.
+      parameters:
+        - name: id or name
+          in: path
+          required: true
+          type: string
+          description: The ID number or name of the encounter condition value.
+      responses:
+        200:
+          description: Successful
+          schema:
+            $ref: '#/definitions/encounterConditionValueById'
+
+  /evolution-chain/{id or name}:
+    get:
+      summary: Evolution Chains
+      tags:
+        - Evolution
+      description: Return an evolution chain value. Evolution chains are essentially family trees. They start with the lowest stage within a family and detail evolution conditions for each as well as Pokémon they can evolve into up through the hierarchy.
+      parameters:
+        - name: id or name
+          in: path
+          required: true
+          type: string
+          description: The ID number or name of the evolution chain value.
+      responses:
+        200:
+          description: Successful
+          schema:
+            $ref: '#/definitions/evolutionChainById'
+
+  /evolution-trigger/{id or name}:
+    get:
+      summary: Evolution Triggers
+      tags:
+        - Evolution
+      description: Return an evolution trigger value. Evolution triggers are the events and conditions that cause a Pokémon to evolve. 
+      parameters:
+        - name: id or name
+          in: path
+          required: true
+          type: string
+          description: The ID number or name of the evolution trigger value.
+      responses:
+        200:
+          description: Successful
+          schema:
+            $ref: '#/definitions/evolutionTriggerById'
+
+  /generation/{id or name}:
+    get:
+      summary: Generations
+      tags:
+        - Games
+      description: Return an generation value. A generation is a grouping of the Pokémon games that separates them based on the Pokémon they include.
+      parameters:
+        - name: id or name
+          in: path
+          required: true
+          type: string
+          description: The ID number or name of the generation.
+      responses:
+        200:
+          description: Successful
+          schema:
+            $ref: '#/definitions/generationById'
+
+  /pokedex/{id or name}:
+    get:
+      summary: Pokedexes
+      tags:
+        - Games
+      description: Return an pokedex value. A Pokédex is a handheld electronic encyclopedia device; one which is capable of recording and retaining information of the various Pokémon in a given region with the exception of the national dex and some smaller dexes related to portions of a region. 
+      parameters:
+        - name: id or name
+          in: path
+          required: true
+          type: string
+          description: The ID number or name of the pokedex.
+      responses:
+        200:
+          description: Successful
+          schema:
+            $ref: '#/definitions/pokedexById'
+
+  /version/{id or name}:
+    get:
+      summary: Versions
+      tags:
+        - Games
+      description: Return an version value. Versions of the games, e.g., Red, Blue or Yellow.
+      parameters:
+        - name: id or name
+          in: path
+          required: true
+          type: string
+          description: The ID number or name of the version.
+      responses:
+        200:
+          description: Successful
+          schema:
+            $ref: '#/definitions/versionById'
+
+  /version-group/{id or name}:
+    get:
+      summary: Version Groups
+      tags:
+        - Games
+      description: Return an version group value. Version groups categorize highly similar versions of the games.
+      parameters:
+        - name: id or name
+          in: path
+          required: true
+          type: string
+          description: The ID number or name of the version group.
+      responses:
+        200:
+          description: Successful
+          schema:
+            $ref: '#/definitions/versionGroupById'
+
+  /item/{id or name}:
+    get:
+      summary: Items
+      tags:
+        - Items
+      description: Return an item value. An item is an object in the games which the player can pick up, keep in their bag, and use in some manner. They have various uses, including healing, powering up, helping catch Pokémon, or to access a new area.
+      parameters:
+        - name: id or name
+          in: path
+          required: true
+          type: string
+          description: The ID number or name of the item.
+      responses:
+        200:
+          description: Successful
+          schema:
+            $ref: '#/definitions/itemById'
+
+  /item-attributes/{id or name}:
+    get:
+      summary: Item Attributes
+      tags:
+        - Items
+      description: Return an item attributes value. Item attributes define particular aspects of items, e.g. "usable in battle" or "consumable".
+      parameters:
+        - name: id or name
+          in: path
+          required: true
+          type: string
+          description: The ID number or name of the item attributes.
+      responses:
+        200:
+          description: Successful
+          schema:
+            $ref: '#/definitions/itemAttributesById'
+
+  /item-category/{id or name}:
+    get:
+      summary: Item Categories
+      tags:
+        - Items
+      description: Return an item category value. Item categories determine where items will be placed in the players bag.
+      parameters:
+        - name: id or name
+          in: path
+          required: true
+          type: string
+          description: The ID number or name of the item category.
+      responses:
+        200:
+          description: Successful
+          schema:
+            $ref: '#/definitions/itemCategoryById'
+
+  /item-fling-effect/{id or name}:
+    get:
+      summary: Item Fling Effects
+      tags:
+        - Items
+      description: Return an item fling effect value. The various effects of the move "Fling" when used with different items.
+      parameters:
+        - name: id or name
+          in: path
+          required: true
+          type: string
+          description: The ID number or name of the item fling effect.
+      responses:
+        200:
+          description: Successful
+          schema:
+            $ref: '#/definitions/itemFlingEffectById'
+
+  /item-pocket/{id or name}:
+    get:
+      summary: Item Pockets
+      tags:
+        - Items
+      description: Return an item pocket value. Pockets within the players bag used for storing items by category.
+      parameters:
+        - name: id or name
+          in: path
+          required: true
+          type: string
+          description: The ID number or name of the item pocket.
+      responses:
+        200:
+          description: Successful
+          schema:
+            $ref: '#/definitions/itemPocketById'
+
+  /machine/{id or name}:
+    get:
+      summary: Machines
+      tags:
+        - Machines
+      description: Return a machine. Machines are the representation of items that teach moves to Pokémon. They vary from version to version, so it is not certain that one specific TM or HM corresponds to a single Machine.
+      parameters:
+        - name: id or name
+          in: path
+          required: true
+          type: string
+          description: The ID number or name of the item machine.
+      responses:
+        200:
+          description: Successful
+          schema:
+            $ref: '#/definitions/machineById'
+
+  /move/{id or name}:
+    get:
+      summary: Moves
+      tags:
+        - Moves
+      description: Return a move. Moves are the skills of Pokémon in battle. In battle, a Pokémon uses one move each turn.
+      parameters:
+        - name: id or name
+          in: path
+          required: true
+          type: string
+          description: The ID number or name of the move.
+      responses:
+        200:
+          description: Successful
+          schema:
+            $ref: '#/definitions/moveById'
+
+  /move-ailment/{id or name}:
+    get:
+      summary: Move Ailments
+      tags:
+        - Moves
+      description: Return a move ailment. Move Ailments are status conditions caused by moves used during battle.
+      parameters:
+        - name: id or name
+          in: path
+          required: true
+          type: string
+          description: The ID number or name of the move ailments.
+      responses:
+        200:
+          description: Successful
+          schema:
+            $ref: '#/definitions/moveAilmentById'
+
+  /move-battle-style/{id or name}:
+    get:
+      summary: Move Battle Styles
+      tags:
+        - Moves
+      description: Return a Move battle style. Styles of moves when used in the Battle Palace.
+      parameters:
+        - name: id or name
+          in: path
+          required: true
+          type: string
+          description: The ID number or name of the item Move battle style.
+      responses:
+        200:
+          description: Successful
+          schema:
+            $ref: '#/definitions/moveBattleStyleById'
+
+  /move-category/{id or name}:
+    get:
+      summary: Move Categories
+      tags:
+        - Moves
+      description: Return a move category. Very general categories that loosely group move effects.
+      parameters:
+        - name: id or name
+          in: path
+          required: true
+          type: string
+          description: The ID number or name of the move category.
+      responses:
+        200:
+          description: Successful
+          schema:
+            $ref: '#/definitions/moveCategoryById'
+
+  /move-damage-class/{id or name}:
+    get:
+      summary: Move Damage Classes
+      tags:
+        - Moves
+      description: Return a move damage class. Damage classes moves can have, e.g. physical, special, or non-damaging.
+      parameters:
+        - name: id or name
+          in: path
+          required: true
+          type: string
+          description: The ID number or name of the item move damage class.
+      responses:
+        200:
+          description: Successful
+          schema:
+            $ref: '#/definitions/moveDamageClassById'
+
+  /move-learn-method/{id or name}:
+    get:
+      summary: Move Learn Methods
+      tags:
+        - Moves
+      description: Return a move learn method. Methods by which Pokémon can learn moves.
+      parameters:
+        - name: id or name
+          in: path
+          required: true
+          type: string
+          description: The ID number or name of the item move learn method.
+      responses:
+        200:
+          description: Successful
+          schema:
+            $ref: '#/definitions/moveLearnMethodById'
+
+  /move-target/{id or name}:
+    get:
+      summary: Move Targets
+      tags:
+        - Moves 
+      description: Return a move target. Targets moves can be directed at during battle. Targets can be Pokémon, environments or even other moves.
+      parameters:
+        - name: id or name
+          in: path
+          required: true
+          type: string
+          description: The ID number or name of the item move target.
+      responses:
+        200:
+          description: Successful
+          schema:
+            $ref: '#/definitions/moveTargetById'
+
+  /location/{id or name}:
+    get:
+      summary: Locations
+      tags:
+        - Locations
+      description: Return a location. Locations that can be visited within the games. Locations make up sizable portions of regions, like cities or routes.
+      parameters:
+        - name: id or name
+          in: path
+          required: true
+          type: string
+          description: The ID number or name of the location.
+      responses:
+        200:
+          description: Successful
+          schema:
+            $ref: '#/definitions/locationById'
+
+  /location-area/{id or name}:
+    get:
+      summary: Location Areas
+      tags:
+        - Locations
+      description: Return a location area. Location areas are sections of areas, such as floors in a building or cave. Each area has its own set of possible Pokémon encounters.
+      parameters:
+        - name: id or name
+          in: path
+          required: true
+          type: string
+          description: The ID number or name of the location area.
+      responses:
+        200:
+          description: Successful
+          schema:
+            $ref: '#/definitions/locationAreaById'
+
+  /pal-park-area/{id or name}:
+    get:
+      summary: Pal Park Areas
+      tags:
+        - Locations
+      description: Return a pal park area. Areas used for grouping Pokémon encounters in Pal Park. They're like habitats that are specific to Pal Park.
+      parameters:
+        - name: id or name
+          in: path
+          required: true
+          type: string
+          description: The ID number or name of the pal park area.
+      responses:
+        200:
+          description: Successful
+          schema:
+            $ref: '#/definitions/palParkAreaById'
+
+  /region/{id or name}:
+    get:
+      summary: Regions
+      tags:
+        - Locations
+      description: Return a region. A region is an organized area of the Pokémon world. Most often, the main difference between regions is the species of Pokémon that can be encountered within them.
+      parameters:
+        - name: id or name
+          in: path
+          required: true
+          type: string
+          description: The ID number or name of the region.
+      responses:
+        200:
+          description: Successful
+          schema:
+            $ref: '#/definitions/regionById'
+
+  /pokemon/{id or name}:
+    get:
+      summary: Pokemon
+      tags:
+        - Pokemon
+      description: Return a Pokemon. Pokémon are the creatures that inhabit the world of the Pokémon games.
+      parameters:
+        - name: id or name
+          in: path
+          required: true
+          type: string
+          description: The ID number or name of the Pokemon.
+      responses:
+        200:
+          description: Successful
+          schema:
+            $ref: '#/definitions/pokemonById'
+
+  /pokemon-color/{id or name}:
+    get:
+      summary: Pokemon Colors
+      tags:
+        - Pokemon
+      description: Return a Pokemon color. Colors used for sorting Pokémon in a Pokédex. The color listed in the Pokédex is usually the color most apparent or covering each Pokémon's body.
+      parameters:
+        - name: id or name
+          in: path
+          required: true
+          type: string
+          description: The ID number or name of the Pokemon color.
+      responses:
+        200:
+          description: Successful
+          schema:
+            $ref: '#/definitions/pokemonColorById'
+
+  /pokemon-form/{id or name}:
+    get:
+      summary: Pokemon Forms
+      tags:
+        - Pokemon
+      description: Return a Pokemon form. Some Pokémon have the ability to take on different forms.
+      parameters:
+        - name: id or name
+          in: path
+          required: true
+          type: string
+          description: The ID number or name of the Pokemon.
+      responses:
+        200:
+          description: Successful
+          schema:
+            $ref: '#/definitions/pokemonFormById'
+
+  /pokemon-habitat/{id or name}:
+    get:
+      summary: Pokemon Habitats
+      tags:
+        - Pokemon
+      description: Return a Pokemon habitat. Habitats are generally different terrain Pokémon can be found in but can also be areas designated for rare or legendary Pokémon.
+      parameters:
+        - name: id or name
+          in: path
+          required: true
+          type: string
+          description: The ID number or name of the Pokemon habitat.
+      responses:
+        200:
+          description: Successful
+          schema:
+            $ref: '#/definitions/pokemonHabitatById'
+
+  /pokemon-shape/{id or name}:
+    get:
+      summary: Pokemon Shapes
+      tags:
+        - Pokemon
+      description: Return a Pokemon shape. Shapes used for sorting Pokémon in a Pokédex.
+      parameters:
+        - name: id or name
+          in: path
+          required: true
+          type: string
+          description: The ID number or name of the Pokemon shape.
+      responses:
+        200:
+          description: Successful
+          schema:
+            $ref: '#/definitions/pokemonShapeById'
+
+  /pokemon-species/{id or name}:
+    get:
+      summary: Pokemon Species
+      tags:
+        - Pokemon
+      description: Return a Pokemon species. A Pokémon Species forms the basis for at least one Pokémon. Attributes of a Pokémon species are shared across all varieties of Pokémon within the species.
+      parameters:
+        - name: id or name
+          in: path
+          required: true
+          type: string
+          description: The ID number or name of the Pokemon species.
+      responses:
+        200:
+          description: Successful
+          schema:
+            $ref: '#/definitions/pokemonSpeciesById'
+
+  /ability/{id or name}:
+    get:
+      summary: Pokemon Abilities
+      tags:
+        - Pokemon
+      description: Return a ability. Abilities provide passive effects for Pokémon in battle or in the overworld.
+      parameters:
+        - name: id or name
+          in: path
+          required: true
+          type: string
+          description: The ID number or name of the ability.
+      responses:
+        200:
+          description: Successful
+          schema:
+            $ref: '#/definitions/abilityById'
+
+  /characteristic/{id or name}:
+    get:
+      summary: Pokemon Characteristics
+      tags:
+        - Pokemon
+      description: Return a characteristic. Characteristics indicate which stat contains a Pokémon's highest IV
+      parameters:
+        - name: id or name
+          in: path
+          required: true
+          type: string
+          description: The ID number or name of the characteristic.
+      responses:
+        200:
+          description: Successful
+          schema:
+            $ref: '#/definitions/characteristicById'
+
+  /egg-group/{id or name}:
+    get:
+      summary: Pokemon Egg Groups
+      tags:
+        - Pokemon
+      description: Return a egg group. Egg Groups are categories which determine which Pokémon are able to interbreed. 
+      parameters:
+        - name: id or name
+          in: path
+          required: true
+          type: string
+          description: The ID number or name of the egg group.
+      responses:
+        200:
+          description: Successful
+          schema:
+            $ref: '#/definitions/eggGroupById'
+
+  /gender/{id or name}:
+    get:
+      summary: Pokemon Genders
+      tags:
+        - Pokemon
+      description: Return a gender. Genders were introduced in Generation II for the purposes of breeding Pokémon but can also result in visual differences or even different evolutionary lines.
+      parameters:
+        - name: id or name
+          in: path
+          required: true
+          type: string
+          description: The ID number or name of the gender.
+      responses:
+        200:
+          description: Successful
+          schema:
+            $ref: '#/definitions/genderById'
+
+  /growth-rate/{id or name}:
+    get:
+      summary: Pokemon Growth Rates
+      tags:
+        - Pokemon
+      description: Return a growth rate. Growth rates are the speed with which Pokémon gain levels through experience. 
+      parameters:
+        - name: id or name
+          in: path
+          required: true
+          type: string
+          description: The ID number or name of the growth rate.
+      responses:
+        200:
+          description: Successful
+          schema:
+            $ref: '#/definitions/growthRateById'
+
+  /nature/{id or name}:
+    get:
+      summary: Pokemon Natures
+      tags:
+        - Pokemon
+      description: Return a nature. Natures influence how a Pokémon's stats grow.
+      parameters:
+        - name: id or name
+          in: path
+          required: true
+          type: string
+          description: The ID number or name of the nature.
+      responses:
+        200:
+          description: Successful
+          schema:
+            $ref: '#/definitions/natureById'
+
+  /pokeathlon-stat/{id or name}:
+    get:
+      summary: Pokemon Pokeathlon Stats
+      tags:
+        - Pokemon
+      description: Return a pokeathlon stat. Pokeathlon Stats are different attributes of a Pokémon's performance in Pokéathlons. 
+      parameters:
+        - name: id or name
+          in: path
+          required: true
+          type: string
+          description: The ID number or name of the pokeathlon stat.
+      responses:
+        200:
+          description: Successful
+          schema:
+            $ref: '#/definitions/pokeathlonStatById'
+
+  /stat/{id or name}:
+    get:
+      summary: Pokemon Stats
+      tags:
+        - Pokemon
+      description: Return a stat. Stats determine certain aspects of battles. Each Pokémon has a value for each stat which grows as they gain levels and can be altered momentarily by effects in battles.
+      parameters:
+        - name: id or name
+          in: path
+          required: true
+          type: string
+          description: The ID number or name of the stat.
+      responses:
+        200:
+          description: Successful
+          schema:
+            $ref: '#/definitions/statById'
+
+  /type/{id or name}:
+    get:
+      summary: Pokemon Types
+      tags:
+        - Pokemon
+      description: Return a type. Types are properties for Pokémon and their moves. Each type has three properties. Which types of Pokémon it is super effective against, which types of Pokémon it is not very effective against, and which types of Pokémon it is completely ineffective against.
+      parameters:
+        - name: id or name
+          in: path
+          required: true
+          type: string
+          description: The ID number or name of the type.
+      responses:
+        200:
+          description: Successful
+          schema:
+            $ref: '#/definitions/typeById'
+
+  /language/{id or name}:
+    get:
+      summary: Languages
+      tags:
+        - Utility
+      description: Return a language. Languages for translations of API resource information.
+      parameters:
+        - name: id or name
+          in: path
+          required: true
+          type: string
+          description: The ID number or name of the language.
+      responses:
+        200:
+          description: Successful
+          schema:
+            $ref: '#/definitions/languageById'
+
+definitions:
+  root:
+    description: All data points in a given resource.
+    properties:
+      count:
+        description: The number of returned data points.
+        type: number
+      previous:
+        description: The URL of the previous results page.
+        type: string
+      results:
+        description: The returned data points.
+        type: array
+        items:
+          $ref: '#/definitions/root_results'
+      next:
+        description: The URL of the next results page.
+        type: string
+  
+  root_results:
+    description: List of data.
+    properties:
+      url:
+        type: string
+        description: The url of the specific data point.
+      name:
+        type: string
+        description: The name of the data point.
+
+  root_noName:
+    description: All data points in a given resource.
+    properties:
+      count:
+        description: The number of returned data points.
+        type: number
+      previous:
+        description: The URL of the previous results page.
+        type: string
+      results:
+        description: The returned data points.
+        type: array
+        items:
+          $ref: '#/definitions/root_results_noName'
+      next:
+        description: The URL of the next results page.
+        type: string
+
+  root_results_noName:
+    description: List of data.
+    properties:
+      url:
+        type: string
+        description: The url of the specific data point.
+
+  berryById:
+    description: Berries identified by ID number or name.
+    properties:
+      natural_gift_power:
+        type: number
+        description: The power of the move Natural Gift when used with this Berry
+      flavors:
+        type: array
+        items:
+          $ref: '#/definitions/berryById_flavors'
+      natural_gift_type:
+        properties:
+          url:
+            description: The URL of the natural gift type.
+            type: string
+          name:
+            description: The name of the natural gift type.
+            type: string
+      name:
+        description: The name of the berry.
+        type: string
+      max_harvest:
+        description: The maximum number of these berries that can grow on one tree in Generation IV.
+        type: number
+      soil_dryness:
+        description: The speed at which this Berry dries out the soil as it grows. A higher rate means the soil dries more quickly.
+        type: number
+      smoothness:
+        description:   The smoothness of this Berry, used in making Pokéblocks or Poffins.
+        type: number
+      item:
+        description: The reference to the specific item data for this berry.
+        properties:
+          url:
+            description: The URL for this item.
+            type: string
+          name:
+            description: This items name.
+            type: string
+      firmness:
+        description:   The firmness of this berry, used in making Pokéblocks or Poffins
+        properties:
+          url:
+            description: The URL of the firmness property.
+            type: string
+          name:
+            description: The name of the firmness property.
+            type: string
+      growth_time:
+        description:   Time it takes the tree to grow one stage, in hours. Berry trees go through four of these growth stages before they can be picked.
+        type: number
+      id:
+        description: The ID number of this berry.
+        type: number
+      size:
+        description: The size of this Berry, in millimeters.
+        type: number
+
+  berryById_flavors:
+    description: List of available berry flavors.
+    properties:
+      flavor:
+        properties:
+          url:
+            description: The URL of the flavor.
+            type: string
+          name:
+            description: The name of the flavor.
+            type: string
+      potency:
+        type: number
+  
+  berryFirmnessById:
+    properties:
+      berries:
+        description: List of berries with this firmness type.
+        type: array
+        items:
+          $ref: '#/definitions/root_results'
+      names:
+        description: Names of this firmness property in various languages.
+        type: array
+        items:
+          $ref: '#/definitions/names'
+      id:
+        description: The ID number of the berry firmness listing.
+        type: number
+      name:
+        description: The name of this berry firmness property.
+        type: string
+  
+  berryFlavorById:
+    description: The properties of the returned berry.
+    properties:
+      berries:
+        description: List of berries with this flavor.
+        type: array
+        items:
+          $ref: '#/definitions/berryFlavorById_berries'
+      names:
+        description: List of names for this flavor in different languages.
+        type: array
+        items:
+          $ref: '#/definitions/names'
+      id:
+        description: The ID of this berry flavor.
+        type: number
+      contest_type:
+        description: The contest type that correlates with this berry flavor.
+        properties:
+          url:
+            description: The URL of the contest type.
+            type: string
+          name:
+            description: The name of the contest type.
+            type: string
+      name:
+        description: The name of the flavor.
+        type: string
+  
+  berryFlavorById_berries:
+    description: A berry with this flavor.
+    properties:
+      potency:
+        description:   How powerful the referenced flavor is for this berry.
+        type: number
+      berry:
+        description: The entry for this berry.
+        properties:
+          url:
+            description: The URL for this berry.
+            type: string
+          name:
+            description: The name of this berry.
+            type: string
+
+  contestTypeById:
+    description: The properties of the returned contest type.
+    properties:
+      berry_flavor:
+        description: The berry flavor that correlates with this contest type.
+        properties:
+          url:
+            description: The URL of the berry flavor.
+            type: string
+          name:
+            description: The name of the berry flavor.
+            type: string
+      names:
+        description: The name of this contest type listed in different languages.
+        type: array
+        items:
+          $ref: '#/definitions/names'
+      id:
+        description: The ID number of this contest type.
+        type: number
+      name:
+        description: The name of this contest type.
+        type: string
+
+  contestEffectById:
+    description: The properties of the returned contest effect.
+    properties:
+      effect_entries:
+        description:  The result of this contest effect listed in different languages.
+        type: array
+        items:
+          $ref: '#/definitions/effect'
+      jam:
+        description: The base number of hearts the user's opponent loses.
+        type: string
+      appeal:
+        description: The base number of hearts the user of this move gets.
+        type: string
+      flavor_text_entries:
+        description: The flavor text of this contest effect listed in different languages.
+        type: array
+        items:
+          $ref: '#/definitions/flavorTextEntries'
+      id:
+        description: The ID of this contest effect.
+        type: number
+
+  superContestEffectById:
+    description: The properties of the returned super contest effect.
+    properties:
+      moves:
+        description: A list of moves that have the effect when used in super contests.
+        type: array
+        items:
+          $ref: '#/definitions/namedResource'
+      appeal:
+        description: The level of appeal this super contest effect has.
+        type: number
+      flavor_text_entries:
+        description:  The flavor text of this super contest effect listed in different language.
+        type: array
+        items:
+          $ref: '#/definitions/flavorTextEntries'
+      id:
+        description: The ID number of this super contest effect.
+        type: number
+
+  encounterMethodById:
+    description: The properties of this specific encounter method.
+    properties:
+      order:
+        description: A good value for sorting.
+        type: number
+      names:
+        description: The name of this encounter method in various languages.
+        type: array
+        items:
+          $ref: '#/definitions/names'
+      id:
+        description: The ID number of this encounter method.
+        type: number
+      name:
+        description: The name for this encounter method resource.
+        type: string
+
+  encounterConditionById:
+    description: The properties of this specific encounter condition.
+    properties:
+      names:
+        description: The name of this encounter method listed in different languages
+        type: array
+        items:
+          $ref: '#/definitions/names'
+      values:
+        description: A list of possible values for this encounter condition.
+        type: array
+        items:
+          $ref: '#/definitions/namedResource'
+      id:
+        description: The ID number of this encounter condition.
+        type: number
+      name:
+        description: The name of this encounter condition.
+        type: string
+
+  encounterConditionValueById:
+    description: The returned properties of the encounter condition value.
+    properties:
+      names:
+        description:   The name for this encounter condition value resource.
+        type: array
+        items:
+          $ref: '#/definitions/names'
+      id:
+        description: The ID number of the encounter condition value.
+        type: number
+      condition:
+        description: The condition this encounter condition value pertains to.
+        properties:
+          url:
+            description: The URL of this condition.
+            type: string
+          name:
+            description: The name of this condition.
+            type: string
+      name:
+        description: The name for this encounter condition value resource.
+        type: string
+
+  evolutionChainById:
+    description: The returned evolution chain properties.
+    properties:
+      baby_trigger_item:
+        description: The item that a Pokémon would be holding when mating that would trigger the egg hatching a baby Pokémon rather than a basic Pokémon.
+        properties:
+          name:
+            description: The name of the referenced resource.
+            type: string
+          url:
+            description: The URL of the referenced resource
+            type: string
+      id:
+        description: The ID number of this evolution chain.
+        type: number
+      chain:
+        description: The evolution chain.
+        properties:
+          evolution_details:
+            description: The deatils of this evolution step.
+            properties:
+              min_level:
+                description: The minimum required level of the evolving Pokémon species to evolve into this Pokémon species.
+                type: number
+              min_beauty:
+                description:   The minimum required level of beauty the evolving Pokémon species to evolve into this Pokémon species.
+                type: number
+              time_of_day:
+                description:   The required time of day. Day or night.
+                type: string
+              gender:
+                description: The id of the gender of the evolving Pokémon species must be in order to evolve into this Pokémon species.
+                type: number
+              realtive_physical_stats:
+                description: The required relation between the Pokémon's Attack and Defense stats. 1 means Attack > Defense. 0 means Attack = Defense. -1 means Attack < Defense.
+                type: number
+              needs_overworld_rain:
+                description: Whether or not it must be raining in the overworld to cause evolution this Pokémon species.
+                type: boolean
+              turn_upside_down:
+                description: Whether or not the 3DS needs to be turned upside-down as this Pokémon levels up.
+                type: boolean
+              item:
+                description: The item required to cause evolution this into Pokémon species.
+                properties:
+                  name:
+                    description: The name of the referenced resource.
+                    type: string
+                  url:
+                    description: The URL of the referenced resource
+                    type: string
+              trigger:
+                description: The type of event that triggers evolution into this Pokémon species.
+                properties:
+                  name:
+                    description: The name of the referenced resource.
+                    type: string
+                  url:
+                    description: The URL of the referenced resource
+                    type: string
+              known_move_type:
+                description: The evolving Pokémon species must know a move with this type during the evolution trigger event in order to evolve into this Pokémon species.
+                properties:
+                  name:
+                    description: The name of the referenced resource.
+                    type: string
+                  url:
+                    description: The URL of the referenced resource
+                    type: string
+              min_affection:
+                description:   The minimum required level of affection the evolving Pokémon species to evolve into this Pokémon species.
+                type: number
+              party_type:
+                description: The player must have a Pokémon of this type in their party during the evolution trigger event in order for the evolving Pokémon species to evolve into this Pokémon species
+                properties:
+                  name:
+                    description: The name of the referenced resource.
+                    type: string
+                  url:
+                    description: The URL of the referenced resource
+                    type: string
+              trade_species:
+                description: Pokémon species for which this one must be traded.
+                properties:
+                  name:
+                    description: The name of the referenced resource.
+                    type: string
+                  url:
+                    description: The URL of the referenced resource
+                    type: string
+              party_species:
+                description:  The Pokémon species that must be in the players party in order for the evolving Pokémon species to evolve into this Pokémon species.
+                properties:
+                  name:
+                    description: The name of the referenced resource.
+                    type: string
+                  url:
+                    description: The URL of the referenced resource
+                    type: string
+              min_happiness:
+                description: The minimum required level of happiness the evolving Pokémon species to evolve into this Pokémon species.
+                type: number
+              held_item:
+                description:   The item the evolving Pokémon species must be holding during the evolution trigger event to evolve into this Pokémon species.
+                properties:
+                  name:
+                    description: The name of the referenced resource.
+                    type: string
+                  url:
+                    description: The URL of the referenced resource
+                    type: string
+              known_move:
+                description: The move that must be known by the evolving Pokémon species during the evolution trigger event in order to evolve into this Pokémon species.
+                properties:
+                  name:
+                    description: The name of the referenced resource.
+                    type: string
+                  url:
+                    description: The URL of the referenced resource
+                    type: string
+              location:
+                description: The location the evolution must be triggered at.
+                properties:
+                  name:
+                    description: The name of the referenced resource.
+                    type: string
+                  url:
+                    description: The URL of the referenced resource
+                    type: string
+          evolves_to:
+            description: This item will refer to another chain refernce if this pokemon has another evolution beyond this spot.
+            type: string  
+          is_baby:
+            type: boolean
+            description: Is it a baby?
+          species:
+            description:  The Pokémon species at this point in the evolution chain.
+            properties:
+              name:
+                description: The name of the referenced resource.
+                type: string
+              url:
+                description: The URL of the referenced resource
+                type: string
+
+  evolutionTriggerById:
+    description: The properties of the returned evolution trigger.
+    properties:
+      pokemon_species:
+        description: A list of pokemon species that result from this evolution trigger.
+        type: array
+        items:
+          $ref: '#/definitions/namedResource'
+      names:
+        description: The name of this evolution trigger listed in different languages.
+        type: array
+        items:
+          $ref: '#/definitions/names'
+      id:
+        description: The ID number of this evolution trigger resource.
+        type: number
+      name:
+        description: The name of this evolution trigger resource.
+        type: string
+
+  generationById:
+    description: The properties of the returned generation.
+    properties:
+      abilities:
+        description: A list of abilities that were introduced in this generation.
+        type: array
+        items:
+          $ref: '#/definitions/namedResource'
+      name:
+        description:  The name for this generation resource.
+        type: string
+      version_groups:
+        description: A list of version groups that were introduced in this generation.
+        type: array
+        items:
+          $ref: '#/definitions/namedResource'
+      id:
+        description: The ID number of this generation.
+        type: number
+      names:
+        description: The name of this generation listed in different languages.
+        type: array
+        items:
+          $ref: '#/definitions/names'
+      pokemon_species:
+        description: A list of pokemon that were introduced in this generation.
+        type: array
+        items:
+          $ref: '#/definitions/namedResource'
+      moves:
+        description: A list of moves that were introduced in this generation.
+        type: array
+        items:
+          $ref: '#/definitions/namedResource'
+      main_region:
+        description: The main region travelled in this generation.
+        properties:
+          url:
+            description: The URL of the resource.
+            type: string
+          name:
+            description: The name of the region.
+            type: string
+      types:
+        description:   A list of types that were introduced in this generation.
+        type: array
+        items:
+          $ref: '#/definitions/namedResource'
+
+  pokedexById:
+    description: The properties of the returned pokedex.
+    properties:
+      name:
+        description:   The name for this Pokédex resource.
+        type: string
+      region:
+        description: The region this Pokédex catalogues Pokémon.
+        type: array
+        items:
+          $ref: '#/definitions/namedResource'
+      version-groups:
+        description: A list of version groups this Pokédex is relevant for.
+        type: array
+        items:
+          $ref: '#/definitions/namedResource'
+      is_main_series:
+        description:   Whether or not this Pokédex originated in the main series of the video games.
+        type: boolean
+      descriptions:
+        description: The description of this Pokédex listed in different languages.
+        type: array
+        items:
+          $ref: '#/definitions/descriptions'
+      pokemon_entries:
+        description: The entries of pokemon in this pokedex.
+        type: array
+        items:
+          $ref: '#/definitions/pokedexById_pokemonEntry'
+      id:
+        description:   The identifier for this Pokédex resource.
+        type: number
+      names:
+        description:   The name of this Pokédex listed in different languages.
+        type: array
+        items:
+          $ref: '#/definitions/names'
+
+  pokedexById_pokemonEntry:
+    properties:
+      entry_number:
+        description: The index of this Pokémon species entry within the Pokédex.
+        type: number
+      pokemon_species:
+        description: The pokemon species.
+        properties:
+          name:
+            description: The name of the referenced resource.
+            type: string
+          url:
+            description: The URL of the referenced resource
+            type: string
+
+  versionById:
+    description: The properties of the returned version.
+    properties:
+      names:
+        description: The names of this version in different languages.
+        type: array
+        items:
+          $ref: '#/definitions/names'
+      id:
+        description: The ID number of the version.
+        type: number
+      version_group:
+        description: The version group this version belongs to.
+        properties:
+          name:
+            description: The name of the referenced resource.
+            type: string
+          url:
+            description: The URL of the referenced resource
+            type: string
+      name:
+        description: The name of the version.
+        type: string
+
+  versionGroupById:
+    description: The properties of the returned version group.
+    properties:
+      move_learn_methods:
+        description: A list of methods in which Pokémon can learn moves in this version group.
+        type: array
+        items:
+          $ref: '#/definitions/namedResource'
+      name:
+        description: The name of the version group.
+        type: string
+      versions:
+        description: The versions belonging to this group.
+        type: array
+        items:
+          $ref: '#/definitions/namedResource'
+      generation:
+        description: The generation this version was introduced in.
+        properties:
+          name:
+            description: The name of the referenced resource.
+            type: string
+          url:
+            description: The URL of the referenced resource
+            type: string
+      id:
+        description: The ID number of this version group.
+        type: number
+      regions:
+        description: A list of regions that can be visited in this version group.
+        type: array
+        items:
+          $ref: '#/definitions/namedResource'
+      pokedexes:
+        description: A list of Pokédexes introduces in this version group.
+        type: array
+        items:
+          $ref: '#/definitions/namedResource'
+      order:
+        description:   Order for sorting. Almost by date of release, except similar versions are grouped together.
+        type: number
+
+  itemById:
+    description: The properties of the returned item.
+    properties:
+      category:
+        description:   The category of items this item falls into.
+        properties:
+          name:
+            description: The name of the referenced resource.
+            type: string
+          url:
+            description: The URL of the referenced resource
+            type: string
+      name:
+        description: The name of the item.
+        type: string
+      fling_effect:
+        description: The effect of the move Fling when used with this item.
+        properties:
+          name:
+            description: The name of the referenced resource.
+            type: string
+          url:
+            description: The URL of the referenced resource
+            type: string
+      effect_entries:
+        description:   The effect of this ability listed in different languages.
+        type: array
+        items:
+          $ref: '#/definitions/effectLong'
+      held_by_pokemon:
+        description: A list of Pokémon that might be found in the wild holding this item.
+        type: array
+        items:
+          $ref: '#/definitions/itemById_heldByPokemon'
+      sprites:
+        description: The URL for this items sprite.
+        type: string
+      game_indices:
+        description:   A list of game indices relevent to this item by generation.
+        type: array
+        items:
+          $ref: '#/definitions/itemById_gameIndices'
+      baby_trigger_for:
+        description: An evolution chain this item requires to produce a baby during mating.
+        properties:
+          name:
+            description: The name of the referenced resource.
+            type: string
+          url:
+            description: The URL of the referenced resource
+            type: string
+      cost:
+        description:   The price of this item in stores.
+        type: number
+      names:
+        description: The name of this item listed in different languages.
+        type: array
+        items:
+          $ref: '#/definitions/names'
+      attributes:
+        description:   A list of attributes this item has.
+        type: array
+        items:
+          $ref: '#/definitions/namedResource'
+      flavor_text_entries:
+        description:   The flavor text of this ability listed in different languages.
+        type: array
+        items:
+          $ref: '#/definitions/flavorTextEntries'
+      id:
+        description: The ID number of this item.
+        type: number
+      machines:
+        description: A list of the machines related to this item.
+        type: array
+        items:
+          $ref: '#/definitions/itemById_machines'
+      fling_power:
+        description: The power of the move Fling when used with this item.
+        type: number
+
+  itemById_machines:
+    properties:
+      machine:
+        description: The machine that teaches a move from an item.
+        properties:
+          url:
+            description: The URL of the referenced resource
+            type: string
+      version_group:
+        description: The verison group of this specific machine.
+        properties:
+          name:
+            description: The name of the referenced resource.
+            type: string
+          url:
+            description: The URL of the referenced resource
+            type: string
+
+  itemById_heldByPokemon:
+    properties:
+      pokemon:
+        description: The Pokémon that holds this item.
+        type: string
+      version_details:
+        description: The details for the version that this item is held in by the Pokémon.
+        type: array
+        items:
+          $ref: '#/definitions/itemById_heldByPokemon_versionDetail'
+
+  itemById_heldByPokemon_versionDetail:
+    properties:
+      rarity:
+        description:   How often this Pokémon holds this item in this version.
+        type: string
+      version:
+        description: The version that this item is held in by the Pokemon.
+        properties:
+          name:
+            description: The name of the referenced resource.
+            type: string
+          url:
+            description: The URL of the referenced resource
+            type: string
+
+  itemById_gameIndices:
+    properties:
+      game_index:
+        description:   The internal id of an API resource within game data.
+        type: number
+      generation:
+        description: The generation relevant to this game index.
+        properties:
+          name:
+            description: The name of the referenced resource.
+            type: string
+          url:
+            description: The URL of the referenced resource
+            type: string
+
+  itemAttributesById:
+    description: The properties of the returned item attribute.
+    properties:
+      descriptions:
+        description: The description of this item attribute listed in different languages.
+        type: array
+        items:
+          $ref: '#/definitions/descriptions'
+      items:
+        description: The items with this attribute.
+        type: array
+        items:
+          $ref: '#/definitions/namedResource'
+      names:
+        description: The names of this attribute in different languages.
+        type: array
+        items:
+          $ref: '#/definitions/names'
+      id:
+        description: The ID number of the item attribute.
+        type: number
+      name:
+        description: The name of the item attribute.
+        type: string
+  
+  itemCategoryById:
+    description: The properties of the returned item category.
+    properties:
+      pocket:
+        description: The pocket items in this category would be put in.
+        properties:
+          name:
+            description: The name of the referenced resource.
+            type: string
+          url:
+            description: The URL of the referenced resource
+            type: string
+      items:
+        description: The items in this category.
+        type: array
+        items:
+          $ref: '#/definitions/namedResource'
+      names:
+        description: The name of this category in multiple languages.
+        type: array
+        items:
+          $ref: '#/definitions/names'
+      id:
+        description: The ID of the category.
+        type: number
+      name:
+        description: The name of the category.
+        type: string
+
+  itemFlingEffectById:
+    description: The properties of the returned item fling effect.
+    properties:
+      effect_entries:
+        description:   The result of this fling effect listed in different languages.
+        type: array
+        items:
+          $ref: '#/definitions/effect'
+      items:
+        description:   A list of items that have this fling effect.
+        type: array
+        items:
+          $ref: '#/definitions/namedResource'
+      id:
+        description: The ID number of the item fling effect.
+        type: number
+      name:
+        description: The name of the fling effect.
+        type: string
+
+  itemPocketById:
+    description: The properties of this item pocket returned.
+    properties:
+      names:
+        description: The name of this item pocket listed in different languages
+        type: array
+        items:
+          $ref: '#/definitions/names'
+      id:
+        description: the ID of this item pocket resource.
+        type: number
+      categories:
+        description: A list of item categories that are relevant to this item pocket.
+        type: array
+        items:
+          $ref: '#/definitions/namedResource'
+      name:
+        description: The name of this pocket resource.
+        type: string
+
+  machineById:
+    description: The properties of the returned machine.
+    properties:
+      item:
+        description: The TM or HM item that corresponds to this machine.
+        properties:
+          name:
+            description: The name of the referenced resource.
+            type: string
+          url:
+            description: The URL of the referenced resource
+            type: string
+      move:
+        description: The move that is taught by this machine.
+        properties:
+          name:
+            description: The name of the referenced resource.
+            type: string
+          url:
+            description: The URL of the referenced resource
+            type: string
+      id:
+        description: The ID number of this machine.
+        type: number
+      version_group:
+        description: The version group that applies to this machine.
+        properties:
+          name:
+            description: The name of the referenced resource.
+            type: string
+          url:
+            description: The URL of the referenced resource
+            type: string
+
+  moveById:
+    description: The properties of the returned move.
+    properties:
+      effect_chance:
+        description: The percent value of how likely it is this moves effect will happen.
+        type: number
+      generation:
+        description:  The generation in which this move was introduced.
+        properties:
+          name:
+            description: The name of the referenced resource.
+            type: string
+          url:
+            description: The URL of the referenced resource
+            type: string
+      stat_changes:
+        description: A list of stats this moves effects and how much it effects them.
+        type: array
+        items:
+          $ref: '#/definitions/moveById_statChanges'
+      effect_changes:
+        description:   The list of previous effects this move has had across version groups of the games.
+        type: array
+        items:
+          $ref: '#/definitions/abilityEffectChange'
+      names:
+        description:   The name of this move listed in different languages.
+        type: array
+        items:
+          $ref: '#/definitions/names'
+      id:
+        description: The ID number of the move.
+        type: number
+      machines:
+        description: A list of the machines that teach this move.
+        type: array
+        items:
+          $ref: '#/definitions/machineVersionDetail'
+      pp:
+        description:   Power points. The number of times this move can be used.
+        type: number
+      contest_combos:
+        description: A detail of normal and super contest combos that require this move.
+        properties:
+          normal:
+            description: A detail of moves this move can be used before or after, granting additional appeal points in contests.
+            properties:
+              use_before:
+                description: A list of move to use before this move.
+                type: array
+                items:
+                  $ref: '#/definitions/namedResource'
+              use_after:
+                description: A list of moves to use after this move.
+                type: array
+                items:
+                  $ref: '#/definitions/namedResource'
+          super:
+            description: A detail of moves this move can be used before or after, granting additional appeal points in super contests.
+            properties:
+              use_before:
+                description: A list of move to use before this move.
+                type: array
+                items:
+                  $ref: '#/definitions/namedResource'
+              use_after:
+                description: A list of moves to use after this move.
+                type: array
+                items:
+                  $ref: '#/definitions/namedResource'
+      type:
+        description: The elemental type of this move.
+        properties:
+          name:
+            description: The name of the referenced resource.
+            type: string
+          url:
+            description: The URL of the referenced resource
+            type: string
+      accuracy:
+        description: The percent value of how likely this move is to be successful.
+        type: number
+      power:
+        description: The base power of this move with a value of 0 if it does not have a base power.
+        type: number
+      past_values:
+        description:   A list of move resource value changes across version groups of the game
+        type: array
+        items:
+          $ref: '#/definitions/moveById_pastValues'
+      target:
+        description:   The type of target that will receive the effects of the attack.
+        properties:
+          name:
+            description: The name of the referenced resource.
+            type: string
+          url:
+            description: The URL of the referenced resource
+            type: string
+      super_contest_effect: 
+        description:   The effect the move has when used in a super contest.
+        properties:
+          url:
+            description: The URL of the referenced resource
+            type: string
+      name:
+        description: The name of the move
+        type: string
+      flavor_text_entries:
+        description: The flavor text of this move listed in different languages.
+        type: array
+        items:
+          $ref: '#/definitions/flavorTextEntries'
+      damage_class:
+        description: The type of damage the move inflicts on the target.
+        properties:
+          name:
+            description: The name of the referenced resource.
+            type: string
+          url:
+            description: The URL of the referenced resource
+            type: string
+      meta:
+        description: The meta information about a move.
+        properties:
+          category:
+            description: The category of move this move falls under.
+            properties:
+              name:
+                description: The name of the referenced resource.
+                type: string
+              url:
+                description: The URL of the referenced resource
+                type: string
+          healing:
+            description:   The amount of hp gained by the attacking Pokemon, in percent of it's maximum HP.
+            type: number
+          max_turns:
+            description:   The maximum number of turns this move continues to take effect. Null if it always only lasts one turn.
+            type: number
+          drain:
+            description: HP drain (if positive) or Recoil damage (if negative), in percent of damage done.
+            type: number
+          ailment:
+            description: The status ailment this move inflicts on its target.
+            properties:
+              name:
+                description: The name of the referenced resource.
+                type: string
+              url:
+                description: The URL of the referenced resource
+                type: string
+          stat_chance:
+            description: The likelihood this attack will cause a stat change in the target Pokémon.
+            type: number
+          flinch_chance:
+            description: The likelihood this attack will cause the target Pokémon to flinch.
+            type: number
+          min_hits:
+            description: The minimum number of times this move hits. Null if it always only hits once.
+            type: number
+          ailment_chance:
+            description: The likelihood this attack will cause an ailment.
+            type: number
+          crit_rate:
+            description: Critical hit rate bonus.
+            type: number
+          min_turns:
+            description:   The minimum number of turns this move continues to take effect. Null if it always only lasts one turn.
+            type: number
+          max_hits: 
+            description: The maximum number of times this move hits. Null if it always only hits once.
+            type: number
+
+  moveById_pastValues:
+    properties:
+      accuracy:
+        description: The percent value of how likely this move is to be successful.
+        type: number
+      effect_chance:
+        description: The percent value of how likely it is this moves effect will take effect.
+        type: number
+      power:
+        description:   The base power of this move with a value of 0 if it does not have a base power.
+        type: number
+      pp:
+        description: Power points. The number of times this move can be used.
+        type: number
+      effect_entries:
+        description: The effect of this move listed in different languages.
+        type: array
+        items:
+          $ref: '#/definitions/effectLong'
+      type:
+        description: The elemental type of this move.
+        properties:
+          name:
+            description: The name of the referenced resource.
+            type: string
+          url:
+            description: The URL of the referenced resource
+            type: string
+      version_group:
+        description: The version group in which these move stat values were in effect.
+        properties:
+          name:
+            description: The name of the referenced resource.
+            type: string
+          url:
+            description: The URL of the referenced resource
+            type: string
+
+  moveById_statChanges:
+    properties:
+      change:
+        description: The amount of change.
+        type: number
+      stat:
+        description: The stat being affected.
+        properties:
+          name:
+            description: The name of the referenced resource.
+            type: string
+          url:
+            description: The URL of the referenced resource
+            type: string
+
+  moveAilmentById:
+    description: The properties of the returned move ailment.
+    properties:
+      moves:
+        description: A list of moves that cause this ailment.
+        type: array
+        items:
+          $ref: '#/definitions/namedResource'
+      names:
+        description: The name of this move ailment listed in different languages.
+        type: array
+        items:
+          $ref: '#/definitions/names'
+      id:
+        description: The identifier for this move ailment resource.
+        type: number
+      name:
+        description: The name for this move ailment resource.
+        type: number
+  
+  moveBattleStyleById:
+    description: The properties of the returned move battle style.
+    properties:
+      names:
+        description: The name of this move battle style listed in different languages.
+        type: array
+        items:
+          $ref: '#/definitions/names'
+      id:
+        description: The identifier for this move battle style resource.
+        type: number
+      name:
+        description: The name for this move battle style resource.
+        type: string
+
+  moveCategoryById:
+    description: The properties of the returned move category.
+    properties:
+      descriptions:
+        description: The description of this move ailment listed in different languages.
+        type: array
+        items:
+          $ref: '#/definitions/descriptions'
+      moves:
+        description: A list of moves that fall into this category.
+        type: array
+        items:
+          $ref: '#/definitions/namedResource'
+      id:
+        description: The ID number of the move category.
+        type: number
+      name:
+        description: The name of the move category.
+        type: string
+  
+  moveDamageClassById:
+    description: The properties of the returned damage class.
+    properties:
+      descriptions:
+        description:   The description of this move damage class listed in different languages.
+        type: array
+        items:
+          $ref: '#/definitions/descriptions'
+      moves:
+        description: A list of moves that fall into this damage class.
+        type: array
+        items:
+          $ref: '#/definitions/namedResource'
+      names:
+        description: The name of this move damage class listed in different languages.
+        type: array
+        items:
+          $ref: '#/definitions/names'
+      id:
+        description: The identifier for this move damage class resource.
+        type: number
+      name:
+        description: The name for this move damage class resource.
+        type: string
+        
+  moveLearnMethodById:
+    description: The properties of the returned learn method.
+    properties:
+      descriptions:
+        description: The description of this move learn method listed in different languages.
+        type: array
+        items:
+          $ref: '#/definitions/descriptions'
+      version_groups:
+        description: A list of version groups where moves can be learned through this method.
+        type: array
+        items:
+          $ref: '#/definitions/namedResource'
+      names:
+        description: The name of this move learn method listed in different languages.
+        type: array
+        items:
+          $ref: '#/definitions/names'
+      id:
+        description: The identifier for this move learn method resource.
+        type: number
+      name:
+        description: The name for this move learn resource.
+        type: string
+
+  moveTargetById:
+    description: The properties of the returned move target resource.
+    properties:
+      descriptions:
+        description: The description of this move target listed in different languages.
+        type: array
+        items:
+          $ref: '#/definitions/descriptions'
+      moves:
+        description: A list of moves that that are directed at this target.
+        type: array
+        items:
+          $ref: '#/definitions/namedResource'
+      names:
+        description: The name of this move target listed in different languages.
+        type: array
+        items:
+          $ref: '#/definitions/names'
+      id:
+        description: The identifier for this move target resource.
+        type: number
+      name:
+        description: The name for this move target resource.
+        type: string
+
+  locationById:
+    description: The properties of the returned location.
+    properties:
+      name:
+        description: The name for this location resource.
+        type: string
+      region:
+        description: The region this location can be found in.
+        type: array
+        items:
+          $ref: '#/definitions/namedResource'
+      game_indices:
+        description: A list of game indices relevent to this location by generation.
+        type: array
+        items:
+          $ref: '#/definitions/generationGameIndex'
+      names:
+        description: The name of this language listed in different languages.
+        type: array
+        items:
+          $ref: '#/definitions/names'
+      id:
+        description: The identifier for this location resource.
+        type: number
+      areas:
+        description: Areas that can be found within this location.
+        type: array
+        items:
+          $ref: '#/definitions/namedResource'
+
+  locationAreaById:
+    description: The properties of the returned location area.
+    properties:
+      names:
+        description: The name of this location area listed in different languages.
+        type: array
+        items:
+          $ref: '#/definitions/names'
+      name:
+        description: The name for this location resource.
+        type: string
+      encounter_method_rates:
+        description: A list of methods in which Pokémon may be encountered in this area and how likely the method will occur depending on the version of the game.
+        type: array
+        items:
+          $ref: '#/definitions/locationAreaById_encounterMethodRates'
+      location:
+        description: The region this location can be found in.
+        properties:
+          name:
+            description: The name of the referenced resource.
+            type: string
+          url:
+            description: The URL of the referenced resource
+            type: string
+      pokemon_encounters:
+        description: A list of Pokémon that can be encountered in this area along with version specific details about the encounter.
+        type: array
+        items:
+          $ref: '#/definitions/locationAreaById_pokemonEncounters'
+      id:
+        description: The identifier for this location resource.
+        type: number
+      game_index:
+        description: The internal id of an API resource within game data.
+        type: number
+
+  locationAreaById_encounterMethodRates:
+    properties:
+      encounter_method:
+        description: The method in which Pokémon may be encountered in an area.
+        properties:
+          name:
+            description: The name of the referenced resource.
+            type: string
+          url:
+            description: The URL of the referenced resource
+            type: string
+      version_details:
+        description: The chance of the encounter to occur on a version of the game.
+        type: array
+        items:
+          $ref: '#/definitions/locationAreaById_encounterMethodRates_versionDetails'
+
+  locationAreaById_encounterMethodRates_versionDetails:
+    properties:
+      rate:
+        description: The chance of an encounter to occur.
+        type: number
+      version:
+        description: The version of the game in which the encounter can occur with the given chance.
+        properties:
+          name:
+            description: The name of the referenced resource.
+            type: string
+          url:
+            description: The URL of the referenced resource
+            type: string
+
+  locationAreaById_pokemonEncounters:
+    properties:
+      pokemon:
+        description: The Pokémon being encountered.
+        properties:
+          name:
+            description: The name of the referenced resource.
+            type: string
+          url:
+            description: The URL of the referenced resource
+            type: string
+      version_details:
+        description: A list of versions and encounters with Pokémon that might happen in the referenced location area.
+        type: array
+        items:
+          $ref: '#/definitions/versionEncounterDetail'
+
+  palParkAreaById:
+    description: The properties of the returned pal park area.
+    properties:
+      names:
+        description: The name of this pal park area listed in different languages.
+        type: array
+        items:
+          $ref: '#/definitions/names'
+      id:
+        description: The identifier for this pal park area resource. 
+        type: number
+      pokemon_encounters: 
+        description: A list of Pokémon encountered in thi pal park area along with details.
+        type: array
+        items:
+          $ref: '#/definitions/palParkAreaById_pokemonEncounters'
+      name: 
+        description: The name for this pal park area resource. 
+        type: string
+
+  palParkAreaById_pokemonEncounters:
+    properties:
+      base_score:
+        description: The base score given to the player when this Pokémon is caught during a pal park run.
+        type: number
+      rate:
+        description: The base rate for encountering this Pokémon in this pal park area.
+        type: number
+      pokemon_species:
+        description: The Pokémon species being encountered.
+        properties:
+          name:
+            description: The name of the referenced resource.
+            type: string
+          url:
+            description: The URL of the referenced resource
+            type: string
+
+  regionById:
+    description: The properties of the region returned.
+    properties:
+      name:
+        description: The name for this region resource.
+        type: string
+      locations:
+        description: A list of locations that can be found in this region.
+        type: array
+        items:
+          $ref: '#/definitions/namedResource'
+      version_groups:
+        description: A list of version groups where this region can be visited.
+        type: array
+        items:
+          $ref: '#/definitions/namedResource' 
+      names:
+        description: The name of this region listed in different languages.
+        type: array
+        items:
+          $ref: '#/definitions/names' 
+      main_generation:
+        description: The generation this region was introduced in.
+        properties:
+          name:
+            description: The name of the referenced resource.
+            type: string
+          url:
+            description: The URL of the referenced resource
+            type: string
+      pokedexes:
+        description: A list of pokédexes that catalogue Pokémon in this region.
+        type: array
+        items:
+          $ref: '#/definitions/namedResource' 
+      id:
+        description: The identifier for this region resource.
+        type: number
+
+  pokemonById:
+    description: The properties of the returned pokemon.
+    properties:
+      forms:
+        description: A list of forms this Pokémon can take on.
+        type: array
+        items:
+          $ref: '#/definitions/namedResource'
+      abilities:
+        description: A list of abilities this Pokémon could potentially have.
+        type: array
+        items:
+          $ref: '#/definitions/pokemonById_abilities'
+      stats:
+        description: A list of base stat values for this Pokémon.
+        type: array
+        items:
+          $ref: '#/definitions/pokemonById_stats'
+      name:
+        description: The name for this Pokemon resource.
+        type: string
+      weight:
+        description: The weight of this Pokémon.
+        type: number
+      moves:
+        description: A list of moves along with learn methods and level details pertaining to specific version groups.
+        type: array
+        items:
+          $ref: '#/definitions/pokemonById_moves'
+      sprites:
+        description: A set of sprites used to depict this Pokémon in the game.
+        properties:
+          back_female:
+            type: string
+          back_shiny_female:
+            type: string
+          back_default:
+            type: string
+          front_female:
+            type: string
+          front_shiny_female:
+            type: string
+          back_shiny:
+            type: string
+          front_default:
+            type: string
+          front_shiny:
+            type: string
+      held_items:
+        description: A list of items this Pokémon may be holding when encountered.
+        type: array
+        items:
+          $ref: '#/definitions/pokemonById_heldItems'
+      location_area_encounters:
+        description: A link to a list of location areas as well as encounter details pertaining to specific versions.
+        type: string
+      height:
+        description: The height of this Pokémon.
+        type: string
+      is_default:
+        description: Set for exactly one Pokémon used as the default for each species.
+        type: boolean
+      species:
+        description: The species this Pokémon belongs to.
+        properties:
+          name:
+            description: The name of the referenced resource.
+            type: string
+          url:
+            description: The URL of the referenced resource
+            type: string
+      id:
+        description: The identifier for this Pokémon resource.
+        type: number
+      order:
+        description: Order for sorting. Almost national order, except families are grouped together.  
+        type: number
+      game_indices:
+        description: A list of game indices relevent to Pokémon item by generation.
+        type: array
+        items:
+          $ref: '#/definitions/versionGameIndex'
+      base_experience:
+        description: The base experience gained for defeating this Pokémon.
+        type: number
+      types:
+        description: A list of details showing types this Pokémon has.
+        type: array
+        items:
+          $ref: '#/definitions/pokemonById_types'
+  
+  pokemonById_abilities:
+    properties:
+      is_hidden:
+        description: Whether or not this is a hidden ability.
+        type: boolean
+      slot:
+        description: The slot this ability occupies in this Pokemon species.
+        type: number
+      ability:
+        description: The ability the Pokemon may have.
+        properties:
+          name:
+            description: The name of the referenced resource.
+            type: string
+          url:
+            description: The URL of the referenced resource
+            type: string
+
+  pokemonById_stats:
+    properties:
+      stat:
+        description: The stat the Pokemon has.
+        properties:
+          name:
+            description: The name of the referenced resource.
+            type: string
+          url:
+            description: The URL of the referenced resource
+            type: string
+      effort:
+        description: The effort points that the Pokemon has in the stat.
+        type: number
+      base_stat:
+        description: The base value of the stat.
+        type: number
+
+  pokemonById_moves:
+    properties:
+      move:
+        description: The move the pokemon can learn.
+        properties:
+          name:
+            description: The name of the referenced resource.
+            type: string
+          url:
+            description: The URL of the referenced resource
+            type: string
+      version_group_details:
+        description: The details of the version in which the Pokémon can learn the move.
+        type: array
+        items:
+          $ref: '#/definitions/pokemonById_moves_versionGroupDetails'
+
+  pokemonById_moves_versionGroupDetails:
+    properties:
+      move_learn_method:
+        description: The method by which the move is learned.
+        properties:
+          name:
+            description: The name of the referenced resource.
+            type: string
+          url:
+            description: The URL of the referenced resource
+            type: string
+      version_group:
+        description: The version group in which the move is learned.
+        properties:
+          name:
+            description: The name of the referenced resource.
+            type: string
+          url:
+            description: The URL of the referenced resource
+            type: string
+      level_learned_at:
+        description: The minimum level to learn the move.
+        type: number
+
+  pokemonById_heldItems:
+    properties:
+      item:
+        description: The item the referenced Pokemon holds.
+        properties:
+          name:
+            description: The name of the referenced resource.
+            type: string
+          url:
+            description: The URL of the referenced resource
+            type: string
+      version_details:
+        description: The details of the different versions in which the item is held.
+        type: array
+        items:
+          $ref: '#/definitions/pokemonById_heldItems_versionDetails'
+
+  pokemonById_heldItems_versionDetails:
+    properties:
+      version:
+        description: The version in which the item is held.
+        properties:
+          name:
+            description: The name of the referenced resource.
+            type: string
+          url:
+            description: The URL of the referenced resource
+            type: string
+      rarity:
+        description: How often the item is held.
+        type: number
+
+  pokemonById_types:
+    properties:
+      slot:
+        description: The order the Pokemons types are listed in.
+        type: number
+      type:
+        description: The type the referenced Pokemon has.
+        properties:
+          name:
+            description: The name of the referenced resource.
+            type: string
+          url:
+            description: The URL of the referenced resource
+            type: string
+
+  pokemonColorById:
+    description: The properties of the returned pokemon color.
+    properties:
+      pokemon_species:
+        description: A list of the Pokémon species that have this color.
+        type: array
+        items:
+          $ref: '#/definitions/namedResource'
+      names:
+        description: The name of this Pokémon color listed in different languages.
+        type: array
+        items:
+          $ref: '#/definitions/names'
+      id:
+        description: The identifier for this Pokémon color resource.
+        type: number
+      name:
+        description: The name for this Pokémon color resource.
+        type: string
+
+  pokemonFormById:
+    description: The properties of the returned pokemon form.
+    properties:
+      is_battle_only:
+        description: Whether or not this form can only happen during battle.
+        type: boolean
+      sprites:
+        description: A set of sprites used to depict this Pokémon form in the game. 
+        properties:
+          front_defualt:
+            type: string
+          front_shiny:
+            type: string
+          back_default:
+            type: string
+          back_shiny:
+            type: string
+      version_group:
+        description: The version group this Pokémon form was introduced in.
+        properties:
+          name:
+            description: The name of the referenced resource.
+            type: string
+          url:
+            description: The URL of the referenced resource
+            type: string
+      form_order:
+        description: The order in which forms should be sorted within a species' forms.
+        type: number
+      is_mega:
+        description: Whether or not this form requires mega evolution.
+        type: boolean
+      form_names:
+        description: The form specific form name of this Pokémon form, or empty if the form does not have a specific name.
+        type: array
+        items:
+          $ref: '#/definitions/names'
+      id:
+        description: The identifier for this Pokémon form resource.
+        type: number
+      is_default:
+        description: Is it exactly one form used as the default for each Pokémon.
+        type: boolean
+      names:
+        description: The form specific full name of this Pokémon form, or empty if the form does not have a specific name.
+        type: array
+        items:
+          $ref: '#/definitions/names'
+      form_name:
+        description: The name of this form.
+        type: string
+      pokemon:
+        description: The Pokémon that can take on this form.
+        properties:
+          name:
+            description: The name of the referenced resource.
+            type: string
+          url:
+            description: The URL of the referenced resource
+            type: string
+      order:
+        description: The order in which forms should be sorted within all forms. Multiple forms may have equal order, in which case they should fall back on sorting by name.
+        type: number
+      name:
+        description: The name for this Pokémon form resource.
+        type: string
+
+  pokemonHabitatById:
+    description: The properties of the returned pokemon habitat.
+    properties:
+      pokemon_species:
+        description: A list of the Pokémon species that can be found in this habitat.
+        type: array
+        items:
+          $ref: '#/definitions/namedResource'
+      names:
+        description: The name of this Pokémon habitat listed in different languages.
+        type: array
+        items:
+          $ref: '#/definitions/names'
+      id:
+        description: The identifier for this Pokémon habitat resource.
+        type: number
+      name:
+        description: The name for this Pokémon habitat resource.
+        type: string
+
+  pokemonShapeById:
+    description: The properties of the returned pokemon shape.
+    properties:
+      pokemon_species:
+        description: A list of the Pokémon species that have this shape. 
+        type: array
+        items:
+          $ref: '#/definitions/namedResource'
+      names:
+        description: The name of this Pokémon shape listed in different languages. 
+        type: array
+        items:
+          $ref: '#/definitions/names'
+      id:
+        description: The identifier for this Pokémon shape resource.
+        type: number
+      awesome_names:
+        description: The "scientific" name of this Pokémon shape listed in different languages.
+        type: array
+        items:
+          $ref: '#/definitions/pokemonShapesById_awesomeNames'
+      name:
+        description: The name for this Pokémon shape resource.
+        type: string
+
+  pokemonShapesById_awesomeNames:
+    properties:
+      awesome_name:
+        description: The localized "scientific" name for an API resource in a specific language.
+        type: string
+      language:
+        description: The language this "scientific" name is in.
+        properties:
+          name:
+            description: The name of the referenced resource.
+            type: string
+          url:
+            description: The URL of the referenced resource
+            type: string
+
+  pokemonSpeciesById:
+    description: The properties of the returned pokemon species.
+    properties:
+      capture_rate: 
+        description: The base capture rate; up to 255. The higher the number, the easier the catch.
+        type: number
+      habitat: 
+        description: The habitat this Pokémon species can be encountered in.
+        properties:
+          name:
+            description: The name of the referenced resource.
+            type: string
+          url:
+            description: The URL of the referenced resource
+            type: string
+      color:
+        description: The color of this Pokémon for gimmicky Pokédex search.
+        properties:
+          name:
+            description: The name of the referenced resource.
+            type: string
+          url:
+            description: The URL of the referenced resource
+            type: string
+      forms_switchable:
+        description: Whether or not this Pokémon has multiple forms and can switch between them.
+        type: boolean
+      shape:
+        description: The shape of this Pokémon for gimmicky Pokédex search.
+        properties:
+          name:
+            description: The name of the referenced resource.
+            type: string
+          url:
+            description: The URL of the referenced resource
+            type: string
+      names:
+        description: The name of this Pokémon species listed in different languages.
+        type: array
+        items:
+          $ref: '#/definitions/names'
+      id:
+        description: The identifier for this Pokémon species resource.
+        type: number
+      egg_groups:
+        description: A list of egg groups this Pokémon species is a member of.
+        type: array
+        items:
+          $ref: '#/definitions/namedResource'
+      base_happiness:
+        description: The happiness when caught by a normal Pokéball; up to 255. The higher the number, the happier the Pokémon.
+        type: number
+      generation:
+        description: The generation this Pokémon species was introduced in.
+        properties:
+          name:
+            description: The name of the referenced resource.
+            type: string
+          url:
+            description: The URL of the referenced resource
+            type: string
+      flavor_text_entries:
+        description: A list of flavor text entries for this Pokémon species.
+        type: array
+        items:
+          $ref: '#/definitions/flavorTextEntries'
+      growth_rate:
+        description: The rate at which this Pokémon species gains levels.
+        properties:
+          name:
+            description: The name of the referenced resource.
+            type: string
+          url:
+            description: The URL of the referenced resource
+            type: string
+      hatch_counter:
+        description: Initial hatch counter. One must walk 255 × (hatch_counter + 1) steps before this Pokémons egg hatches, unless utilizing bonuses like Flame Body.
+        type: number
+      genera:
+        description: The genus of this Pokémon species listed in multiple languages.
+        type: array
+        items:
+          $ref: '#/definitions/pokemonSpeciesById_genera'
+      evolves_from_species:
+        description: The Pokémon species that evolves into this Pokemon_species.
+        properties:
+          name:
+            description: The name of the referenced resource.
+            type: string
+          url:
+            description: The URL of the referenced resource
+            type: string
+      form_descriptions:
+        description: Descriptions of different forms Pokémon take on within the Pokémon species.
+        type: array
+        items:
+          $ref: '#/definitions/descriptions'
+      varieties:
+        description: A list of the Pokémon that exist within this Pokémon species.
+        type: array
+        items:
+          $ref: '#/definitions/pokemonSpeciesById_varieties'
+      name:
+        description: The name for this Pokémon species resource.
+        type: string
+      evolution_chain:
+        description: The evolution chain this Pokémon species is a member of. 
+        properties:
+          url:
+            description: The URL of the referenced resource
+            type: string
+      has_gender_differences:
+        description: Whether or not this Pokémon has visual gender differences.
+        type: boolean
+      is_baby:
+        description: Whether or not this is a baby Pokémon.
+        type: boolean
+      gender_rate:
+        description: The chance of this Pokémon being female, in eighths; or -1 for genderless.
+        type: number
+      pal_park_encounters:
+        description: A list of encounters that can be had with this Pokémon species in pal park.
+        type: array
+        items:
+          $ref: '#/definitions/pokemonSpeciesById_palParkEncounters'
+      order:
+        description: The order in which species should be sorted. Based on National Dex order, except families are grouped together and sorted by stage.
+        type: number
+      pokedex_numbers:
+        description: A list of Pokedexes and the indexes reserved within them for this Pokémon species. 
+        type: array
+        items:
+          $ref: '#/definitions/pokemonSpeciesById_pokedexNumbers'
+
+  pokemonSpeciesById_genera:
+    properties:
+      genus:
+        description: The localized genus for the referenced Pokémon species.
+        type: string
+      language:
+        description: The language this genus is in.
+        properties:
+          name:
+            description: The name of the referenced resource.
+            type: string
+          url:
+            description: The URL of the referenced resource
+            type: string
+
+  pokemonSpeciesById_varieties:
+    properties:
+      is_default:
+        description: Whether this variety is the default variety.
+        type: boolean
+      pokemon:
+        description: The pokemon variety.
+        properties:
+          name:
+            description: The name of the referenced resource.
+            type: string
+          url:
+            description: The URL of the referenced resource
+            type: string
+
+  pokemonSpeciesById_palParkEncounters:
+    properties:
+      base_score:
+        description: The base score given to the player when the referenced Pokémon is caught during a pal park run.
+        type: number
+      rate:
+        description: The base rate for encountering the referenced Pokémon in this pal park area.
+        type: number
+      area:
+        description: The pal park area where this encounter happens.
+        properties:
+          name:
+            description: The name of the referenced resource.
+            type: string
+          url:
+            description: The URL of the referenced resource
+            type: string
+
+  pokemonSpeciesById_pokedexNumbers:
+    properties:
+      entry_number:
+        description: The index number within the Pokédex.
+        type: number
+      pokedex:
+        description: The Pokédex the referenced Pokémon species can be found in.
+        properties:
+          name:
+            description: The name of the referenced resource.
+            type: string
+          url:
+            description: The URL of the referenced resource
+            type: string
+
+  abilityById:
+    description: The properties of the returned ability.
+    properties:
+      effect_changes:
+        description: The list of previous effects this ability has had across version groups.
+        type: array
+        items:
+          $ref: '#/definitions/abilityById_effectChanges'
+      name:
+        description: The name for this ability resource.
+        type: string
+      generation:
+        description: The generation this ability originated in.
+        properties:
+          name:
+            description: The name of the referenced resource.
+            type: string
+          url:
+            description: The URL of the referenced resource
+            type: string
+      pokemon:
+        description: A list of Pokémon that could potentially have this ability.
+        type: array
+        items:
+          $ref: '#/definitions/abilityById_pokemon'
+      is_main_series:
+        description: Whether or not this ability originated in the main series of the video games.
+        type: boolean
+      effect_entries:
+        description: The effect of this ability listed in different languages.
+        type: array
+        items:
+          $ref: '#/definitions/effectLong'
+      names:
+        description: The name of this ability listed in different languages.
+        type: array
+        items:
+          $ref: '#/definitions/names'
+      flavor_text_entries:
+        description: The flavor text of this ability listed in different languages.
+        type: array
+        items:
+          $ref: '#/definitions/abilityById_flavorTextEntries'
+      id:
+        description: The identifier for this ability resource.
+        type: number
+
+  abilityById_effectChanges:
+    properties:
+      effect_entries:
+        description: The previous effect of this ability listed in different languages.
+        type: array
+        items:
+          $ref: '#/definitions/effect'
+      version_group:
+        description: The version group in which the previous effect of this ability originated.
+        properties:
+          name:
+            description: The name of the referenced resource.
+            type: string
+          url:
+            description: The URL of the referenced resource
+            type: string
+
+  abilityById_pokemon:
+    properties:
+      is_hidden:
+        description: Whether or not this a hidden ability for the referenced Pokémon.
+        type: boolean
+      slot:
+        description: Pokémon have 3 ability 'slots' which hold references to possible abilities they could have. This is the slot of this ability for the referenced pokemon.
+        type: number
+      pokemon:
+        description: The Pokémon this ability could belong to.
+        properties:
+          name:
+            description: The name of the referenced resource.
+            type: string
+          url:
+            description: The URL of the referenced resource
+            type: string
+  
+  abilityById_flavorTextEntries:
+    properties:
+      flavor_text:
+        description: The localized name for an API resource in a specific language.
+        type: string
+      language:
+        description: The language this name is in.
+        properties:
+          name:
+            description: The name of the referenced resource.
+            type: string
+          url:
+            description: The URL of the referenced resource
+            type: string
+      version_group:
+        description: The version group that uses this flavor text.
+        properties:
+          name:
+            description: The name of the referenced resource.
+            type: string
+          url:
+            description: The URL of the referenced resource
+            type: string
+
+  characteristicById:
+    description: The properites of the returned characteristic.
+    properties:
+      highest_stat:
+        description: The highest stat possible for this characteristic.
+        properties:
+          name:
+            description: The name of the referenced resource.
+            type: string
+          url:
+            description: The URL of the referenced resource
+            type: string
+      possible_values:
+        description: The possible values of the highest stat that would result in a Pokémon recieving this characteristic when divided by 5.
+        type: array
+        items:
+          type: number
+      id:
+        description: The identifier for this characteristic resource.
+        type: number
+      descriptions:
+        description: The descriptions of this characteristic listed in different languages.
+        type: array
+        items:
+          $ref: '#/definitions/descriptions'
+      gene_modulo:
+        description: The remainder of the highest stat/IV divided by 5.
+        type: number
+
+  eggGroupById:
+    description: The properties of the returned egg group.
+    properties:
+      pokemon_species:
+        description: A list of all Pokémon species that are members of this egg group.
+        type: array
+        items:
+          $ref: '#/definitions/namedResource'
+      names:
+        description: The name of this egg group listed in different languages.
+        type: array
+        items:
+          $ref: '#/definitions/names'
+      id:
+        description: The identifier for this egg group resource.
+        type: number
+      name:
+        description: The name for this egg group resource.
+        type: string
+
+  genderById:
+    description: The properties of the returned gender.
+    properties:
+      pokemon_species_details:
+        description: A list of Pokémon species that can be this gender and how likely it is that they will be.
+        type: array
+        items:
+          $ref: '#/definitions/genderById_pokemonSpeciesDetails'
+      required_for_evolution:
+        description: A list of Pokémon species that required this gender in order for a Pokémon to evolve into them.
+        type: array
+        items:
+          $ref: '#/definitions/namedResource'
+      id:
+        description: The identifier for this gender resource.
+        type: number
+      name:
+        description: The name for this gender resource.
+        type: string
+
+  genderById_pokemonSpeciesDetails:
+    properties:
+      rate:
+        description: The chance of this Pokémon being female, in eighths; or -1 for genderless.
+        type: number
+      pokemon_species:
+        description: A Pokémon species that can be the referenced gender  
+        properties:
+          name:
+            description: The name of the referenced resource.
+            type: string
+          url:
+            description: The URL of the referenced resource
+            type: string
+
+  growthRateById:
+    description: The properties of the returned growth rate.
+    properties:
+      name:
+        description: The name for this gender resource.
+        type: string
+      levels:
+        description: A list of levels and the amount of experienced needed to atain them based on this growth rate.
+        type: array
+        items:
+          $ref: '#/definitions/growthRateById_levels'
+      descriptions:
+        description: The descriptions of this characteristic listed in different languages.
+        type: array
+        items:
+          $ref: '#/definitions/descriptions'
+      pokemon_species:
+        description: A list of Pokémon species that gain levels at this growth rate.
+        type: array
+        items:
+          $ref: '#/definitions/namedResource'
+      formula:
+        description: The formula used to calculate the rate at which the Pokémon species gains level.
+        type: string
+      id:
+        description: The identifier for this gender resource.
+        type: number
+
+  growthRateById_levels:
+    properties:
+      level:
+        description: The level gained.
+        type: number
+      experience:
+        description: The amount of experience required to reach the referenced level.
+        type: number
+
+  natureById:
+    description: The properties of the returned nature.
+    properties:
+      name:
+        description: The name for this nature resource.
+        type: string
+      pokeathlon_stat_changes:
+        description: A list of Pokéathlon stats this nature effects and how much it effects them.
+        type: array
+        items:
+          $ref: '#/definitions/natureById_pokeathlonStatChanges'
+      names:
+        description: The name of this nature listed in different languages.
+        type: array
+        items:
+          $ref: '#/definitions/names'
+      hates_flavor:
+        description: The flavor hated by Pokémon with this nature.
+        properties:
+          name:
+            description: The name of the referenced resource.
+            type: string
+          url:
+            description: The URL of the referenced resource
+            type: string
+      likes_flavor:
+        description: The flavor liked by Pokémon with this nature.
+        properties:
+          name:
+            description: The name of the referenced resource.
+            type: string
+          url:
+            description: The URL of the referenced resource
+            type: string
+      decreased_stat:
+        description: The stat decreased by 10% in Pokémon with this nature.
+        properties:
+          name:
+            description: The name of the referenced resource.
+            type: string
+          url:
+            description: The URL of the referenced resource
+            type: string
+      move_battle_style_preferences:
+        description: A list of battle styles and how likely a Pokémon with this nature is to use them in the Battle Palace or Battle Tent.
+        type: array
+        items:
+          $ref: '#/definitions/natureById_moveBattleStylePreferences'
+      id:
+        description: The identifier for this nature resource.
+        type: number
+      increased_stat:
+        description: The stat increased by 10% in Pokémon with this nature.
+        properties:
+          name:
+            description: The name of the referenced resource.
+            type: string
+          url:
+            description: The URL of the referenced resource
+            type: string
+
+  natureById_pokeathlonStatChanges:
+    properties:
+      max_Charge:
+        description: The amount of change
+        type: number
+      pokeathlon_stat:
+        description: The stat being affected.
+        properties:
+          name:
+            description: The name of the referenced resource.
+            type: string
+          url:
+            description: The URL of the referenced resource
+            type: string
+
+  natureById_moveBattleStylePreferences:
+    properties:
+      low_hp_preference:
+        description: Chance of using the move, in percent, if HP is under one half.
+        type: number
+      high_hp_preference:
+        description: Chance of using the move, in percent, if HP is over one half.
+        type: number
+      move_battle_style:
+        description: The moves battle style.
+        properties:
+          name:
+            description: The name of the referenced resource.
+            type: string
+          url:
+            description: The URL of the referenced resource
+            type: string
+
+  pokeathlonStatById:
+    description: The properties of the returned pokeathlon stat
+    properties:
+      names:
+        description: The name of this Pokéathlon stat listed in different languages.
+        type: array
+        items:
+          $ref: '#/definitions/names'
+      affecting_natures:
+        description: A detail of natures which affect this Pokéathlon stat positively or negatively.
+        properties:
+          increase:
+            description: A list of natures and how they change the referenced Pokéathlon stat.
+            type: array
+            items:
+              $ref: '#/definitions/pokeathlonStatsById_affectingNatures'
+          decrease:
+            description: A list of natures and how they change the referenced Pokéathlon stat.
+            type: array
+            items:
+              $ref: '#/definitions/pokeathlonStatsById_affectingNatures'
+      id:
+        description: The identifier for this Pokéathlon stat resource.
+        type: number
+      name:
+        description: The name for this Pokéathlon stat resource.
+        type: string
+
+  pokeathlonStatsById_affectingNatures:
+    properties:
+      max_charge:
+        description: The maximum amount of change to the referenced Pokéathlon stat.
+        type: number
+      nature:
+        description: The nature causing the change.
+        properties:
+          name:
+            description: The name of the referenced resource.
+            type: string
+          url:
+            description: The URL of the referenced resource
+            type: string
+
+  statById:
+    description: The properties of the returned stat.
+    properties:
+      is_battle_only:
+        description: Whether this stat only exists within a battle.
+        type: boolean
+      names:
+        description: The name of this region listed in different languages.
+        type: array
+        items:
+          $ref: '#/definitions/names'
+      affecting_natures:
+        description: A detail of natures which affect this stat positively or negatively.
+        properties:
+          increase:
+            description: A list of natures and how they change the referenced stat. 
+            type: array
+            items:
+              $ref: '#/definitions/namedResource'
+          decrease:
+            description: A list of natures and how they change the referenced stat. 
+            type: array
+            items:
+              $ref: '#/definitions/namedResource'
+      characteristics:
+        description: A list of characteristics that are set on a Pokémon when its highest base stat is this stat.
+        type: array
+        items:
+          $ref: '#/definitions/resource'
+      affecting_moves:
+        description: A detail of moves which affect this stat positively or negatively.
+        properties:
+          increase:
+            description: A list of moves and how they change the referenced stat.
+            type: array
+            items:
+              $ref: '#/definitions/statById_affectingMoves'
+          decrease:
+            description: A list of moves and how they change the referenced stat.
+            type: array
+            items:
+              $ref: '#/definitions/statById_affectingMoves'
+      move_damage_class:
+        description: The class of damage this stat is directly related to.
+        properties:
+          name:
+            description: The name of the referenced resource.
+            type: string
+          url:
+            description: The URL of the referenced resource
+            type: string
+
+      game_index:
+        description: ID the games use for this stat.
+        type: number
+      id:
+        description: The identifier for this stat resource.
+        type: number
+      name:
+        description: The name for this stat resource.
+        type: string
+
+  statById_affectingMoves:
+    properties:
+      change:
+        description: The maximum amount of change to the referenced stat.
+        type: number
+      move:
+        description: The move causing the change.
+        properties:
+          name:
+            description: The name of the referenced resource.
+            type: string
+          url:
+            description: The URL of the referenced resource
+            type: string
+
+  typeById:
+    description: The properties of the returned type.
+    properties:
+      name:
+        description: The name for this type resource.
+        type: string
+      generation:
+        description: The generation this type was introduced in.
+        properties:
+          name:
+            description: The name of the referenced resource.
+            type: string
+          url:
+            description: The URL of the referenced resource
+            type: string
+      damage_relations:
+        description: A detail of how effective this type is toward others and vice versa. 
+        properties:
+          no_damage_to:
+            description: A list of types this type has no effect on. 
+            type: array
+            items:
+              $ref: '#/definitions/namedResource'
+          half_damage_to:
+            description: A list of types this type is not very effect against.
+            type: array
+            items:
+              $ref: '#/definitions/namedResource'
+          double_damage_to:
+            description: A list of types this type is very effect against.
+            type: array
+            items:
+              $ref: '#/definitions/namedResource'
+          no_damage_from:
+            description: A list of types that have no effect on this type.
+            type: array
+            items:
+              $ref: '#/definitions/namedResource'
+          half_damage_from:
+            description: A list of types that are not very effective against this type.
+            type: array
+            items:
+              $ref: '#/definitions/namedResource'
+          double_damage_from:
+            description: A list of types that are very effective against this type.
+            type: array
+            items:
+              $ref: '#/definitions/namedResource'
+      game_indices:
+        description: A list of game indices relevent to this item by generation.
+        type: array
+        items:
+          $ref: '#/definitions/generationGameIndex'
+      move_damage_class:
+        description: The class of damage inflicted by this type.
+        properties:
+          name:
+            description: The name of the referenced resource.
+            type: string
+          url:
+            description: The URL of the referenced resource
+            type: string
+      moves:
+        description: A list of moves that have this type.
+        type: array
+        items:
+          $ref: '#/definitions/namedResource'
+      pokemon:
+        description: A list of details of Pokémon that have this type.
+        type: array
+        items:
+          $ref: '#/definitions/typeById_pokemon'
+      id:
+        description: The identifier for this type resource.
+        type: number
+      names:
+        description: The name of this type listed in different languages.
+        type: array
+        items:
+          $ref: '#/definitions/names'
+
+  typeById_pokemon:
+    properties:
+      slot:
+        description: The order the Pokémon's types are listed in.
+        type: number
+      pokemon:
+        description: The Pokémon that has the referenced type.
+        properties:
+          name:
+            description: The name of the referenced resource.
+            type: string
+          url:
+            description: The URL of the referenced resource
+            type: string
+
+  languageById:
+    description: The properties of the returned language.
+    properties:
+      iso639:
+        description: The two-letter code of the country where this language is spoken. Note that it is not unique.
+        type: string
+      name:
+        description: The name for this language resource.
+        type: string
+      official:
+        description: Whether or not the games are published in this language.
+        type: boolean
+      names:
+        description: The name of this language listed in different languages.
+        type: array
+        items:
+          $ref: '#/definitions/names'
+      iso3166:
+        description: The two-letter code of the language. Note that it is not unique.
+        type: string
+      id:
+        description: The identifier for this language resource.
+        type: number
+
+  apiRoot:
+    description: A list of all resources and URL to each resource root.
+    properties:
+      endpoint:
+        description: Value of each key is the URL.
+        type: string 
+
+  descriptions:
+    description: The descriptions for a particular resource.
+    properties:
+      description:
+        description: The local description for an API resource in a specific language.
+        type: string
+      language:
+        description: The language listing of the references language.
+        properties:
+          url:
+            type: string
+          name:
+            type: string
+
+  generationGameIndex:
+    properties:
+      game_index:
+        description: The internal id of an API resource within game data.
+        type: number
+      generation:
+        description: The generation relevent to this game index.
+        properties:
+          name:
+            description: The name of the referenced resource.
+            type: string
+          url:
+            description: The URL of the referenced resource
+            type: string
+
+
+  machineVersionDetail:
+    properties:
+      machine:
+        description: The machine that teaches a move from an item.
+        properties:
+          url:
+            description: The URL of the referenced resource
+            type: string
+      version_group:
+        description: The version group of this specific machine.
+        properties:
+          name:
+            description: The name of the referenced resource.
+            type: string
+          url:
+            description: The URL of the referenced resource
+            type: string
+
+  abilityEffectChange:
+    properties:
+      effect_entries:
+        description: The The previous effect of this ability listed in different languages.
+        type: array
+        items:
+          $ref: '#/definitions/effect'
+      version_group:
+        description: The version group in which the previous effect of this ability originated.
+        properties:
+          name:
+            description: The name of the referenced resource.
+            type: string
+          url:
+            description: The URL of the referenced resource
+            type: string
+
+  namedResource:
+    properties:
+      name:
+        description: The name of the referenced resource.
+        type: string
+      url:
+        description: The URL of the referenced resource
+        type: string
+
+  resource:
+    properties:
+      url:
+        description: The URL of the referenced resource
+        type: string
+
+  names:
+    description: Language listing of data point.
+    properties:
+      name:
+        type: string
+        description: The name of this data point in the listed language.
+      language:
+        description: The language listing of the references language.
+        properties:
+          url:
+            description: The URL for this language item.
+            type: string
+          name:
+            description: The two letter code for a language listed.
+            type: string
+
+  effectLong:
+    properties:
+      short_effect:
+        description: The localized effect text in brief.
+        type: string
+      effect:
+        description: The localized effect text for an API resource in a specific language.
+        type: string
+      language:
+        description: The language listing of the references language.
+        properties:
+          url:
+            description: The URL for this language item.
+            type: string
+          name:
+            description: The two letter code for a language listed.
+            type: string
+
+  versionEncounterDetail:
+    properties:
+      version:
+        description: The game version this encounter happens in.
+        properties:
+          name:
+            description: The name of the referenced resource.
+            type: string
+          url:
+            description: The URL of the referenced resource
+            type: string
+      max_chance:
+        description: The total percentage of all encounter potential.
+        type: number
+      encounter_details:
+        description: A list of encounters and their specifics.
+        type: array
+        items:
+          $ref: '#/definitions/encounter'
+
+  encounter:
+    properties:
+      min_level:
+        description: The lowest level the Pokémon could be encountered at. 
+        type: number
+      max_level:
+        description: The highest level the Pokémon could be encountered at.
+        type: number
+      condition_values:
+        description: A list of condition values that must be in effect for this encounter to occur.
+        type: array
+        items:
+          $ref: '#/definitions/namedResource'
+      chance:
+        description: Percent chance that this encounter will occur.
+        type: number
+      method:
+        description: The method by which this encounter happens.
+        properties:
+          name:
+            description: The name of the referenced resource.
+            type: string
+          url:
+            description: The URL of the referenced resource
+            type: string
+
+  effect:
+    properties:
+      effect:
+        description: The localized effect text for an API resource in a specific language .
+        type: string
+      language:
+        description: The language this effect is in.
+        properties:
+          url:
+            description: The URL of this language.
+            type: string
+          name:
+            description: The two letter code for this language.
+            type: string
+
+  flavorTextEntries:
+    properties:
+      flavor_text:
+        description: The text in this flavor text entry.
+        type: string
+      version_group:
+        description: The version group this belongs to.
+        properties:
+          url:
+            description: The URL of this language.
+            type: string
+          name:
+            description: The two letter code for this language.
+            type: string
+      language:
+        description: The language this entry is in.
+        properties:
+          url:
+            description: The URL of this language.
+            type: string
+          name:
+            description: The two letter code for this language.
+            type: string
+
+  versionGameIndex:
+    properties:
+      game_index:
+        description: The internal id of an API resource within game data.
+        type: number
+      version:
+        description: The version relevent to this game index.
+        properties:
+          name:
+            description: The name of the referenced resource.
+            type: string
+          url:
+            description: The URL of the referenced resource
+            type: string
+          

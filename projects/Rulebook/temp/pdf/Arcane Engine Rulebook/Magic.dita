@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><?workdir /F:\Personal Documents and Files\Documents\Portfolio\Rulebook\Arcane Engine Rulebook\temp\pdf\Arcane Engine Rulebook?><?workdir-uri file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/temp/pdf/Arcane%20Engine%20Rulebook/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Concept//EN?><?doctype-system concept.dtd?><concept xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" id="concept_qhs_bvm_d2b" ditaarch:DITAArchVersion="1.3" domains="(topic concept)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)   " class="- topic/topic concept/concept " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Magic.dita" xtrc="concept:1;3:35">
+    <title class="- topic/title " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Magic.dita" xtrc="title:1;4:12">Magic</title>
+    <shortdesc class="- topic/shortdesc " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Magic.dita" xtrc="shortdesc:1;5:16">The following is a discussion on magic in the game, and what it means beyond the
+        numbers.</shortdesc>
+    <conbody class="- topic/body  concept/conbody " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Magic.dita" xtrc="conbody:1;7:14">
+        <p class="- topic/p " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Magic.dita" xtrc="p:1;8:12">The power of a mage comes from their natural energy, or fatigue. Casting spells
+            constantly is very draining, and becomes even more acutely tiring as you unlock more
+            powerful abilities. A powerful mage may have stronger spells than a weaker mage, but it
+            also becomes much more difficult to cast those spells, and with increased power comes
+            increased responsibility to both yourself and the world. Your power may eventually
+            become powerful enough to destroy whole towns and level battlefields in an instant;
+            These powers are for you to choose how to act, but let it be known that there will
+            always be those who fear your power and abilities, those who wish to control your
+            natural abilities, and those who hate your gifts and will stop at nothing to destroy
+            them in whatever way possible.</p>
+        <p class="- topic/p " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Magic.dita" xtrc="p:2;18:12">
+            <div class="- topic/div " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Magic.dita" xtrc="div:1;19:18"><p class="- topic/p " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Magic.dita" xtrc="p:3;19:21">Magic is intrinsically personal to the mage, and often reflects and/or directly
+                    affects their personality. This is one of the many differences between magic and
+                    technology, which is often quite detached from the personality of the
+                    technologist.</p> Magic, especially high powered magic, leaves scars and traces
+                in the world. Magic, or the energy that allows mages to use magic, is little
+                understood, but is oftentimes referred to as the essence of reality. By working
+                magic, a mage is bending and tearing at reality in a fundamental way.</div>
+        </p>
+        <p class="- topic/p " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Magic.dita" xtrc="p:4;27:12">There are 15 distinct magical classes, each commanding a separate array of powers.
+            Oftentimes these classes overlap in usage, some are meant to deal damage, some are meant
+            to heal and support, and some contain defensive capabilities, some utilitarian uses, and
+            most combine two or three of these.</p>
+    </conbody>
+</concept>

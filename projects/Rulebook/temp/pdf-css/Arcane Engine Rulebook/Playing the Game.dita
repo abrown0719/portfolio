@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /F:\Personal Documents and Files\Documents\Portfolio\Rulebook\Arcane Engine Rulebook\temp\pdf-css\Arcane Engine Rulebook?><?workdir-uri file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/temp/pdf-css/Arcane%20Engine%20Rulebook/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Concept//EN?><?doctype-system concept.dtd?><concept xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" id="concept_v5z_jyl_d2b" ditaarch:DITAArchVersion="1.3" domains="(topic concept)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)   " class="- topic/topic concept/concept " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Playing%20the%20Game.dita" xtrc="concept:1;3:35">
+    <title class="- topic/title " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Playing%20the%20Game.dita" xtrc="title:1;4:12">Playing the Game</title>
+    <conbody class="- topic/body  concept/conbody " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Playing%20the%20Game.dita" xtrc="conbody:1;5:14">
+        <p class="- topic/p " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Playing%20the%20Game.dita" xtrc="p:1;6:12">
+            <div class="- topic/div " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Playing%20the%20Game.dita" xtrc="div:1;7:18"><p class="- topic/p " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Playing%20the%20Game.dita" xtrc="p:2;7:21">This game is a game of tactics, strategy, roleplaying, acting, and storytelling.
+                    It is most recommended to use a grid and miniatures, as these aid in the
+                    description of a setting and especially in the tactics of play. These miniatures
+                    represent your characters, and they can be anything, from a 3-D printed model
+                    you made with detail down to the buckle on her belt, a square cutout with a name
+                    on it, or a marble that had an interesting color. These are hardly necessary
+                    though, and many players always opt to not use one, instead playing in a
+                    “theater of the mind” which allows for quicker gameplay and a more cinematic
+                    experience.</p><p class="- topic/p " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Playing%20the%20Game.dita" xtrc="p:3;15:39">As a character you will face tasks. This is a loose term to
+                    describe situations which you must overcome. To simulate the often unseen
+                    circumstances of real life that many cannot track but dictate how any task will
+                    resolve, this game uses dice. The Core Mechanic of this game is to roll a 20
+                    sided die (d20) whenever you are faced with a task and must take action. Your
+                    roll on the die i1s added to whatever modifiers that exist, such as your skill at
+                    the task, and compared against a number called a Target. This target number
+                    represents how difficult the task is, the higher the number, the more difficult
+                    the task. Depending upon how close you come to the number, under or over, shows
+                    how well you succeed, or how badly you fail at the task.</p><p class="- topic/p " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Playing%20the%20Game.dita" xtrc="p:4;24:84">This system is
+                    designed to only need a single die, a single d20 to roll for all things. There
+                    are no other dice needed for anyone except the GM, who needs only 2 6-sided die.
+                    Other things will be needed will be this ruleset, a character sheet provided in
+                    the book, and scrap paper. The use of a battle grid and miniatures is
+                    optional.</p><p class="- topic/p " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Playing%20the%20Game.dita" xtrc="p:5;29:37">Remember, this system is a game of imagination. There is no
+                    limit to what your characters can do. Describe what you want to do, and talk to
+                    the GM about whether what you wish is possible, and what happens because of it.
+                    Your character has a plethora of numbers: attributes, skills, abilities, and
+                    knowledge fields, to figure out if and how they can do something. These are
+                    rolled using the core mechanic to accomplish tasks in the world.</p> This Core
+                Rulebook should be used to create and manage characters, create and manage worlds,
+                and give ideas and tools to craft stories. This core rulebook does not contain and
+                exhaustive list of possible plot points and does not set hard rules about abilities.
+                You are free to ignore or expand upon parts of this book at your leisure to suit
+                your game.</div>
+        </p>
+    </conbody>
+</concept>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_prw_stm_d2b">
+    <title>Making a Character</title>
+    <shortdesc>This is the step-by-step process for making a character.</shortdesc>
+    <taskbody>
+        <context>Making a character may take a little while, especially including any conceptual
+            steps to figure out what the goals in this character are. Record it all on the character
+            sheet.</context>
+        <steps>
+            <step>
+                <cmd><b>Concept</b>: Come up with what the character does, who they are, what
+                    generally are they good at, what are they bad at, and what is their history,
+                    etc.</cmd>
+            </step>
+            <step>
+                <cmd><b>Attributes</b>: Determine the characters attributes. Take 30 attribute
+                    points, start all attributes at 1, and distribute those attribute points among
+                    the various attributes, with each attribute point adding 1 to the attribute it
+                    is applied to. Reference: <xref href="Attribute%20List.dita"/>.</cmd>
+            </step>
+            <step>
+                <cmd><b>Skills</b>: Determine the characters skills. Take 20 skill points, start all
+                    skills at 0, and distribute those skill points among the various skills, with
+                    each attribute adding 1 to the attribute it is applied to. Reference: <xref
+                        href="../Player%20Companion/Skills%20List.dita"/>.</cmd>
+            </step>
+            <step>
+                <cmd><b>Classes</b>: Determine the characters classes. Take 5 class points, start
+                    all classes at 0, and distribute those class points among the classes, with each
+                    class point adding 1 to the class it is applied to. Reference: <xref
+                        href="Class%20List.dita"/>.</cmd>
+            </step>
+            <step>
+                <cmd><b>Derived Attributes</b>: Based on attributes, record derived attributes.
+                    Reference: <xref href="Derived%20Attributes.dita"/>.</cmd>
+            </step>
+            <step>
+                <cmd><b>Goals, Habits, Facets</b>: Determine the characters goals, habits, and
+                    facets. Think long and hard about it, and record them down. Try to come up with
+                    at least 1 of each, but more is always welcome. Reference: <xref
+                        href="Goals%20Habits%20Facets.dita"/>.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

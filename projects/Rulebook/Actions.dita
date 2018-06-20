@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="reference_ybd_fcn_d2b">
+    <title>Actions</title>
+    <shortdesc>This is a list of possible actions.</shortdesc>
+    <refbody>
+        <table frame="all" rowsep="1" colsep="1" id="table_qs1_gcn_d2b">
+            <tgroup cols="2">
+                <colspec colname="c1" colnum="1" colwidth="1*"/>
+                <colspec colname="c2" colnum="2" colwidth="2.51*"/>
+                <thead>
+                    <row>
+                        <entry>Action</entry>
+                        <entry>Description</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry>Draw Weapon</entry>
+                        <entry>Draw a weapon.</entry>
+                    </row>
+                    <row>
+                        <entry>Attack</entry>
+                        <entry>Make an attack roll against a target. See<xref
+                                href="Attack%20Roll.dita"/>.</entry>
+                    </row>
+                    <row>
+                        <entry>Cast a Spell</entry>
+                        <entry>Cast a spell. See <xref href="Casting%20Magic.dita"/>.</entry>
+                    </row>
+                    <row>
+                        <entry>Move</entry>
+                        <entry>Move where you wish to move to, within reason.</entry>
+                    </row>
+                    <row>
+                        <entry>Take Cover</entry>
+                        <entry>Take cover, providing a bonus determined by the GM to defending
+                            against attacks.</entry>
+                    </row>
+                    <row>
+                        <entry>Use an Item</entry>
+                        <entry>Using an item.</entry>
+                    </row>
+                    <row>
+                        <entry>Overwatch</entry>
+                        <entry>Set up overwatch, and get to use Attack against anyone that moves
+                            within sight.</entry>
+                    </row>
+                    <row>
+                        <entry>Parry/Block</entry>
+                        <entry>Actively parry or block with a shield or weapon. Make an attack
+                            opposed to the enemies attack.</entry>
+                    </row>
+                    <row>
+                        <entry>Sprint</entry>
+                        <entry>Double movement at the cost of fatigue.</entry>
+                    </row>
+                    <row>
+                        <entry>Aim</entry>
+                        <entry>Gain a bonus to next Attack action taken.</entry>
+                    </row>
+                    <row>
+                        <entry>Grapple</entry>
+                        <entry>Wrestle with the opponent, locking both of you out of using
+                            weapons.</entry>
+                    </row>
+                    <row>
+                        <entry>Trip</entry>
+                        <entry>Trip an enemy, knocking them to the ground.</entry>
+                    </row>
+                    <row>
+                        <entry>Disarm</entry>
+                        <entry>Disarming an opponent, removing their weapon by making an Attack
+                            action.</entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+    </refbody>
+</reference>

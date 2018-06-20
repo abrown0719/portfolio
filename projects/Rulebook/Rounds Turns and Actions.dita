@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_ccg_5bn_d2b">
+    <title>Rounds, Turns, and Actions</title>
+    <shortdesc>This is a discussion on what Rounds, Turns, and Actions are.</shortdesc>
+    <conbody>
+        <p>Combat occurs in rounds, each one taking approximately 10 seconds of game-time. Each
+            round, every character gets a turn within the round, where they take actions. Actions
+            are things that the characters can do. Every character gets to do a number of actions
+            that are equal to their Speed. Actions include things such as running, attacking, or
+            using abilities.</p>
+        <p>Each round represents about 30 seconds of time in game, though that can be changed
+            according to the GM’s wishes. This is important to understand the length of effects, and
+            the logical limits to what can be completed within a round.</p>
+    </conbody>
+</concept>

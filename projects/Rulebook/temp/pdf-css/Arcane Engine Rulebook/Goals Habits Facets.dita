@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /F:\Personal Documents and Files\Documents\Portfolio\Rulebook\Arcane Engine Rulebook\temp\pdf-css\Arcane Engine Rulebook?><?workdir-uri file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/temp/pdf-css/Arcane%20Engine%20Rulebook/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Concept//EN?><?doctype-system concept.dtd?><concept xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" id="concept_qsd_2tm_d2b" ditaarch:DITAArchVersion="1.3" domains="(topic concept)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)   " class="- topic/topic concept/concept " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Goals%20Habits%20Facets.dita" xtrc="concept:1;3:35">
+    <title class="- topic/title " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Goals%20Habits%20Facets.dita" xtrc="title:1;4:12">Goals, Habits, and Facets</title>
+    <shortdesc class="- topic/shortdesc " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Goals%20Habits%20Facets.dita" xtrc="shortdesc:1;5:16">This is a section that describes the less mechanical aspects of a character to round
+        out personality.</shortdesc>
+    <conbody class="- topic/body  concept/conbody " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Goals%20Habits%20Facets.dita" xtrc="conbody:1;7:14">
+        <p class="- topic/p " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Goals%20Habits%20Facets.dita" xtrc="p:1;8:12">Goals, Habits, and Facets are meant to round out a characters personality. There are no
+            set values for these, and they are inherently intimate to a character and a player. They
+            are also individual to every character.</p>
+        <table frame="all" rowsep="1" colsep="1" id="table_skm_jtm_d2b" class="- topic/table " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Goals%20Habits%20Facets.dita" xtrc="table:1;11:73">
+            <tgroup cols="2" class="- topic/tgroup " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Goals%20Habits%20Facets.dita" xtrc="tgroup:1;12:30">
+                <colspec class="- topic/colspec " colnum="1" colname="col1"/><colspec class="- topic/colspec " colnum="2" colname="col2"/><tbody class="- topic/tbody " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Goals%20Habits%20Facets.dita" xtrc="tbody:1;13:24">
+                    <row class="- topic/row " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Goals%20Habits%20Facets.dita" xtrc="row:1;14:26">
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Goals%20Habits%20Facets.dita" xtrc="entry:1;15:32" colname="col1" dita-ot:x="1" dita-ot:y="1">Goals</entry>
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Goals%20Habits%20Facets.dita" xtrc="entry:2;16:32" colname="col2" dita-ot:x="2" dita-ot:y="1">Goals are simply things that the character wants to do, life goals,
+                            temporary goals, anything that the character believes should be done.
+                            These can be anything from a simple goal to find your brother, to
+                            something as grandiose as dethroning the king. Characters are encouraged
+                            to pick three of these that are meaningful, and can get the player into
+                            interesting and dangerous situations.</entry>
+                    </row>
+                    <row class="- topic/row " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Goals%20Habits%20Facets.dita" xtrc="row:2;23:26">
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Goals%20Habits%20Facets.dita" xtrc="entry:3;24:32" colname="col1" dita-ot:x="1" dita-ot:y="2">Habits</entry>
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Goals%20Habits%20Facets.dita" xtrc="entry:4;25:32" colname="col2" dita-ot:x="2" dita-ot:y="2">Habits are things that your character does reflexively. “I scream
+                            when startled”. These may not be apparent to work against or for you
+                            immediately, but perhaps you scream loudly at a fancy dinner because the
+                            waiter brushed your back…that can be interesting.</entry>
+                    </row>
+                    <row class="- topic/row " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Goals%20Habits%20Facets.dita" xtrc="row:3;30:26">
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Goals%20Habits%20Facets.dita" xtrc="entry:5;31:32" colname="col1" dita-ot:x="1" dita-ot:y="3">Facets</entry>
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Goals%20Habits%20Facets.dita" xtrc="entry:6;32:32" colname="col2" dita-ot:x="2" dita-ot:y="3">Facets are things about your character that stand out, and are
+                            memorable. “Hairy,” “Hot-headed,” or “Clumsy,” things that people will
+                            remember you by. Again, these things might endear you to someone or
+                            antagonize others, and either way, it builds story and tension.</entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+    </conbody>
+</concept>

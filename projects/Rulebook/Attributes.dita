@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_t1d_c3m_d2b">
+    <title>Attributes</title>
+    <shortdesc>This describes what an attribute is, and what they mean for a character.</shortdesc>
+    <conbody>
+        <p>An attribute is a number that represents something innate about a characters physicality
+            or mental capabilities. Attributes are untrained talents that a character finds
+            themselves good or bad at. An attribute does not describe how good a character is at
+            doing any one task, and attributes apply to a lot of tasks.</p>
+        <p>Derived Attributes are secondary attributes that describe things that are innate, but not
+            a core attribute. They are derived, because their values are derived from math applied
+            to the regular 8 attributes.</p>
+    </conbody>
+</concept>

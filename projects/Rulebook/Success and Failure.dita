@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_ixp_hcm_d2b">
+    <title>Success and Failure</title>
+    <shortdesc>This section describes the meanings and concepts of success and failure.</shortdesc>
+    <conbody>
+        <p>
+            <div><p>There is no success and failure within the strictest sense. There are degrees of
+                    success and degrees of failure, but an abject failure is very rare, as even in
+                    complete disaster, something is often taken away. </p> For GM’s, opposed rolls
+                often do not halt the game by their nature, but for standard rolls against a simple
+                target, it is important that there not be a binary outcome to the roll. Rolls should
+                have a target, but the character falling below the target does not mean that they
+                simply fail. Provided is a table with common rolls in comparison to the target, and
+                the outcome of those rolls.</div>
+            <div>For opposed checks, the difference to the target refers to difference between the
+                players roll and their oppositions roll.</div>
+        </p>
+    </conbody>
+</concept>

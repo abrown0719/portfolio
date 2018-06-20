@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /F:\Personal Documents and Files\Documents\Portfolio\Rulebook\Arcane Engine Rulebook\temp\pdf-css\Arcane Engine Rulebook?><?workdir-uri file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/temp/pdf-css/Arcane%20Engine%20Rulebook/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Concept//EN?><?doctype-system concept.dtd?><concept xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" id="concept_mxb_zdn_d2b" ditaarch:DITAArchVersion="1.3" domains="(topic concept)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)   " class="- topic/topic concept/concept " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Chase%20and%20Pursuits.dita" xtrc="concept:1;3:35">
+    <title class="- topic/title " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Chase%20and%20Pursuits.dita" xtrc="title:1;4:12">Chase and Pursuits</title>
+    <shortdesc class="- topic/shortdesc " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Chase%20and%20Pursuits.dita" xtrc="shortdesc:1;5:16">This is a discussion on chases and pursuits.</shortdesc>
+    <conbody class="- topic/body  concept/conbody " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Chase%20and%20Pursuits.dita" xtrc="conbody:1;6:14">
+        <p class="- topic/p " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Chase%20and%20Pursuits.dita" xtrc="p:1;7:12">
+            <div class="- topic/div " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Chase%20and%20Pursuits.dita" xtrc="div:1;8:18"><p class="- topic/p " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Chase%20and%20Pursuits.dita" xtrc="p:2;8:21">Chasing opponents or objects refers to the short-term, quick act of going after
+                    a target. This target could be a person, especially an enemy the players want to
+                    catch and/or kill, and object such as a piece of paper flying in the wind or a
+                    runaway cart, a skittish horse, and any number of other objects.</p> Chasing is
+                simple, and will involve both Athletics and Acrobatics checks, with possibly other
+                checks such as Contort if necessary. Chasing a target that is actively running away
+                usually means that the Athletics and Acrobatics checks are rolled vs. the targets
+                Athletics or Acrobatics roll. Athletics is used when they jump in the water, climb a
+                wall, or simply run. Acrobatics is used to resolve leaping over obstacles or winding
+                through a hectic, busy environment, like a street market. When chasing an object,
+                the rolls are made vs. a simple target.</div>
+        </p>
+        <p class="- topic/p " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Chase%20and%20Pursuits.dita" xtrc="p:3;20:12">Pursuing a target is a process that can take a very long time, perhaps weeks or months
+            trekking across wilderness. The important distinction between pursuit and chase is that
+            during a pursuit, the pursuers do not know their targets precise location, and cannot
+            catch them immediately.</p>
+        <p class="- topic/p " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Chase%20and%20Pursuits.dita" xtrc="p:4;24:12"> Each day, the pursuer and target make an opposed roll. The skill used depends upon the
+            action taken in the pursuit.</p>
+    </conbody>
+</concept>

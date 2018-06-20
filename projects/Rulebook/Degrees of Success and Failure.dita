@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="reference_mhs_5cm_d2b">
+    <title>Degrees of Success/Failure</title>
+    <shortdesc>This is a table of possible rolls, and their effects on the results of intended
+        actions.</shortdesc>
+    <refbody>
+        <table frame="all" rowsep="1" colsep="1" id="table_or4_bdm_d2b">
+            <title/>
+            <tgroup cols="2">
+                <colspec colname="c1" colnum="1" colwidth="1*"/>
+                <colspec colname="c2" colnum="2" colwidth="3.44*"/>
+                <thead>
+                    <row>
+                        <entry>Difference to Target</entry>
+                        <entry>Effect</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry>10+ Below Target</entry>
+                        <entry>The intended task is a complete failure, and extra negative effects
+                            are assured.</entry>
+                    </row>
+                    <row>
+                        <entry>5-9 Below Target</entry>
+                        <entry>The intended task is barely completed but in a very unsatisfactory
+                            manner.</entry>
+                    </row>
+                    <row>
+                        <entry>1-4 Below Target</entry>
+                        <entry>The intended task is completed adequately, but negative side effects
+                            are likely.</entry>
+                    </row>
+                    <row>
+                        <entry>Equal to Target</entry>
+                        <entry>The intended task is completed exactly as intended.</entry>
+                    </row>
+                    <row>
+                        <entry>1-4 Above Target</entry>
+                        <entry>There are possible positive side effects in addition to the task
+                            completion.</entry>
+                    </row>
+                    <row>
+                        <entry>5-9 Above Target</entry>
+                        <entry>The intended task is completed with incredible quality and
+                            speed.</entry>
+                    </row>
+                    <row>
+                        <entry>10+ Above Target</entry>
+                        <entry>The intended task is completed exceptionally, better than intended,
+                            and with positive side effects.</entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+    </refbody>
+</reference>

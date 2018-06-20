@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+    <title>Glossary</title>
+    <topicref href="glossaction.dita"/>
+    <topicref href="glossarmor.dita"/>
+    <topicref href="glossattackroll.dita"/>
+    <topicref href="glossattribute.dita"/>
+    <topicref href="glosscharacter.dita"/>
+    <topicref href="glosschase.dita"/>
+    <topicref href="glossclass.dita"/>
+    <topicref href="glosscoremechanic.dita"/>
+    <topicref href="glossD20.dita"/>
+    <topicref href="glossequipment.dita"/>
+    <topicref href="glossGHF.dita"/>
+    <topicref href="glossmagic.dita"/>
+    <topicref href="glossroundturn.dita"/>
+    <topicref href="glossskill.dita"/>
+    <topicref href="glossspecialist.dita"/>
+    <topicref href="glosstask.dita"/>
+    <topicref href="glosstechnology.dita"/>
+    <topicref href="glosstravel.dita"/>
+    <topicref href="glossweapons.dita"/>
+</map>

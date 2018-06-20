@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /F:\Personal Documents and Files\Documents\Portfolio\Rulebook\Arcane Engine Rulebook\temp\pdf-css\Arcane Engine Rulebook?><?workdir-uri file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/temp/pdf-css/Arcane%20Engine%20Rulebook/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Task//EN?><?doctype-system task.dtd?><task xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" id="task_thq_kvm_d2b" ditaarch:DITAArchVersion="1.3" domains="(topic task)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)                            (topic task strictTaskbody-c)   " class="- topic/topic task/task " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Casting%20Magic.dita" xtrc="task:1;3:29">
+    <title class="- topic/title " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Casting%20Magic.dita" xtrc="title:1;4:12">Casting Magic</title>
+    <shortdesc class="- topic/shortdesc " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Casting%20Magic.dita" xtrc="shortdesc:1;5:16">This is the way in which magic is cast in the game.</shortdesc>
+    <taskbody class="- topic/body task/taskbody " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Casting%20Magic.dita" xtrc="taskbody:1;6:15">
+        <context class="- topic/section task/context " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Casting%20Magic.dita" xtrc="context:1;7:18">Magic works the same way as any roll, but it does require a few extra steps. It
+            will come down to a dice roll however.</context>
+        <steps class="- topic/ol task/steps " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Casting%20Magic.dita" xtrc="steps:1;9:16">
+            <step class="- topic/li task/step " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Casting%20Magic.dita" xtrc="step:1;10:19">
+                <cmd class="- topic/ph task/cmd " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Casting%20Magic.dita" xtrc="cmd:1;11:22">Choose the spell that the player wishes to cast.</cmd>
+            </step>
+            <step class="- topic/li task/step " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Casting%20Magic.dita" xtrc="step:2;13:19">
+                <cmd class="- topic/ph task/cmd " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Casting%20Magic.dita" xtrc="cmd:2;14:22">Determine the effect of the spell with the GM.</cmd>
+            </step>
+            <step class="- topic/li task/step " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Casting%20Magic.dita" xtrc="step:3;16:19">
+                <cmd class="- topic/ph task/cmd " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Casting%20Magic.dita" xtrc="cmd:3;17:22">Determine how much the spell is going to cost to cast it, either in materials
+                    or in fatigue.</cmd>
+            </step>
+            <step class="- topic/li task/step " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Casting%20Magic.dita" xtrc="step:4;20:19">
+                <cmd class="- topic/ph task/cmd " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Casting%20Magic.dita" xtrc="cmd:4;21:22">Determine the target of the spell, if applicable.</cmd>
+            </step>
+            <step class="- topic/li task/step " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Casting%20Magic.dita" xtrc="step:5;23:19">
+                <cmd class="- topic/ph task/cmd " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Casting%20Magic.dita" xtrc="cmd:5;24:22">Determine how the target will resist the spell, if applicable.</cmd>
+            </step>
+            <step class="- topic/li task/step " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Casting%20Magic.dita" xtrc="step:6;26:19">
+                <cmd class="- topic/ph task/cmd " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Casting%20Magic.dita" xtrc="cmd:6;27:22">Roll: The player rolls their Spell Power, and the opponent rolls their
+                    resistance in an opposed check.</cmd>
+            </step>
+            <step class="- topic/li task/step " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Casting%20Magic.dita" xtrc="step:7;30:19">
+                <cmd class="- topic/ph task/cmd " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Casting%20Magic.dita" xtrc="cmd:7;31:22">Determine effect as a normal opposed roll. If the player wins, the spell
+                    affects the enemy, if the enemy wins, the spell does nothing.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

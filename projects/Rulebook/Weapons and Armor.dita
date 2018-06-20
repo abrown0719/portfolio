@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_okh_jzm_d2b">
+    <title>Weapons and Armor</title>
+    <shortdesc>This is a basic overview of weapons and armor, what they are, and why they are
+        necessary.</shortdesc>
+    <conbody>
+        <p>Armor and weapons are those items that specifically deal damage, and protect you from
+            damage. As opposed to other equipment that provides tangential bonuses or other effects,
+            weapons specifically are used in combat, and armor is worn to protect you from
+            damage.</p>
+        <p>It is imperative that any character have at least a weapon and some armor in any
+            dangerous situation. The world is deadly, and weapons can kill. Your enemies will have
+            them, so should you.</p>
+    </conbody>
+</concept>

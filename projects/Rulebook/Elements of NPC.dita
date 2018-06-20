@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="reference_yjm_wmt_d2b">
+    <title>Elements of NPC's</title>
+    <shortdesc>In creating an NPC, the GM must understand exactly what the NPC is supposed to do.
+        They are not a Player Character, and their importance to the story is less for that, but
+        they do serve some purpose, otherwise, why would they be there?</shortdesc>
+    <refbody>
+        <table frame="all" rowsep="0" colsep="0" id="table_gdy_xmt_d2b">
+            <tgroup cols="2" align="left">
+                <colspec colname="c1" colnum="1" colwidth="1*"/>
+                <colspec colname="c2" colnum="2" colwidth="2.33*"/>
+                <thead>
+                    <row>
+                        <entry>Element</entry>
+                        <entry>Description</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row valign="middle">
+                        <entry>
+                            <p>NPCs are not Player Characters</p>
+                        </entry>
+                        <entry>The Player Characters are the center of the story. The players are
+                            your reason why this campaign is happening, so you as the GM must
+                            understand that your part is to play the less important world around
+                            them. Now this is not to say that anything that happens to anyone else
+                            isn’t as important within the game world, but outside the game world,
+                            everyone else is, in fact, less important. NPCs should almost never
+                            become the focus of your story, and if they must, they should not be
+                            able to drive the plot forward without the aid of the player characters.
+                        </entry>
+                    </row>
+                    <row valign="middle">
+                        <entry>
+                            <p>NPCs are People Too</p>
+                        </entry>
+                        <entry>
+                            <p>Just because NPCs are not as important as the players doesn’t mean
+                                they aren’t supposed to be living thinking beings as well. They have
+                                emotions, they make mistakes, they are not all knowing, and they
+                                don’t usually want to die. NPCs should react accordingly when the
+                                players do something. Even if the NPC would severely complicate the
+                                lives of the Players, such as calling the police when the Players
+                                are spotted committing a crime, that NPC should do so. It is what
+                                the NPC would do naturally.</p>
+                        </entry>
+                    </row>
+                    <row valign="middle">
+                        <entry>
+                            <p>The GM is not the NPC</p>
+                        </entry>
+                        <entry>As a GM, you must understand above and beyond your players the
+                            necessity of separating in-game and out-of-game knowledge. You as the GM
+                            understand what is going to happen in a few moments. You know when the
+                            wolves are going to attack, and when the police are going to arrive. The
+                            NPC you are playing as may not know these things. In combat, enemies are
+                            not perfectly coordinated unless they have some sort of mental link.
+                            They often do not perform 4-part combos unless they happen to be some
+                            special task-force that have worked together before.</entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+    </refbody>
+</reference>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="reference_l3r_mrm_d2b">
+    <title>Class List</title>
+    <shortdesc>This is a list of classes, and their descriptions.</shortdesc>
+    <refbody>
+        <table>
+            <title>Magic</title>
+            <tgroup cols="2">
+                <colspec colname="c1" colnum="1" colwidth="1*"/>
+                <colspec colname="c2" colnum="2" colwidth="2.84*"/>
+                <thead>
+                    <row>
+                        <entry>Class</entry>
+                        <entry>Description</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry>Air</entry>
+                        <entry>Control of air and wind.</entry>
+                    </row>
+                    <row>
+                        <entry>Coveyance</entry>
+                        <entry>Control of movement and kinetic energy.</entry>
+                    </row>
+                    <row>
+                        <entry>Divination</entry>
+                        <entry>Control of visions and information.</entry>
+                    </row>
+                    <row>
+                        <entry>Earth</entry>
+                        <entry>Control of dirt, rock, and lava.</entry>
+                    </row>
+                    <row>
+                        <entry>Fire</entry>
+                        <entry>Control of heat and fire.</entry>
+                    </row>
+                    <row>
+                        <entry>Lightning</entry>
+                        <entry>Control of electricity and magnetism.</entry>
+                    </row>
+                    <row>
+                        <entry>Mental</entry>
+                        <entry>Control of the mind and thoughts.</entry>
+                    </row>
+                    <row>
+                        <entry>Meta</entry>
+                        <entry>Control of magic and magical energies.</entry>
+                    </row>
+                    <row>
+                        <entry>Water</entry>
+                        <entry>Control of water and ice.</entry>
+                    </row>
+                    <row>
+                        <entry>Nature</entry>
+                        <entry>Control of nature, plants, and animals.</entry>
+                    </row>
+                    <row>
+                        <entry>White</entry>
+                        <entry>Control of life and healing.</entry>
+                    </row>
+                    <row>
+                        <entry>Black</entry>
+                        <entry>Control of death, pain, and suffering.</entry>
+                    </row>
+                    <row>
+                        <entry>Phantasm</entry>
+                        <entry>Control of illusions.</entry>
+                    </row>
+                    <row>
+                        <entry>Temporal</entry>
+                        <entry>Control of time.</entry>
+                    </row>
+                    <row>
+                        <entry>Thaumaturgy</entry>
+                        <entry>Control of blood and flesh.</entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+        <table id="table_lh4_fsm_d2b">
+            <title>Technology</title>
+            <tgroup cols="2">
+                <colspec colname="c1" colnum="1" colwidth="1*"/>
+                <colspec colname="c2" colnum="2" colwidth="2.84*"/>
+                <thead>
+                    <row>
+                        <entry>Class</entry>
+                        <entry>Description</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry>Medicine</entry>
+                        <entry>The study of medicine and herbal infusions.</entry>
+                    </row>
+                    <row>
+                        <entry>Chemistry</entry>
+                        <entry>The study of caustic chemicals, poisons, and acids.</entry>
+                    </row>
+                    <row>
+                        <entry>Electricity</entry>
+                        <entry>The study of electricity and magnetic creations.</entry>
+                    </row>
+                    <row>
+                        <entry>Explosives</entry>
+                        <entry>The study of explosives and volatile compounds.</entry>
+                    </row>
+                    <row>
+                        <entry>Gunsmithing</entry>
+                        <entry>The study of making guns and bullets.</entry>
+                    </row>
+                    <row>
+                        <entry>Blacksmithing</entry>
+                        <entry>The study of metallurgy, melee weapons, and armor.</entry>
+                    </row>
+                    <row>
+                        <entry>Mechanics</entry>
+                        <entry>The study of mechancial and physical machines.</entry>
+                    </row>
+                    <row>
+                        <entry>Therapeutics</entry>
+                        <entry>The study of drugs and stimulants.</entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+        <table id="table_b1s_fsm_d2b">
+            <title>Specialist</title>
+            <tgroup cols="2">
+                <colspec colname="c1" colnum="1" colwidth="1*"/>
+                <colspec colname="c2" colnum="2" colwidth="2.84*"/>
+                <thead>
+                    <row>
+                        <entry>Class</entry>
+                        <entry>Description</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry>Commander</entry>
+                        <entry>Master of commanding allies and controlling the battlefield.</entry>
+                    </row>
+                    <row>
+                        <entry>Martial Artist</entry>
+                        <entry>Master of hand to hand combat.</entry>
+                    </row>
+                    <row>
+                        <entry>Infiltrator</entry>
+                        <entry>Master of steatlh and silent infiltration.</entry>
+                    </row>
+                    <row>
+                        <entry>Gunslinger</entry>
+                        <entry>Master of hand-guns and flashy firearms maneuvers.</entry>
+                    </row>
+                    <row>
+                        <entry>Operative</entry>
+                        <entry>Master of survival and tracking.</entry>
+                    </row>
+                    <row>
+                        <entry>Rifleman/Archer</entry>
+                        <entry>Master of long-arms and bows.</entry>
+                    </row>
+                    <row>
+                        <entry>Enforcer</entry>
+                        <entry>Master of heavy weapons and furious combat.</entry>
+                    </row>
+                    <row>
+                        <entry>Melee Master</entry>
+                        <entry>Master of melee weapons and blades.</entry>
+                    </row>
+                    <row>
+                        <entry>Bodyguard</entry>
+                        <entry>Master of defense and defending allies.</entry>
+                    </row>
+                    <row>
+                        <entry>Transporter</entry>
+                        <entry>Master of vehicles and mounts.</entry>
+                    </row>
+                    <row>
+                        <entry>Spy</entry>
+                        <entry>Master of face-first infiltration and snooping.</entry>
+                    </row>
+                    <row>
+                        <entry>Knife Thrower/Grenadier</entry>
+                        <entry>Master of thrown weapons.</entry>
+                    </row>
+                    <row>
+                        <entry>Debate Master</entry>
+                        <entry>Master of debates and arguments.</entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+    </refbody>
+</reference>

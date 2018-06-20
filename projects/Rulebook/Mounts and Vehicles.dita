@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="reference_rnr_w1n_d2b">
+    <title>Mounts and Vehicles</title>
+    <shortdesc>This sections is a reference for mounts and vehicles, their speeds, and
+        weights.</shortdesc>
+    <refbody>
+        <table frame="all" rowsep="1" colsep="1" id="table_kry_bbn_d2b">
+            <tgroup cols="2">
+                <colspec colname="c1" colnum="1" colwidth="1*"/>
+                <colspec colname="c2" colnum="2" colwidth="3.44*"/>
+                <thead>
+                    <row>
+                        <entry>Header</entry>
+                        <entry>Description</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry>Average Speed</entry>
+                        <entry>The speed this mount/vehicle can maintain endlessly.</entry>
+                    </row>
+                    <row>
+                        <entry>Max Speed</entry>
+                        <entry>The maximum speed of this mount/vehicle, this can only be maintained
+                            for 10 minutes.</entry>
+                    </row>
+                    <row>
+                        <entry>Weight Limit</entry>
+                        <entry>The maximum weight this mount/vehicle can carry before they break or
+                            refuse to continue.</entry>
+                    </row>
+                    <row>
+                        <entry>Cost</entry>
+                        <entry>Cost of buying this vehicle/mount in gold pieces.</entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+        <table id="table_cxv_w1n_d2b">
+            <tgroup cols="5">
+                <colspec colnum="1" colname="col1"/>
+                <colspec colnum="2" colname="col2"/>
+                <colspec colnum="3" colname="col3"/>
+                <colspec colnum="4" colname="col4"/>
+                <colspec colnum="5" colname="col5"/>
+                <tbody>
+                    <row>
+                        <entry>Vehicle/Mount</entry>
+                        <entry>Average Speed</entry>
+                        <entry>Max Speed</entry>
+                        <entry>Weight Limit</entry>
+                        <entry>Cost</entry>
+                    </row>
+                    <row>
+                        <entry>Riding Dog</entry>
+                        <entry>2 mph</entry>
+                        <entry>5 mph</entry>
+                        <entry>100 lbs.</entry>
+                        <entry>50g</entry>
+                    </row>
+                    <row>
+                        <entry>Mule</entry>
+                        <entry>3 mph</entry>
+                        <entry>7 mph</entry>
+                        <entry>300 lbs.</entry>
+                        <entry>150g</entry>
+                    </row>
+                    <row>
+                        <entry>Light Horse</entry>
+                        <entry>5 mph</entry>
+                        <entry>12 mph</entry>
+                        <entry>200 lbs.</entry>
+                        <entry>250g</entry>
+                    </row>
+                    <row>
+                        <entry>Heavy Horse</entry>
+                        <entry>4 mph</entry>
+                        <entry>10 mph</entry>
+                        <entry>400 lbs.</entry>
+                        <entry>500g</entry>
+                    </row>
+                    <row>
+                        <entry>Warhorse</entry>
+                        <entry>4 mph</entry>
+                        <entry>10 mph</entry>
+                        <entry>400 lbs.</entry>
+                        <entry>1000g</entry>
+                    </row>
+                    <row>
+                        <entry>Small Stagecoach</entry>
+                        <entry>5 mph</entry>
+                        <entry>15 mph</entry>
+                        <entry>800 lbs.</entry>
+                        <entry>2000g</entry>
+                    </row>
+                    <row>
+                        <entry>Heavy Stagecoach</entry>
+                        <entry>6 mph</entry>
+                        <entry>18 mph</entry>
+                        <entry>1100 lbs.</entry>
+                        <entry>6000g</entry>
+                    </row>
+                    <row>
+                        <entry>Motor Carriage</entry>
+                        <entry>5 mph</entry>
+                        <entry>25 mph</entry>
+                        <entry>1500 lbs.</entry>
+                        <entry>15000g</entry>
+                    </row>
+                    <row>
+                        <entry>Flying Machine</entry>
+                        <entry>60 mph</entry>
+                        <entry>110 mph</entry>
+                        <entry>400 lbs.</entry>
+                        <entry>60000g</entry>
+                    </row>
+                    <row>
+                        <entry>Airship</entry>
+                        <entry>12 mph</entry>
+                        <entry>35 mph</entry>
+                        <entry>200 tons</entry>
+                        <entry>300000g</entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+    </refbody>
+</reference>

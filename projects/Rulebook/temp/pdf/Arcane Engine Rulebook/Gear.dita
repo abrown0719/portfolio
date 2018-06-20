@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?><?workdir /F:\Personal Documents and Files\Documents\Portfolio\Rulebook\Arcane Engine Rulebook\temp\pdf\Arcane Engine Rulebook?><?workdir-uri file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/temp/pdf/Arcane%20Engine%20Rulebook/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Reference//EN?><?doctype-system reference.dtd?><reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" id="reference_dxn_f1n_d2b" ditaarch:DITAArchVersion="1.3" domains="(topic reference)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)   " class="- topic/topic       reference/reference " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Gear.dita" xtrc="reference:1;3:39">
+    <title class="- topic/title " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Gear.dita" xtrc="title:1;4:12">Gear</title>
+    <shortdesc class="- topic/shortdesc " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Gear.dita" xtrc="shortdesc:1;5:16">Gear refers to any equipment that is usually hand-held and useful in a number of
+        scenarios.</shortdesc>
+    <refbody class="- topic/body        reference/refbody " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Gear.dita" xtrc="refbody:1;7:14">
+        <table id="table_jf3_h1n_d2b" class="- topic/table " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Gear.dita" xtrc="table:1;8:39">
+            <tgroup cols="2" class="- topic/tgroup " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Gear.dita" xtrc="tgroup:1;9:30">
+                <colspec colnum="1" colname="col1" rowheader="headers" class="- topic/colspec " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Gear.dita" xtrc="colspec:1;10:53"/>
+                <colspec colnum="2" colname="col2" rowheader="headers" class="- topic/colspec " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Gear.dita" xtrc="colspec:2;11:53"/>
+                <tbody class="- topic/tbody " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Gear.dita" xtrc="tbody:1;12:24">
+                    <row class="- topic/row " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Gear.dita" xtrc="row:1;13:26">
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Gear.dita" xtrc="entry:1;14:32" colname="col1" dita-ot:x="1" dita-ot:y="1">Item</entry>
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Gear.dita" xtrc="entry:2;15:32" colname="col2" dita-ot:x="2" dita-ot:y="1">Cost in gold pieces</entry>
+                    </row>
+                    <row class="- topic/row " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Gear.dita" xtrc="row:2;17:26">
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Gear.dita" xtrc="entry:3;18:32" colname="col1" dita-ot:x="1" dita-ot:y="2">Backpack</entry>
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Gear.dita" xtrc="entry:4;19:32" colname="col2" dita-ot:x="2" dita-ot:y="2">10g</entry>
+                    </row>
+                    <row class="- topic/row " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Gear.dita" xtrc="row:3;21:26">
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Gear.dita" xtrc="entry:5;22:32" colname="col1" dita-ot:x="1" dita-ot:y="3">Bell</entry>
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Gear.dita" xtrc="entry:6;23:32" colname="col2" dita-ot:x="2" dita-ot:y="3">5g</entry>
+                    </row>
+                    <row class="- topic/row " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Gear.dita" xtrc="row:4;25:26">
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Gear.dita" xtrc="entry:7;26:32" colname="col1" dita-ot:x="1" dita-ot:y="4">Caltrops</entry>
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Gear.dita" xtrc="entry:8;27:32" colname="col2" dita-ot:x="2" dita-ot:y="4">20g</entry>
+                    </row>
+                    <row class="- topic/row " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Gear.dita" xtrc="row:5;29:26">
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Gear.dita" xtrc="entry:9;30:32" colname="col1" dita-ot:x="1" dita-ot:y="5">Candle</entry>
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Gear.dita" xtrc="entry:10;31:32" colname="col2" dita-ot:x="2" dita-ot:y="5">1g</entry>
+                    </row>
+                    <row class="- topic/row " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Gear.dita" xtrc="row:6;33:26">
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Gear.dita" xtrc="entry:11;34:32" colname="col1" dita-ot:x="1" dita-ot:y="6">Chain (5 ft.)</entry>
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Gear.dita" xtrc="entry:12;35:32" colname="col2" dita-ot:x="2" dita-ot:y="6">2g</entry>
+                    </row>
+                    <row class="- topic/row " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Gear.dita" xtrc="row:7;37:26">
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Gear.dita" xtrc="entry:13;38:32" colname="col1" dita-ot:x="1" dita-ot:y="7">Crowbar</entry>
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Gear.dita" xtrc="entry:14;39:32" colname="col2" dita-ot:x="2" dita-ot:y="7">5g</entry>
+                    </row>
+                    <row class="- topic/row " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Gear.dita" xtrc="row:8;41:26">
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Gear.dita" xtrc="entry:15;42:32" colname="col1" dita-ot:x="1" dita-ot:y="8">Electric Lantern</entry>
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Gear.dita" xtrc="entry:16;43:32" colname="col2" dita-ot:x="2" dita-ot:y="8">30g</entry>
+                    </row>
+                    <row class="- topic/row " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Gear.dita" xtrc="row:9;45:26">
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Gear.dita" xtrc="entry:17;46:32" colname="col1" dita-ot:x="1" dita-ot:y="9">Entrenchment Tool</entry>
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Gear.dita" xtrc="entry:18;47:32" colname="col2" dita-ot:x="2" dita-ot:y="9">30g</entry>
+                    </row>
+                    <row class="- topic/row " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Gear.dita" xtrc="row:10;49:26">
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Gear.dita" xtrc="entry:19;50:32" colname="col1" dita-ot:x="1" dita-ot:y="10">Gas Mask</entry>
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Gear.dita" xtrc="entry:20;51:32" colname="col2" dita-ot:x="2" dita-ot:y="10">80g</entry>
+                    </row>
+                    <row class="- topic/row " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Gear.dita" xtrc="row:11;53:26">
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Gear.dita" xtrc="entry:21;54:32" colname="col1" dita-ot:x="1" dita-ot:y="11">Goggles</entry>
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Gear.dita" xtrc="entry:22;55:32" colname="col2" dita-ot:x="2" dita-ot:y="11">10g</entry>
+                    </row>
+                    <row class="- topic/row " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Gear.dita" xtrc="row:12;57:26">
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Gear.dita" xtrc="entry:23;58:32" colname="col1" dita-ot:x="1" dita-ot:y="12">Gun Brace/Bandolier</entry>
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Gear.dita" xtrc="entry:24;59:32" colname="col2" dita-ot:x="2" dita-ot:y="12">20g</entry>
+                    </row>
+                    <row class="- topic/row " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Gear.dita" xtrc="row:13;61:26">
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Gear.dita" xtrc="entry:25;62:32" colname="col1" dita-ot:x="1" dita-ot:y="13">Lantern</entry>
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Gear.dita" xtrc="entry:26;63:32" colname="col2" dita-ot:x="2" dita-ot:y="13">10g</entry>
+                    </row>
+                    <row class="- topic/row " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Gear.dita" xtrc="row:14;65:26">
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Gear.dita" xtrc="entry:27;66:32" colname="col1" dita-ot:x="1" dita-ot:y="14">Manacles</entry>
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Gear.dita" xtrc="entry:28;67:32" colname="col2" dita-ot:x="2" dita-ot:y="14">10g</entry>
+                    </row>
+                    <row class="- topic/row " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Gear.dita" xtrc="row:15;69:26">
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Gear.dita" xtrc="entry:29;70:32" colname="col1" dita-ot:x="1" dita-ot:y="15">Mining Pick</entry>
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Gear.dita" xtrc="entry:30;71:32" colname="col2" dita-ot:x="2" dita-ot:y="15">40g</entry>
+                    </row>
+                    <row class="- topic/row " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Gear.dita" xtrc="row:16;73:26">
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Gear.dita" xtrc="entry:31;74:32" colname="col1" dita-ot:x="1" dita-ot:y="16">Net</entry>
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Gear.dita" xtrc="entry:32;75:32" colname="col2" dita-ot:x="2" dita-ot:y="16">40g</entry>
+                    </row>
+                    <row class="- topic/row " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Gear.dita" xtrc="row:17;77:26">
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Gear.dita" xtrc="entry:33;78:32" colname="col1" dita-ot:x="1" dita-ot:y="17">Padlock</entry>
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Gear.dita" xtrc="entry:34;79:32" colname="col2" dita-ot:x="2" dita-ot:y="17">5g</entry>
+                    </row>
+                    <row class="- topic/row " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Gear.dita" xtrc="row:18;81:26">
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Gear.dita" xtrc="entry:35;82:32" colname="col1" dita-ot:x="1" dita-ot:y="18">Pocket Watch</entry>
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Gear.dita" xtrc="entry:36;83:32" colname="col2" dita-ot:x="2" dita-ot:y="18">15g</entry>
+                    </row>
+                    <row class="- topic/row " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Gear.dita" xtrc="row:19;85:26">
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Gear.dita" xtrc="entry:37;86:32" colname="col1" dita-ot:x="1" dita-ot:y="19">Spyglass</entry>
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Gear.dita" xtrc="entry:38;87:32" colname="col2" dita-ot:x="2" dita-ot:y="19">10g</entry>
+                    </row>
+                    <row class="- topic/row " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Gear.dita" xtrc="row:20;89:26">
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Gear.dita" xtrc="entry:39;90:32" colname="col1" dita-ot:x="1" dita-ot:y="20">Watch</entry>
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Gear.dita" xtrc="entry:40;91:32" colname="col2" dita-ot:x="2" dita-ot:y="20">5g</entry>
+                    </row>
+                    <row class="- topic/row " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Gear.dita" xtrc="row:21;93:26">
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Gear.dita" xtrc="entry:41;94:32" colname="col1" dita-ot:x="1" dita-ot:y="21">Whistle</entry>
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Gear.dita" xtrc="entry:42;95:32" colname="col2" dita-ot:x="2" dita-ot:y="21">1g</entry>
+                    </row>
+                    <row class="- topic/row " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Gear.dita" xtrc="row:22;97:26">
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Gear.dita" xtrc="entry:43;98:32" colname="col1" dita-ot:x="1" dita-ot:y="22">Wrench</entry>
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Gear.dita" xtrc="entry:44;99:32" colname="col2" dita-ot:x="2" dita-ot:y="22">5g</entry>
+                    </row>
+                    <row class="- topic/row " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Gear.dita" xtrc="row:23;101:26">
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Gear.dita" xtrc="entry:45;102:32" colname="col1" dita-ot:x="1" dita-ot:y="23">Quiver</entry>
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Gear.dita" xtrc="entry:46;103:32" colname="col2" dita-ot:x="2" dita-ot:y="23">60g</entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+    </refbody>
+</reference>

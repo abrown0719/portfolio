@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /F:\Personal Documents and Files\Documents\Portfolio\Rulebook\Arcane Engine Rulebook\temp\pdf-css\Arcane Engine Rulebook?><?workdir-uri file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/temp/pdf-css/Arcane%20Engine%20Rulebook/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Concept//EN?><?doctype-system concept.dtd?><concept xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" id="concept_u1d_shm_d2b" ditaarch:DITAArchVersion="1.3" domains="(topic concept)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)   " class="- topic/topic concept/concept " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/What%20makes%20a%20character.dita" xtrc="concept:1;3:35">
+    <title class="- topic/title " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/What%20makes%20a%20character.dita" xtrc="title:1;4:12">What Makes a Character?</title>
+    <shortdesc class="- topic/shortdesc " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/What%20makes%20a%20character.dita" xtrc="shortdesc:1;5:16">A quick overview of what makes a character what they are, and what they are defined
+        by.</shortdesc>
+    <conbody class="- topic/body  concept/conbody " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/What%20makes%20a%20character.dita" xtrc="conbody:1;7:14">
+        <p class="- topic/p " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/What%20makes%20a%20character.dita" xtrc="p:1;8:12">A character is a collection of numbers that describe themselves, combined with the story
+            of their life and personality. Neither the numbers, nor the story are meaningful without
+            the other when it comes to playing the game.</p>
+        <p class="- topic/p " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/What%20makes%20a%20character.dita" xtrc="p:2;11:12">A character is defined by what is on their character sheet, which is supposed to be a
+            direct-but-symbolic translation of their physical and mental being into numbers and
+            words. Their attributes define their physical and mental faculties as raw power and
+            unharnessed energy, their skills show this being put into practical use, and define
+            their proficiency at doing things in the world, and their abilities translate their
+            specialness and extraordinary capabilities into a tangible asset that can be used in the
+            game world. Their equipment represents all the stuff they should have on them, their
+            knowledge fields represent their mental store of information, and their Goals, Habits,
+            and Facets, reduce a complex personality into an easily digestible format for the
+            players and the GM to understand.</p>
+    </conbody>
+</concept>

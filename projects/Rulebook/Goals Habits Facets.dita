@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_qsd_2tm_d2b">
+    <title>Goals, Habits, and Facets</title>
+    <shortdesc>This is a section that describes the less mechanical aspects of a character to round
+        out personality.</shortdesc>
+    <conbody>
+        <p>Goals, Habits, and Facets are meant to round out a characters personality. There are no
+            set values for these, and they are inherently intimate to a character and a player. They
+            are also individual to every character.</p>
+        <table frame="all" rowsep="1" colsep="1" id="table_skm_jtm_d2b">
+            <tgroup cols="2">
+                <tbody>
+                    <row>
+                        <entry>Goals</entry>
+                        <entry>Goals are simply things that the character wants to do, life goals,
+                            temporary goals, anything that the character believes should be done.
+                            These can be anything from a simple goal to find your brother, to
+                            something as grandiose as dethroning the king. Characters are encouraged
+                            to pick three of these that are meaningful, and can get the player into
+                            interesting and dangerous situations.</entry>
+                    </row>
+                    <row>
+                        <entry>Habits</entry>
+                        <entry>Habits are things that your character does reflexively. “I scream
+                            when startled”. These may not be apparent to work against or for you
+                            immediately, but perhaps you scream loudly at a fancy dinner because the
+                            waiter brushed your back…that can be interesting.</entry>
+                    </row>
+                    <row>
+                        <entry>Facets</entry>
+                        <entry>Facets are things about your character that stand out, and are
+                            memorable. “Hairy,” “Hot-headed,” or “Clumsy,” things that people will
+                            remember you by. Again, these things might endear you to someone or
+                            antagonize others, and either way, it builds story and tension.</entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+    </conbody>
+</concept>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /F:\Personal Documents and Files\Documents\Portfolio\Rulebook\Arcane Engine Rulebook\temp\pdf-css\Arcane Engine Rulebook?><?workdir-uri file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/temp/pdf-css/Arcane%20Engine%20Rulebook/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Concept//EN?><?doctype-system concept.dtd?><concept xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" id="concept_s1v_vvm_d2b" ditaarch:DITAArchVersion="1.3" domains="(topic concept)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)   " class="- topic/topic concept/concept " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Technology.dita" xtrc="concept:1;3:35">
+    <title class="- topic/title " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Technology.dita" xtrc="title:1;4:12">Technology</title>
+    <shortdesc class="- topic/shortdesc " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Technology.dita" xtrc="shortdesc:1;5:16">This section is a discussion on technology in the world.</shortdesc>
+    <conbody class="- topic/body  concept/conbody " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Technology.dita" xtrc="conbody:1;6:14">
+        <p class="- topic/p " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Technology.dita" xtrc="p:1;7:12">Technologists create machinery from nothing, seeming to control the world’s powers with
+            nothing more than a heap of scrap metal and some good ingenuity. Technologists have an
+            array of different inventions on them which they can use to boost themselves, harness
+            lightning to throw it at enemies, entrap them and destroy them with explosives and so
+            much more! The life of a technologist is what you make of it, and the rewarding nature
+            of invention provides a rich life full of challenges that test both your physical and
+            mental prowess.</p>
+        <p class="- topic/p " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Technology.dita" xtrc="p:2;14:12">
+            <div class="- topic/div " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Technology.dita" xtrc="div:1;15:18">
+                <p class="- topic/p " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Technology.dita" xtrc="p:3;16:20">Unlike magic, technology and its disciplines are not inherently tied to the
+                    personality of whoever studies them. That in itself is one of the greatest
+                    strength of modern science and technology, there is such a diversity of opinions
+                    and ideas, and the best and brightest rise quickly to the top!</p>
+                <p class="- topic/p " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Technology.dita" xtrc="p:4;20:20">There are 8 distinct Technological classes, each with a very distinct set of
+                    schematics, and each with its own general usage. Oftentimes these classes
+                    overlap in their usage though, and most classes contain schematics that require
+                    creations from other classes, and likewise they contain items that are used as
+                    reagents for other creations in other classes.</p>
+            </div>
+        </p>
+    </conbody>
+</concept>

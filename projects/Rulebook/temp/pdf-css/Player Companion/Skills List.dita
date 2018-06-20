@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /F:\Personal Documents and Files\Documents\Portfolio\Rulebook\Arcane Engine Rulebook\temp\pdf-css\Player Companion?><?workdir-uri file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/temp/pdf-css/Player%20Companion/?><?path2project ..\pdf-css\?><?path2project-uri ../pdf-css/?><?path2rootmap-uri ../Arcane%20Engine%20Rulebook/?><?doctype-public -//OASIS//DTD DITA Reference//EN?><?doctype-system reference.dtd?><reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" id="reference_wj1_qnm_d2b" ditaarch:DITAArchVersion="1.3" domains="(topic reference)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)   " class="- topic/topic       reference/reference " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="reference:1;3:39">
+    <title class="- topic/title " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="title:1;4:12">Skills List</title>
+    <shortdesc class="- topic/shortdesc " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="shortdesc:1;5:16">Tables of skills separated by the attributes that control them.</shortdesc>
+    <refbody class="- topic/body        reference/refbody " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="refbody:1;6:14">
+        <table frame="all" rowsep="1" colsep="1" id="table_itw_k4m_d2b" class="- topic/table " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="table:1;7:73">
+            <title class="- topic/title " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="title:2;8:20">Dexterity Skills</title>
+            <tgroup cols="2" class="- topic/tgroup " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="tgroup:1;9:30">
+                <colspec colname="col1" colnum="1" colwidth="1*" rowheader="headers" class="- topic/colspec " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="colspec:1;10:65"/>
+                <colspec colname="col2" colnum="2" colwidth="3.76*" rowheader="headers" class="- topic/colspec " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="colspec:2;11:68"/>
+                <thead class="- topic/thead " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="thead:1;12:24">
+                    <row class="- topic/row " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="row:1;13:26">
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="entry:1;14:32" colname="col1" dita-ot:x="1" dita-ot:y="1">Skill</entry>
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="entry:2;15:32" colname="col2" dita-ot:x="2" dita-ot:y="1">Description</entry>
+                    </row>
+                </thead>
+                <tbody class="- topic/tbody " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="tbody:1;18:24">
+                    <row class="- topic/row " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="row:2;19:26">
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="entry:3;20:32" colname="col1" dita-ot:x="1" dita-ot:y="2">Dodge</entry>
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="entry:4;21:32" colname="col2" dita-ot:x="2" dita-ot:y="2"> Dodge is incredibly important, it is your ability to avoid attacks
+                            and other things that would otherwise hit you.</entry>
+                    </row>
+                    <row class="- topic/row " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="row:3;24:26">
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="entry:5;25:32" colname="col1" dita-ot:x="1" dita-ot:y="3">Small Melee</entry>
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="entry:6;26:32" colname="col2" dita-ot:x="2" dita-ot:y="3"> Small Melee is your characters’ ability to use small melee weapons
+                            such as swords and axes.</entry>
+                    </row>
+                    <row class="- topic/row " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="row:4;29:26">
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="entry:7;30:32" colname="col1" dita-ot:x="1" dita-ot:y="4">Large Melee</entry>
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="entry:8;31:32" colname="col2" dita-ot:x="2" dita-ot:y="4">Large Melee, conversely, is your characters skill with heavy weapons
+                            that require two hands, such as great swords and mauls.</entry>
+                    </row>
+                    <row class="- topic/row " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="row:5;34:26">
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="entry:9;35:32" colname="col1" dita-ot:x="1" dita-ot:y="5">Unarmed</entry>
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="entry:10;36:32" colname="col2" dita-ot:x="2" dita-ot:y="5">Unarmed is your skill fighting without a weapon. It is useful for
+                            brawls where weapons are inappropriate, and for martial artists.</entry>
+                    </row>
+                    <row class="- topic/row " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="row:6;39:26">
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="entry:11;40:32" colname="col1" dita-ot:x="1" dita-ot:y="6">Stealth</entry>
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="entry:12;41:32" colname="col2" dita-ot:x="2" dita-ot:y="6">Stealth is the ability to silently move around not seen or heard. It
+                            is rolled vs the enemies Perception.</entry>
+                    </row>
+                    <row class="- topic/row " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="row:7;44:26">
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="entry:13;45:32" colname="col1" dita-ot:x="1" dita-ot:y="7">Acrobatics</entry>
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="entry:14;46:32" colname="col2" dita-ot:x="2" dita-ot:y="7">Acrobatics is the ability to perform jumping and twisting feats
+                            including flips and rolls.</entry>
+                    </row>
+                    <row class="- topic/row " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="row:8;49:26">
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="entry:15;50:32" colname="col1" dita-ot:x="1" dita-ot:y="8">Athletics</entry>
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="entry:16;51:32" colname="col2" dita-ot:x="2" dita-ot:y="8">Athletics is the ability to perform athletic feats such as sustained
+                            running, swimming, and climbing.</entry>
+                    </row>
+                    <row class="- topic/row " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="row:9;54:26">
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="entry:17;55:32" colname="col1" dita-ot:x="1" dita-ot:y="9">Grapple</entry>
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="entry:18;56:32" colname="col2" dita-ot:x="2" dita-ot:y="9">Grapple is used in wrestling and ground fighting.Dexterity
+                            Skills</entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+        <table frame="all" rowsep="1" colsep="1" id="table_lbj_q4m_d2b" class="- topic/table " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="table:2;62:73">
+            <title class="- topic/title " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="title:3;63:20">Intelligence Skills</title>
+            <tgroup cols="2" class="- topic/tgroup " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="tgroup:2;64:30">
+                <colspec colname="col1" colnum="1" colwidth="1*" rowheader="headers" class="- topic/colspec " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="colspec:3;65:65"/>
+                <colspec colname="col2" colnum="2" colwidth="3.76*" rowheader="headers" class="- topic/colspec " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="colspec:4;66:68"/>
+                <thead class="- topic/thead " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="thead:2;67:24">
+                    <row class="- topic/row " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="row:10;68:26">
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="entry:19;69:32" colname="col1" dita-ot:x="1" dita-ot:y="1">Skill</entry>
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="entry:20;70:32" colname="col2" dita-ot:x="2" dita-ot:y="1">Description</entry>
+                    </row>
+                </thead>
+                <tbody class="- topic/tbody " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="tbody:2;73:24">
+                    <row class="- topic/row " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="row:11;74:26">
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="entry:21;75:32" colname="col1" dita-ot:x="1" dita-ot:y="2">Forgery</entry>
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="entry:22;76:32" colname="col2" dita-ot:x="2" dita-ot:y="2">Forgery is the ability to fake handwriting, but also to make things
+                            look more official than they are.</entry>
+                    </row>
+                    <row class="- topic/row " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="row:12;79:26">
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="entry:23;80:32" colname="col1" dita-ot:x="1" dita-ot:y="3">Roguery</entry>
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="entry:24;81:32" colname="col2" dita-ot:x="2" dita-ot:y="3">Roguery is the ability to perform roguish acts. These include acts
+                            such as picking locks, picking pockets, and performing assassinations,
+                            no matter what they be.</entry>
+                    </row>
+                    <row class="- topic/row " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="row:13;85:26">
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="entry:25;86:32" colname="col1" dita-ot:x="1" dita-ot:y="4">Traps</entry>
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="entry:26;87:32" colname="col2" dita-ot:x="2" dita-ot:y="4">This is the user’s aptitude with setting traps and ambushes, in
+                            addition to their ability to spot and disarm said traps.</entry>
+                    </row>
+                    <row class="- topic/row " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="row:14;90:26">
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="entry:27;91:32" colname="col1" dita-ot:x="1" dita-ot:y="5">Repair</entry>
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="entry:28;92:32" colname="col2" dita-ot:x="2" dita-ot:y="5">Repair is the ability to repair mechanical things.</entry>
+                    </row>
+                    <row class="- topic/row " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="row:15;94:26">
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="entry:29;95:32" colname="col1" dita-ot:x="1" dita-ot:y="6">Drive</entry>
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="entry:30;96:32" colname="col2" dita-ot:x="2" dita-ot:y="6">Drive is used to operate any vehicle.</entry>
+                    </row>
+                    <row class="- topic/row " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="row:16;98:26">
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="entry:31;99:32" colname="col1" dita-ot:x="1" dita-ot:y="7">Ride</entry>
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="entry:32;100:32" colname="col2" dita-ot:x="2" dita-ot:y="7">Ride is the ability to maintain control of animals or things that
+                            have a mind of their own.</entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+        <table frame="all" rowsep="1" colsep="1" id="table_smm_q4m_d2b" class="- topic/table " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="table:3;106:73">
+            <title class="- topic/title " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="title:4;107:20"> Perception Skills</title>
+            <tgroup cols="2" class="- topic/tgroup " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="tgroup:3;108:30">
+                <colspec colname="col1" colnum="1" colwidth="1*" rowheader="headers" class="- topic/colspec " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="colspec:5;109:65"/>
+                <colspec colname="col2" colnum="2" colwidth="3.76*" rowheader="headers" class="- topic/colspec " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="colspec:6;110:68"/>
+                <thead class="- topic/thead " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="thead:3;111:24">
+                    <row class="- topic/row " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="row:17;112:26">
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="entry:33;113:32" colname="col1" dita-ot:x="1" dita-ot:y="1">Skill</entry>
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="entry:34;114:32" colname="col2" dita-ot:x="2" dita-ot:y="1">Description</entry>
+                    </row>
+                </thead>
+                <tbody class="- topic/tbody " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="tbody:3;117:24">
+                    <row class="- topic/row " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="row:18;118:26">
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="entry:35;119:32" colname="col1" dita-ot:x="1" dita-ot:y="2">Small Guns</entry>
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="entry:36;120:32" colname="col2" dita-ot:x="2" dita-ot:y="2">This is the skill used to operate most pistols and small automatic
+                            weapons.</entry>
+                    </row>
+                    <row class="- topic/row " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="row:19;123:26">
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="entry:37;124:32" colname="col1" dita-ot:x="1" dita-ot:y="3">Large Guns</entry>
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="entry:38;125:32" colname="col2" dita-ot:x="2" dita-ot:y="3">Large Guns refers to the operation of two-handed firearms, most
+                            rifles both single shot and automatic, and any heavier cannons.</entry>
+                    </row>
+                    <row class="- topic/row " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="row:20;128:26">
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="entry:39;129:32" colname="col1" dita-ot:x="1" dita-ot:y="4">Bow</entry>
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="entry:40;130:32" colname="col2" dita-ot:x="2" dita-ot:y="4">Bow is the skill with accurately shooting a drawn bow and a crossbow,
+                            through crossbows can also use the guns skills.</entry>
+                    </row>
+                    <row class="- topic/row " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="row:21;133:26">
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="entry:41;134:32" colname="col1" dita-ot:x="1" dita-ot:y="5">Investigate</entry>
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="entry:42;135:32" colname="col2" dita-ot:x="2" dita-ot:y="5">Investigate is the user’s ability to find hidden objects that would
+                            be impossible to see at a mere glance.</entry>
+                    </row>
+                    <row class="- topic/row " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="row:22;138:26">
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="entry:43;139:32" colname="col1" dita-ot:x="1" dita-ot:y="6">Read Crowd</entry>
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="entry:44;140:32" colname="col2" dita-ot:x="2" dita-ot:y="6">Reading Crowds is used to ascertain the necessary arguments or
+                            preferred arguments of a crowd or judge in a debate.</entry>
+                    </row>
+                    <row class="- topic/row " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="row:23;143:26">
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="entry:45;144:32" colname="col1" dita-ot:x="1" dita-ot:y="7">Thrown</entry>
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="entry:46;145:32" colname="col2" dita-ot:x="2" dita-ot:y="7">Thrown is your skill with accurately throwing things, anything from a
+                            throwing knife to a grenade.</entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+        <table frame="all" rowsep="1" colsep="1" id="table_xq4_q4m_d2b" class="- topic/table " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="table:4;151:73">
+            <title class="- topic/title " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="title:5;152:20"> Willpower Skills</title>
+            <tgroup cols="2" class="- topic/tgroup " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="tgroup:4;153:30">
+                <colspec colname="col1" colnum="1" colwidth="1*" rowheader="headers" class="- topic/colspec " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="colspec:7;154:65"/>
+                <colspec colname="col2" colnum="2" colwidth="3.76*" rowheader="headers" class="- topic/colspec " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="colspec:8;155:68"/>
+                <thead class="- topic/thead " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="thead:4;156:24">
+                    <row class="- topic/row " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="row:24;157:26">
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="entry:47;158:32" colname="col1" dita-ot:x="1" dita-ot:y="1">Skill</entry>
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="entry:48;159:32" colname="col2" dita-ot:x="2" dita-ot:y="1">Description</entry>
+                    </row>
+                </thead>
+                <tbody class="- topic/tbody " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="tbody:4;162:24">
+                    <row class="- topic/row " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="row:25;163:26">
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="entry:49;164:32" colname="col1" dita-ot:x="1" dita-ot:y="2">Command</entry>
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="entry:50;165:32" colname="col2" dita-ot:x="2" dita-ot:y="2">Command is both used to command allies in combat, but it is also used
+                            to intimidate opponents.</entry>
+                    </row>
+                    <row class="- topic/row " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="row:26;168:26">
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="entry:51;169:32" colname="col1" dita-ot:x="1" dita-ot:y="3">Survival</entry>
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="entry:52;170:32" colname="col2" dita-ot:x="2" dita-ot:y="3">Survival is the user’s aptitude for surviving in the wilderness,
+                            scavenging and foraging, finding and building shelter.</entry>
+                    </row>
+                    <row class="- topic/row " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="row:27;173:26">
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="entry:53;174:32" colname="col1" dita-ot:x="1" dita-ot:y="4">Deception</entry>
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="entry:54;175:32" colname="col2" dita-ot:x="2" dita-ot:y="4">Bluff is simply the ability to lie convincingly. Including disguising
+                            oneself, performing a role, and outright spoken lies to someone
+                            else.</entry>
+                    </row>
+                    <row class="- topic/row " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="row:28;179:26">
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="entry:55;180:32" colname="col1" dita-ot:x="1" dita-ot:y="5">Heal</entry>
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="entry:56;181:32" colname="col2" dita-ot:x="2" dita-ot:y="5">Heal is the ability of the character to perform first aid and
+                            conventional medicine.</entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+        <table frame="all" colsep="1" rowsep="1" class="- topic/table " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="table:5;187:50">
+            <title class="- topic/title " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="title:6;188:20">Charisma Skills</title>
+            <tgroup cols="2" class="- topic/tgroup " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="tgroup:5;189:30">
+                <colspec colname="col1" colnum="1" colwidth="1*" rowheader="headers" class="- topic/colspec " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="colspec:9;190:65"/>
+                <colspec colname="col2" colnum="2" colwidth="3.76*" rowheader="headers" class="- topic/colspec " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="colspec:10;191:68"/>
+                <thead class="- topic/thead " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="thead:5;192:24">
+                    <row class="- topic/row " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="row:29;193:26">
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="entry:57;194:32" colname="col1" dita-ot:x="1" dita-ot:y="1">Skill</entry>
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="entry:58;195:32" colname="col2" dita-ot:x="2" dita-ot:y="1">Description</entry>
+                    </row>
+                </thead>
+                <tbody class="- topic/tbody " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="tbody:5;198:24">
+                    <row class="- topic/row " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="row:30;199:26">
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="entry:59;200:32" colname="col1" dita-ot:x="1" dita-ot:y="2">Entertainer</entry>
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="entry:60;201:32" colname="col2" dita-ot:x="2" dita-ot:y="2">Entertainer is the ability of the user to make a performance.</entry>
+                    </row>
+                    <row class="- topic/row " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="row:31;203:26">
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="entry:61;204:32" colname="col1" dita-ot:x="1" dita-ot:y="3">Social Sense</entry>
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="entry:62;205:32" colname="col2" dita-ot:x="2" dita-ot:y="3">Social Sense is both a user’s ability to know how they should act in
+                            a situation, but also the user’s ability to know when they are being
+                            lied to.</entry>
+                    </row>
+                    <row class="- topic/row " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="row:32;209:26">
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="entry:63;210:32" colname="col1" dita-ot:x="1" dita-ot:y="4">Persuasion</entry>
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="entry:64;211:32" colname="col2" dita-ot:x="2" dita-ot:y="4">Persuasion is used to simulate the characters ability to persuade
+                            another to do something the character wishes, to change ones viewpoint,
+                            or to get something from someone else.</entry>
+                    </row>
+                    <row class="- topic/row " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="row:33;215:26">
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="entry:65;216:32" colname="col1" dita-ot:x="1" dita-ot:y="5">Debating</entry>
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Player%20Companion/Skills%20List.dita" xtrc="entry:66;217:32" colname="col2" dita-ot:x="2" dita-ot:y="5">Debating is the basic skill used in a debate, and represents the
+                            characters ability to make certain types of arguments within a
+                            debate.</entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+    </refbody>
+</reference>

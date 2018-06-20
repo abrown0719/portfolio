@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary//EN" "glossary.dtd">
+<glossentry id="glossentry_ect_z3n_d2b">
+    <glossterm>Rounds/Turns</glossterm>
+    <glossdef>The ways in which structured time is split up. Rounds are a structure of time, and
+        turns are each characters actions within a round.</glossdef>
+</glossentry>

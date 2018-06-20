@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="reference_b2p_m1m_d2b">
+    <title>Task List</title>
+    <shortdesc>The following is the list of task types, the way they are executed, and when they are
+        used.</shortdesc>
+    <refbody>
+        <table frame="all" rowsep="1" colsep="1" id="table_ztv_51m_d2b">
+            <title/>
+            <tgroup cols="3">
+                <colspec colname="c1" colnum="1" colwidth="1*"/>
+                <colspec colname="c2" colnum="2" colwidth="3.11*"/>
+                <colspec colname="c3" colnum="3" colwidth="3.08*"/>
+                <thead>
+                    <row>
+                        <entry>Task Type</entry>
+                        <entry>When to Use</entry>
+                        <entry>Method</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry>Standard</entry>
+                        <entry>When the opposition of the check is unchanging or static, and the
+                            scope of the task can be finished in a single continuous action.</entry>
+                        <entry>The player rolls a single die, adds any possible attributes, skills,
+                            and other modifiers, and compares it to a set number as determined by
+                            the GM. If the roll total is equal to or greater than the set number,
+                            the action is successful.</entry>
+                    </row>
+                    <row>
+                        <entry>Opposed</entry>
+                        <entry>Similar to a standard task, but the opposition is actively attempting
+                            to impede the progress of the player.</entry>
+                        <entry>Like a standard test, but instead of a set number determined by the
+                            GM, the opposing force makes their own roll in the same way. Whoever has
+                            the higher total wins and has their intended effect happen.</entry>
+                    </row>
+                    <row>
+                        <entry>Linked</entry>
+                        <entry>When the task is complex, and requires multiple skills or when
+                            multiple, separate, sequential tasks combine to have an emergent
+                            effect.</entry>
+                        <entry>A series of multiple standard tests, where each success unlocks the
+                            ability to make the next roll in the chain.</entry>
+                    </row>
+                    <row>
+                        <entry>Joined</entry>
+                        <entry>Similar to a linked test, but multiple actors are completing the
+                            separate tasks at the same time.</entry>
+                        <entry>A number of standard tests, where each success makes all other tests
+                            easier, and any failures make all other tests harder as determined by
+                            the GM.</entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+    </refbody>
+</reference>

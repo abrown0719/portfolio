@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task id="task_thq_kvm_d2b">
+    <title>Casting Magic</title>
+    <shortdesc>This is the way in which magic is cast in the game.</shortdesc>
+    <taskbody>
+        <context>Magic works the same way as any roll, but it does require a few extra steps. It
+            will come down to a dice roll however.</context>
+        <steps>
+            <step>
+                <cmd>Choose the spell that the player wishes to cast.</cmd>
+            </step>
+            <step>
+                <cmd>Determine the effect of the spell with the GM.</cmd>
+            </step>
+            <step>
+                <cmd>Determine how much the spell is going to cost to cast it, either in materials
+                    or in fatigue.</cmd>
+            </step>
+            <step>
+                <cmd>Determine the target of the spell, if applicable.</cmd>
+            </step>
+            <step>
+                <cmd>Determine how the target will resist the spell, if applicable.</cmd>
+            </step>
+            <step>
+                <cmd>Roll: The player rolls their Spell Power, and the opponent rolls their
+                    resistance in an opposed check.</cmd>
+            </step>
+            <step>
+                <cmd>Determine effect as a normal opposed roll. If the player wins, the spell
+                    affects the enemy, if the enemy wins, the spell does nothing.</cmd>
+            </step>
+        </steps>
+    </taskbody>
+</task>

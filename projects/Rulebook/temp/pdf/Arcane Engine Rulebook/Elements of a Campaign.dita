@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><?workdir /F:\Personal Documents and Files\Documents\Portfolio\Rulebook\Arcane Engine Rulebook\temp\pdf\Arcane Engine Rulebook?><?workdir-uri file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/temp/pdf/Arcane%20Engine%20Rulebook/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Reference//EN?><?doctype-system reference.dtd?><reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" id="reference_n1p_slt_d2b" ditaarch:DITAArchVersion="1.3" domains="(topic reference)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)   " class="- topic/topic       reference/reference " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Elements%20of%20a%20Campaign.dita" xtrc="reference:1;3:39">
+    <title class="- topic/title " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Elements%20of%20a%20Campaign.dita" xtrc="title:1;4:12">Elements of a Campaign/Adventure</title>
+    <shortdesc class="- topic/shortdesc " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Elements%20of%20a%20Campaign.dita" xtrc="shortdesc:1;5:16">The following is a quick exploration of the things that make a good
+        campaign:</shortdesc>
+    <refbody class="- topic/body        reference/refbody " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Elements%20of%20a%20Campaign.dita" xtrc="refbody:1;7:14">
+        <table frame="all" rowsep="0" colsep="0" id="table_x2n_vlt_d2b" class="- topic/table " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Elements%20of%20a%20Campaign.dita" xtrc="table:1;8:73">
+            <tgroup cols="2" align="left" class="- topic/tgroup " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Elements%20of%20a%20Campaign.dita" xtrc="tgroup:1;9:43">
+                <colspec colname="c1" colnum="1" colwidth="1*" rowheader="headers" class="- topic/colspec " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Elements%20of%20a%20Campaign.dita" xtrc="colspec:1;10:65"/>
+                <colspec colname="c2" colnum="2" colwidth="4.02*" rowheader="headers" class="- topic/colspec " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Elements%20of%20a%20Campaign.dita" xtrc="colspec:2;11:68"/>
+                <thead class="- topic/thead " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Elements%20of%20a%20Campaign.dita" xtrc="thead:1;12:24">
+                    <row class="- topic/row " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Elements%20of%20a%20Campaign.dita" xtrc="row:1;13:26">
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Elements%20of%20a%20Campaign.dita" xtrc="entry:1;14:32">Element</entry>
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Elements%20of%20a%20Campaign.dita" xtrc="entry:2;15:32">Description</entry>
+                    </row>
+                </thead>
+                <tbody class="- topic/tbody " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Elements%20of%20a%20Campaign.dita" xtrc="tbody:1;18:24">
+                    <row valign="middle" class="- topic/row " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Elements%20of%20a%20Campaign.dita" xtrc="row:2;19:42">
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Elements%20of%20a%20Campaign.dita" xtrc="entry:3;20:32">
+                            <p class="- topic/p " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Elements%20of%20a%20Campaign.dita" xtrc="p:1;21:32">A Problem That Needs Solving</p>
+                        </entry>
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Elements%20of%20a%20Campaign.dita" xtrc="entry:4;23:32">
+                            <p class="- topic/p " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Elements%20of%20a%20Campaign.dita" xtrc="p:2;24:32">There must be something to overcome, a specific reason why the party
+                                would go forth and do what they are doing. This can be as simple as
+                                a singular assassination contract, or a multiple part, world-wide
+                                treasure hunt. The problem may simply be that the party wants an
+                                item and will do whatever is needed to obtain that item. The problem
+                                must however be worthy of their attention and valuable to them in
+                                some way, even if it’s only valuable to give to someone else.</p>
+                        </entry>
+                    </row>
+                    <row valign="middle" class="- topic/row " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Elements%20of%20a%20Campaign.dita" xtrc="row:3;33:42">
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Elements%20of%20a%20Campaign.dita" xtrc="entry:5;34:32">
+                            <p class="- topic/p " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Elements%20of%20a%20Campaign.dita" xtrc="p:3;35:32">A Clear Goal</p>
+                        </entry>
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Elements%20of%20a%20Campaign.dita" xtrc="entry:6;37:32">Characters must have a clear goal to work towards. In a structured
+                            campaign, this is very easy to set up, and the goal is ever-present. In
+                            a free form campaign, this means that the characters must always have
+                            something to do. It is not necessarily something they should or will do,
+                            but merely something that they can do.</entry>
+                    </row>
+                    <row valign="middle" class="- topic/row " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Elements%20of%20a%20Campaign.dita" xtrc="row:4;43:42">
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Elements%20of%20a%20Campaign.dita" xtrc="entry:7;44:32">
+                            <p class="- topic/p " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Elements%20of%20a%20Campaign.dita" xtrc="p:4;45:32">Meaningful Outcomes for Everyone</p>
+                        </entry>
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Elements%20of%20a%20Campaign.dita" xtrc="entry:8;47:32">This means two things: That the players should have choices that
+                            actually matter to the outcome of the story, and that there should be
+                            choices that everyone can participate in.</entry>
+                    </row>
+                    <row valign="middle" class="- topic/row " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Elements%20of%20a%20Campaign.dita" xtrc="row:5;51:42">
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Elements%20of%20a%20Campaign.dita" xtrc="entry:9;52:32">
+                            <p class="- topic/p " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Elements%20of%20a%20Campaign.dita" xtrc="p:5;53:32">Interesting Encounters</p>
+                        </entry>
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Elements%20of%20a%20Campaign.dita" xtrc="entry:10;55:32">Encounters, which are covered later, are the basis of what a campaign
+                            is identified by. In essence, a campaign is a series of encounters. Each
+                            of these encounters should be interesting and meaningful. Having filler
+                            fights for the sake of fighting is not a good way to go about it.
+                            Players should feel like every encounter, whether social or martial, has
+                            a meaning. Do not just randomly set enemies upon your players, with no
+                            outcomes for winning beyond experience and loot. The enemies should have
+                            a purpose to be there. This is not to say that random encounters are not
+                            good, but just that random encounters for the sake of randomness is not
+                            good. If the players are attempting to fight through a docks district to
+                            catch a VIP, then random henchmen or bodyguards popping up to fight the
+                            players is meaningful. They are not just there to fight the players,
+                            they are there to defend the VIP. Even if the enemies are there just to
+                            weaken the players and expend valuable items before the players fight
+                            some monster at the end of a tunnel system is meaningful, even though it
+                            may not appear so.</entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+    </refbody>
+</reference>

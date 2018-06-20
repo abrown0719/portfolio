@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_wjc_zcn_d2b">
+    <title>Damage, Injury, and Death</title>
+    <shortdesc>This section is a description of how damage, injury, and death work in this
+        game.</shortdesc>
+    <conbody>
+        <p>Getting damaged happens when a character does not completely dodge out of the way of an
+            attack. Taking hits is never good, as every hit reduces the HP of the character, which
+            may end in death. There are ways to reduce the damage a character takes however,
+            including high skills for defense, and high damage resistance from armor, which can make
+            a character immune to low damage attacks.</p>
+        <p>Damage Resistance is the armor, both natural and non-natural of a character. Damage
+            Resistance is naturally half of your STR. Beyond that, any armor the character wears
+            will add more to Damage Resistance. The DR of all specific types of armor will be
+            detailed later in the book. Damage Resistance is removed from damage directly. A 20
+            damage attack against a character with 20 DR does no damage.</p>
+        <p>Health Points mean two things in the game world: the ability to take physical punishment
+            and keep going, and the ability to turn a serious blow into a less serious one. Likewise
+            Fatigue represents your inability to maintain composure and consciousness under intense
+            pain and blood loss, as well as exhaustion from exerting yourself in extraordinary
+            ways.</p>
+        <p>It is assumed that until a character hits 0 HP, they have not taken any massive wounds
+            that would stop them through their adrenaline. Upon hitting 0 HP, the character takes a
+            massive disabling wound, and could possibly end in instant death.</p>
+        <p> Likewise, it is assumed that adrenaline keeps a character acting as normal until FT hits
+            0. Upon a character hitting 0 FT, the characters adrenaline fails them, and their battle
+            fatigue catches up, forcing them to take a quick breather.</p>
+    </conbody>
+</concept>

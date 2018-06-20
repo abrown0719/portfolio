@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="concept_dfq_qdn_d2b">
+    <title>Travel</title>
+    <shortdesc>This is a description of long distance travel.</shortdesc>
+    <conbody>
+        <p>Between certain events, much of the time of adventuring and traveling is the actual
+            journey itself. Characters may often spend weeks in an airship before they reach their
+            target city, and upon another mission are sent to a location three days away. The
+            journey itself is just as important as combat.</p>
+        <p>GM’s are responsible for pacing a game, and journeys don’t need to be noted or measured
+            all the time, but the journey itself can be filled with such rich storytelling that it
+            would be a shame to pass up the chance.</p>
+        <p>Long Distance Travel is determined by what kind of movement the characters are
+            taking.</p>
+        <p>For every 2 levels of Athletics a character possesses, they add an extra mile onto their
+            daily walking and marching distances.</p>
+    </conbody>
+</concept>

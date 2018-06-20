@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><?workdir /F:\Personal Documents and Files\Documents\Portfolio\Rulebook\Arcane Engine Rulebook\temp\pdf\Arcane Engine Rulebook?><?workdir-uri file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/temp/pdf/Arcane%20Engine%20Rulebook/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Concept//EN?><?doctype-system concept.dtd?><concept xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" id="concept_axt_nbn_d2b" ditaarch:DITAArchVersion="1.3" domains="(topic concept)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)   " class="- topic/topic concept/concept " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Combat.dita" xtrc="concept:1;3:35">
+    <title class="- topic/title " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Combat.dita" xtrc="title:1;4:12">Combat</title>
+    <shortdesc class="- topic/shortdesc " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Combat.dita" xtrc="shortdesc:1;5:16">This is an overview of combat and what it means to this system.</shortdesc>
+    <conbody class="- topic/body  concept/conbody " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Combat.dita" xtrc="conbody:1;6:14">
+        <p class="- topic/p " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Combat.dita" xtrc="p:1;7:12">
+            <div class="- topic/div " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Combat.dita" xtrc="div:1;8:18"><p class="- topic/p " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Combat.dita" xtrc="p:2;8:21">Combat is the basis of interaction, and underlies all higher diplomatic
+                    exchanges from the individual to the international. In this world, there are
+                    rules that outline how to translate real world combat to the table.</p>Note
+                through all of this that combat in The Arcane Engine is not meant to be
+                simulation-like or hyper-realistic. There are plenty of RPG systems that wish to
+                translate hyper-realism. The Arcane Engine wishes to translate a heroic combat
+                system that simplifies combat in a way that enables players to engage in stylish
+                combat with dangerous enemies while keeping a very deadly and dangerous atmosphere
+                in which players will need to utilize their full arsenal and work together to
+                succeed.</div>
+        </p>
+        <p class="- topic/p " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Combat.dita" xtrc="p:3;19:12">Combat in The Arcane Engine is cyclical, with everyone going in turn following a standard
+            combat sequence. This, of course, is not literally supposed to be imagined as people
+            waiting for another to make an action before they take their turn, everything is
+            happening simultaneously. Each character has a number of actions to take per turn, and
+            takes them on their turn.</p>
+        <p class="- topic/p " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Combat.dita" xtrc="p:4;24:12">To assist the GM and characters in maintaining a collective imaginative space, and ensure
+            that the players understand events in the game, a game grid can be used. Game grids and
+            miniature figures or markers allow the table to physically show character positions and
+            range for abilities, attacks, and movement. There may not be much use for a game grid
+            when doing normal adventuring, but during battle it is invaluable.</p>
+    </conbody>
+</concept>

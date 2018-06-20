@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><?workdir /F:\Personal Documents and Files\Documents\Portfolio\Rulebook\Arcane Engine Rulebook\temp\pdf\Arcane Engine Rulebook?><?workdir-uri file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/temp/pdf/Arcane%20Engine%20Rulebook/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Reference//EN?><?doctype-system reference.dtd?><reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" id="reference_yjm_wmt_d2b" ditaarch:DITAArchVersion="1.3" domains="(topic reference)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)   " class="- topic/topic       reference/reference " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Elements%20of%20NPC.dita" xtrc="reference:1;3:39">
+    <title class="- topic/title " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Elements%20of%20NPC.dita" xtrc="title:1;4:12">Elements of NPC's</title>
+    <shortdesc class="- topic/shortdesc " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Elements%20of%20NPC.dita" xtrc="shortdesc:1;5:16">In creating an NPC, the GM must understand exactly what the NPC is supposed to do.
+        They are not a Player Character, and their importance to the story is less for that, but
+        they do serve some purpose, otherwise, why would they be there?</shortdesc>
+    <refbody class="- topic/body        reference/refbody " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Elements%20of%20NPC.dita" xtrc="refbody:1;8:14">
+        <table frame="all" rowsep="0" colsep="0" id="table_gdy_xmt_d2b" class="- topic/table " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Elements%20of%20NPC.dita" xtrc="table:1;9:73">
+            <tgroup cols="2" align="left" class="- topic/tgroup " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Elements%20of%20NPC.dita" xtrc="tgroup:1;10:43">
+                <colspec colname="col1" colnum="1" colwidth="1*" rowheader="headers" class="- topic/colspec " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Elements%20of%20NPC.dita" xtrc="colspec:1;11:65"/>
+                <colspec colname="col2" colnum="2" colwidth="2.33*" rowheader="headers" class="- topic/colspec " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Elements%20of%20NPC.dita" xtrc="colspec:2;12:68"/>
+                <thead class="- topic/thead " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Elements%20of%20NPC.dita" xtrc="thead:1;13:24">
+                    <row class="- topic/row " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Elements%20of%20NPC.dita" xtrc="row:1;14:26">
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Elements%20of%20NPC.dita" xtrc="entry:1;15:32" colname="col1" dita-ot:x="1" dita-ot:y="1">Element</entry>
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Elements%20of%20NPC.dita" xtrc="entry:2;16:32" colname="col2" dita-ot:x="2" dita-ot:y="1">Description</entry>
+                    </row>
+                </thead>
+                <tbody class="- topic/tbody " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Elements%20of%20NPC.dita" xtrc="tbody:1;19:24">
+                    <row valign="middle" class="- topic/row " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Elements%20of%20NPC.dita" xtrc="row:2;20:42">
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Elements%20of%20NPC.dita" xtrc="entry:3;21:32" colname="col1" dita-ot:x="1" dita-ot:y="2">
+                            <p class="- topic/p " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Elements%20of%20NPC.dita" xtrc="p:1;22:32">NPCs are not Player Characters</p>
+                        </entry>
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Elements%20of%20NPC.dita" xtrc="entry:4;24:32" colname="col2" dita-ot:x="2" dita-ot:y="2">The Player Characters are the center of the story. The players are
+                            your reason why this campaign is happening, so you as the GM must
+                            understand that your part is to play the less important world around
+                            them. Now this is not to say that anything that happens to anyone else
+                            isn’t as important within the game world, but outside the game world,
+                            everyone else is, in fact, less important. NPCs should almost never
+                            become the focus of your story, and if they must, they should not be
+                            able to drive the plot forward without the aid of the player characters.
+                        </entry>
+                    </row>
+                    <row valign="middle" class="- topic/row " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Elements%20of%20NPC.dita" xtrc="row:3;34:42">
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Elements%20of%20NPC.dita" xtrc="entry:5;35:32" colname="col1" dita-ot:x="1" dita-ot:y="3">
+                            <p class="- topic/p " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Elements%20of%20NPC.dita" xtrc="p:2;36:32">NPCs are People Too</p>
+                        </entry>
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Elements%20of%20NPC.dita" xtrc="entry:6;38:32" colname="col2" dita-ot:x="2" dita-ot:y="3">
+                            <p class="- topic/p " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Elements%20of%20NPC.dita" xtrc="p:3;39:32">Just because NPCs are not as important as the players doesn’t mean
+                                they aren’t supposed to be living thinking beings as well. They have
+                                emotions, they make mistakes, they are not all knowing, and they
+                                don’t usually want to die. NPCs should react accordingly when the
+                                players do something. Even if the NPC would severely complicate the
+                                lives of the Players, such as calling the police when the Players
+                                are spotted committing a crime, that NPC should do so. It is what
+                                the NPC would do naturally.</p>
+                        </entry>
+                    </row>
+                    <row valign="middle" class="- topic/row " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Elements%20of%20NPC.dita" xtrc="row:4;49:42">
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Elements%20of%20NPC.dita" xtrc="entry:7;50:32" colname="col1" dita-ot:x="1" dita-ot:y="4">
+                            <p class="- topic/p " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Elements%20of%20NPC.dita" xtrc="p:4;51:32">The GM is not the NPC</p>
+                        </entry>
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Elements%20of%20NPC.dita" xtrc="entry:8;53:32" colname="col2" dita-ot:x="2" dita-ot:y="4">As a GM, you must understand above and beyond your players the
+                            necessity of separating in-game and out-of-game knowledge. You as the GM
+                            understand what is going to happen in a few moments. You know when the
+                            wolves are going to attack, and when the police are going to arrive. The
+                            NPC you are playing as may not know these things. In combat, enemies are
+                            not perfectly coordinated unless they have some sort of mental link.
+                            They often do not perform 4-part combos unless they happen to be some
+                            special task-force that have worked together before.</entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+    </refbody>
+</reference>

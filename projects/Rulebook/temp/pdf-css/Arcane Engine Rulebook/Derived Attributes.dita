@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?><?workdir /F:\Personal Documents and Files\Documents\Portfolio\Rulebook\Arcane Engine Rulebook\temp\pdf-css\Arcane Engine Rulebook?><?workdir-uri file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/temp/pdf-css/Arcane%20Engine%20Rulebook/?><?path2project?><?path2project-uri ./?><?path2rootmap-uri ./?><?doctype-public -//OASIS//DTD DITA Reference//EN?><?doctype-system reference.dtd?><reference xmlns:ditaarch="http://dita.oasis-open.org/architecture/2005/" xmlns:dita-ot="http://dita-ot.sourceforge.net/ns/201007/dita-ot" id="reference_ubv_bmm_d2b" ditaarch:DITAArchVersion="1.3" domains="(topic reference)                            (topic abbrev-d)                            a(props deliveryTarget)                            (topic equation-d)                            (topic hazard-d)                            (topic hi-d)                            (topic indexing-d)                            (topic markup-d)                            (topic mathml-d)                            (topic pr-d)                            (topic relmgmt-d)                            (topic sw-d)                            (topic svg-d)                            (topic ui-d)                            (topic ut-d)                            (topic markup-d xml-d)   " class="- topic/topic       reference/reference " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Derived%20Attributes.dita" xtrc="reference:1;3:39">
+    <title class="- topic/title " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Derived%20Attributes.dita" xtrc="title:1;4:12">Derived Attributes</title>
+    <shortdesc class="- topic/shortdesc " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Derived%20Attributes.dita" xtrc="shortdesc:1;5:16">This is a list of derived attributes, what they are, and how they are
+        derived.</shortdesc>
+    <refbody class="- topic/body        reference/refbody " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Derived%20Attributes.dita" xtrc="refbody:1;7:14">
+        <table frame="all" rowsep="1" colsep="1" id="table_rlj_dmm_d2b" class="- topic/table " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Derived%20Attributes.dita" xtrc="table:1;8:73">
+            <title class="- topic/title " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Derived%20Attributes.dita" xtrc="title:2;9:21"/>
+            <tgroup cols="3" class="- topic/tgroup " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Derived%20Attributes.dita" xtrc="tgroup:1;10:30">
+                <colspec colname="col1" colnum="1" colwidth="1*" rowheader="headers" class="- topic/colspec " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Derived%20Attributes.dita" xtrc="colspec:1;11:65"/>
+                <colspec colname="col2" colnum="2" colwidth="2.76*" rowheader="headers" class="- topic/colspec " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Derived%20Attributes.dita" xtrc="colspec:2;12:68"/>
+                <colspec colname="col3" colnum="3" colwidth="1.87*" rowheader="headers" class="- topic/colspec " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Derived%20Attributes.dita" xtrc="colspec:3;13:68"/>
+                <thead class="- topic/thead " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Derived%20Attributes.dita" xtrc="thead:1;14:24">
+                    <row class="- topic/row " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Derived%20Attributes.dita" xtrc="row:1;15:26">
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Derived%20Attributes.dita" xtrc="entry:1;16:32" colname="col1" dita-ot:x="1" dita-ot:y="1">Attribute</entry>
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Derived%20Attributes.dita" xtrc="entry:2;17:32" colname="col2" dita-ot:x="2" dita-ot:y="1">Description</entry>
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Derived%20Attributes.dita" xtrc="entry:3;18:32" colname="col3" dita-ot:x="3" dita-ot:y="1">Derivation</entry>
+                    </row>
+                </thead>
+                <tbody class="- topic/tbody " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Derived%20Attributes.dita" xtrc="tbody:1;21:24">
+                    <row class="- topic/row " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Derived%20Attributes.dita" xtrc="row:2;22:26">
+                        <entry valign="middle" class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Derived%20Attributes.dita" xtrc="entry:4;23:48" colname="col1" dita-ot:x="1" dita-ot:y="2">Physical Resistance</entry>
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Derived%20Attributes.dita" xtrc="entry:5;24:32" colname="col2" dita-ot:x="2" dita-ot:y="2">
+                            <p class="- topic/p " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Derived%20Attributes.dita" xtrc="p:1;25:32">Your physical resistance is a blanket attribute to describe your
+                                ability to resist a multitude of various attacks. Anything from
+                                poison, electricity, to great forces that attempt to knock you down
+                                roll against your physical resistance.</p>
+                        </entry>
+                        <entry valign="middle" class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Derived%20Attributes.dita" xtrc="entry:6;30:48" colname="col3" dita-ot:x="3" dita-ot:y="2">Strength + Constitution divided by 2.</entry>
+                    </row>
+                    <row class="- topic/row " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Derived%20Attributes.dita" xtrc="row:3;32:26">
+                        <entry valign="middle" class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Derived%20Attributes.dita" xtrc="entry:7;33:48" colname="col1" dita-ot:x="1" dita-ot:y="3">Mental Resistance</entry>
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Derived%20Attributes.dita" xtrc="entry:8;34:32" colname="col2" dita-ot:x="2" dita-ot:y="3">
+                            <p class="- topic/p " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Derived%20Attributes.dita" xtrc="p:2;35:32">Your mental resistance is a blanket attribute to describe your
+                                ability to resist any type of assault on your mind or psyche.
+                                Anything from mental magic, to mind affecting gadgets, and even
+                                persuasion techniques that attempt to lull you into some non-natural
+                                state. In addition, this is used to roll against any type of fear or
+                                mental trauma.</p>
+                        </entry>
+                        <entry valign="middle" class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Derived%20Attributes.dita" xtrc="entry:9;42:48" colname="col3" dita-ot:x="3" dita-ot:y="3">Willpower + Intelligence divided by 2.</entry>
+                    </row>
+                    <row class="- topic/row " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Derived%20Attributes.dita" xtrc="row:4;44:26">
+                        <entry valign="middle" class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Derived%20Attributes.dita" xtrc="entry:10;45:48" colname="col1" dita-ot:x="1" dita-ot:y="4">Damage Resistance</entry>
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Derived%20Attributes.dita" xtrc="entry:11;46:32" colname="col2" dita-ot:x="2" dita-ot:y="4">Damage resistance is your ability to slough off damage dealt directly
+                            to your body.</entry>
+                        <entry valign="middle" class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Derived%20Attributes.dita" xtrc="entry:12;48:48" colname="col3" dita-ot:x="3" dita-ot:y="4">(Strength divided by 2) + any bonuses from
+                            armor.</entry>
+                    </row>
+                    <row class="- topic/row " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Derived%20Attributes.dita" xtrc="row:5;51:26">
+                        <entry valign="middle" class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Derived%20Attributes.dita" xtrc="entry:13;52:48" colname="col1" dita-ot:x="1" dita-ot:y="5">Creation Expertise</entry>
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Derived%20Attributes.dita" xtrc="entry:14;53:32" colname="col2" dita-ot:x="2" dita-ot:y="5">Creation expertise is your ability as a technologist, to create
+                            things that are of higher quality. </entry>
+                        <entry valign="middle" class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Derived%20Attributes.dita" xtrc="entry:15;55:48" colname="col3" dita-ot:x="3" dita-ot:y="5">Dexterity + Intelligence divided by 2.</entry>
+                    </row>
+                    <row class="- topic/row " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Derived%20Attributes.dita" xtrc="row:6;57:26">
+                        <entry valign="middle" class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Derived%20Attributes.dita" xtrc="entry:16;58:48" colname="col1" dita-ot:x="1" dita-ot:y="6">Spell Power</entry>
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Derived%20Attributes.dita" xtrc="entry:17;59:32" colname="col2" dita-ot:x="2" dita-ot:y="6">Spell power is a derived attribute that determines how powerful your
+                            spells are</entry>
+                        <entry valign="middle" class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Derived%20Attributes.dita" xtrc="entry:18;61:48" colname="col3" dita-ot:x="3" dita-ot:y="6">Willpower + Charisma divided by 2.</entry>
+                    </row>
+                    <row class="- topic/row " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Derived%20Attributes.dita" xtrc="row:7;63:26">
+                        <entry valign="middle" class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Derived%20Attributes.dita" xtrc="entry:19;64:48" colname="col1" dita-ot:x="1" dita-ot:y="7">Speed</entry>
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Derived%20Attributes.dita" xtrc="entry:20;65:32" colname="col2" dita-ot:x="2" dita-ot:y="7">This is how fast your character moves, and how many times they may
+                            act in battle. Faster characters gain more actions and can move
+                            further.</entry>
+                        <entry valign="middle" class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Derived%20Attributes.dita" xtrc="entry:21;68:48" colname="col3" dita-ot:x="3" dita-ot:y="7">Dexterity + Perception divided b 2.</entry>
+                    </row>
+                    <row class="- topic/row " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Derived%20Attributes.dita" xtrc="row:8;70:26">
+                        <entry valign="middle" class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Derived%20Attributes.dita" xtrc="entry:22;71:48" colname="col1" dita-ot:x="1" dita-ot:y="8">Health</entry>
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Derived%20Attributes.dita" xtrc="entry:23;72:32" colname="col2" dita-ot:x="2" dita-ot:y="8">Health is a numerical abstraction of a persons ability to cling to
+                            life. The lower the number, the closer they are to death.</entry>
+                        <entry valign="middle" class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Derived%20Attributes.dita" xtrc="entry:24;74:48" colname="col3" dita-ot:x="3" dita-ot:y="8">(Strength multiplied by 5) + 100.</entry>
+                    </row>
+                    <row class="- topic/row " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Derived%20Attributes.dita" xtrc="row:9;76:26">
+                        <entry valign="middle" class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Derived%20Attributes.dita" xtrc="entry:25;77:48" colname="col1" dita-ot:x="1" dita-ot:y="9">Fatigue</entry>
+                        <entry class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Derived%20Attributes.dita" xtrc="entry:26;78:32" colname="col2" dita-ot:x="2" dita-ot:y="9">Fatigue is a numerical measure of a persons energy levels. As the
+                            number falls, the character becomes more and more tired, until finally
+                            falling unconscious or becoming unable to act due to exhaustion.</entry>
+                        <entry valign="middle" class="- topic/entry " xtrf="file:/F:/Personal%20Documents%20and%20Files/Documents/Portfolio/Rulebook/Arcane%20Engine%20Rulebook/Derived%20Attributes.dita" xtrc="entry:27;81:48" colname="col3" dita-ot:x="3" dita-ot:y="9">(Constitution multiplied by 5) + 100.</entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+    </refbody>
+</reference>
