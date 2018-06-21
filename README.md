@@ -1,8 +1,10 @@
-![Screenshot](assets/img/screenshot.png)
+
 
 # Adam Brown Portfolio
 
 [Live](http://adamrbrown.info)
+
+![Screenshot](assets/img/screenshot.png)
 
 Welcome to my portfolio. I am a young aspiring technical writer who made this portfolio site to learn new and valuable skills as well as make a detailed and dedicated site to show off my skills.
 
