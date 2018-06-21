@@ -563,5 +563,7 @@ section {
 }
 
 .card.card-body.work-card.cert-card {
-    border-style: none;
+	border-style: none;
+	border-top: 4px solid #B1BA9A;
+    padding-top: .75rem;
 }

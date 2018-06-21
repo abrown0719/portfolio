@@ -1,0 +1,1 @@
+define({r:0.5,st:'Stem',n:1,t:[0],u:['../Content/A_Introduction/Core Mechanic.htm'],s:['a'],p:[['a',0]]});

@@ -65,7 +65,7 @@ gulp.task("minifyCss", ["compileSass"], function() {
     .pipe(gulp.dest('docs/assets/css'));
 });
 
-gulp.task('browser-sync', function() {
+gulp.task('browsersync', function() {
     browserSync.init({
         server: {
             baseDir: "./"
