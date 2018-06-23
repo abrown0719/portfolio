@@ -22,15 +22,31 @@ $( document ).ready(function() {
         $('.navbar-toggle:visible').click();
     });
 
-    $('.fa-angle-double-down').on('click', scrollDownHeader)
+    $('#scrollArrowAbout').on('click', function(){
+        scrollDownHeader("about");
+    })
+
+    $('#scrollArrowWork').on('click', function() {
+        scrollDownHeader("work");
+    })
 
 });
 
-function scrollDownHeader() {
+function scrollDownHeader(sectionName) {
     var offset = -20; //Offset of 20px
-
-    $('html, body').animate({
-        scrollTop: $("#pageid").offset().top + offset
-    }, 1000);
+    switch(sectionName) {
+        case ("about"):
+            $('html, body').animate({
+                scrollTop: $("#pageid").offset().top + offset
+            }, 1000);
+            break;
+        case ("work"):
+            $('html, body').animate({
+                scrollTop: $("#single-project").offset().top + offset
+            }, 1000);
+            break;
+        default:
+            return false;
+    }
     return false;
 }
