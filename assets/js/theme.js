@@ -22,4 +22,15 @@ $( document ).ready(function() {
         $('.navbar-toggle:visible').click();
     });
 
+    $('.fa-angle-double-down').on('click', scrollDownHeader)
+
 });
+
+function scrollDownHeader() {
+    var offset = -20; //Offset of 20px
+
+    $('html, body').animate({
+        scrollTop: $("#pageid").offset().top + offset
+    }, 1000);
+    return false;
+}

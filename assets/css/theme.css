@@ -159,6 +159,7 @@ img.img-circle {
 	-moz-background-size:cover;
 	background-size:cover;
 	-o-background-size:cover;
+	background-attachment: fixed;
 }
 
 .intro.intro2 {
@@ -567,3 +568,9 @@ section {
 	border-top: 4px solid #B1BA9A;
     padding-top: .75rem;
 }
+
+.fa-angle-double-down {
+	font-size: 4rem;
+    transform: translateY(50%);
+}
+
