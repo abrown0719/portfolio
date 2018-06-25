@@ -115,7 +115,7 @@ a:hover,a:focus {
 	.navbar-custom {
 			padding:0px 0;
 			border-bottom:0;
-			font-size:13px;
+			font-size: .9rem;
 			background:0 0;
 			-webkit-transition:background .5s ease-in-out,padding .5s ease-in-out;
 			-moz-transition:background .5s ease-in-out,padding .5s ease-in-out;
@@ -134,7 +134,7 @@ a:hover,a:focus {
 	.navbar-expand-md .navbar-custom.navbar-nav .nav-link {
 		padding-right:1rem;
 		padding-left:1rem;
-		font-weight:300;
+		font-weight:600;
 	}
 	.dropdown-menu {
 		border:0px solid rgba(0,0,0,0.03);
@@ -163,11 +163,7 @@ img.img-circle {
 }
 
 .intro.intro2 {
-	background-image:radial-gradient(circle at 50% 50%,rgba(0,0,0,0.46),rgba(0,0,0,0.18)),url('https://images.pexels.com/photos/353140/pexels-photo-353140.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
-}
-
-.intro.intro3 {
-	background-image:radial-gradient(circle at 50% 50%,rgba(0,0,0,0.46),rgba(0,0,0,0.18)),url('https://images.pexels.com/photos/1034887/pexels-photo-1034887.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+	background-image:radial-gradient(circle at 50% 50%,rgba(0,0,0,0.46),rgba(0,0,0,0.18)),url('https://images.pexels.com/photos/90766/landscape-autumn-fog-village-90766.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
 }
 
 .work-box {
@@ -200,9 +196,9 @@ img.img-circle {
 			padding:7px 0;
 	}
 	.intro .intro-body .intro-text {
-			font-size:20px;
-				font-weight:300;
-				letter-spacing:1px;
+		font-size: 16px;
+		font-weight: 600;
+		letter-spacing:1px;
 	}
 }
 .btn-circle {
@@ -323,6 +319,7 @@ ul.banner-social-buttons {
 		margin-bottom:0;
 		font-size:14px;
 		letter-spacing:1px;
+		font-weight: 600;
 	}
 	.navbar-custom {
 		background-color:#F9FFE0;
@@ -401,11 +398,10 @@ p.lead {
 	line-height:1.9;
 }
 .btnghost {
-	border:2px solid #39422B;
 	background-color:transparent;
 	padding:15px 20px;
 	letter-spacing:3px;
-	font-size:12px;
+	font-size:16px;
 	text-transform:uppercase;
 	font-weight:400;
 	color:#39422B;
@@ -414,9 +410,7 @@ p.lead {
     min-width: 150px;
 }
 .btnghost:hover {
-	background-color:#39422B;
-	color:#F9FFE0;
-	border:2px solid #39422B;
+	color: #2E5F9B;
 }
 .highlightlink {
 	border-bottom:1px dashed #ccc;
@@ -570,7 +564,60 @@ section {
 }
 
 .fa-angle-double-down {
-	font-size: 4rem;
-    transform: translateY(50%);
+	font-size: 3rem;
+	transform: translateY(50%);
+	transition: color 0.2s ease;
 }
 
+.fa-angle-double-down:hover {
+	cursor: pointer;
+	color: #2E5F9B;
+}
+
+button.info {
+	font-weight: 1000;
+	font-size: 1.5rem;
+}
+
+button.info:after {
+	content: "\f107";
+	font-family: FontAwesome;
+	margin-left: .2rem;
+}
+
+button.info:hover {
+	color: #2E5F9B;
+}
+
+a.nav-link:hover{
+	color: #2E5F9B;
+}
+
+a.highlightlink:hover {
+	color: #2E5F9B;
+}
+
+a.workCardLink {
+    font-weight: 600;
+    font-size: 18px;
+    border: 2px solid;
+    justify-content: center;
+	width: 46%;
+	margin-top: .8rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a.workCardLink:hover {
+    color: #2E5F9B;
+}
+
+.workLinkWrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+a.workCardLink.certCardLink {
+    width: 70%;
+}

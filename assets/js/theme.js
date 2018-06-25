@@ -29,7 +29,8 @@ $( document ).ready(function() {
     $('#scrollArrowWork').on('click', function() {
         scrollDownHeader("work");
     })
-
+    
+    $('[data-toggle="tooltip"]').tooltip(); 
 });
 
 function scrollDownHeader(sectionName) {
