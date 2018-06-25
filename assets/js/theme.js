@@ -30,6 +30,7 @@ $( document ).ready(function() {
         scrollDownHeader("work");
     })
     
+    // Initialize Tooltips
     $('[data-toggle="tooltip"]').tooltip(); 
 });
 
